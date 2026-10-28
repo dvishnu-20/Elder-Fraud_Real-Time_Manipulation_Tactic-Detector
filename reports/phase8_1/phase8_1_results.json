@@ -1,0 +1,103 @@
+{
+  "clean": {
+    "tp": 0,
+    "fn": 2,
+    "fp": 0,
+    "tn": 1
+  },
+  "degraded": {
+    "tp": 0,
+    "fn": 2,
+    "fp": 0,
+    "tn": 1
+  },
+  "short_utterance_clean": {
+    "tp": 0,
+    "fn": 1
+  },
+  "long_utterance_clean": {
+    "tp": 3,
+    "fn": 4
+  },
+  "errors": [
+    {
+      "type": "classifier_miss",
+      "text": "I'm calling from your bank's fraud department. Your account is compromised.",
+      "word_count": 11,
+      "probs": [
+        0.000229,
+        0.001333,
+        0.005504,
+        0.000918,
+        0.000296
+      ],
+      "gt_tactics": [
+        "authority",
+        "urgency"
+      ]
+    },
+    {
+      "type": "classifier_miss",
+      "text": "You need to act immediately to secure your funds.",
+      "word_count": 9,
+      "probs": [
+        0.410976,
+        0.003926,
+        0.000253,
+        0.027619,
+        0.000254
+      ],
+      "gt_tactics": [
+        "urgency"
+      ]
+    },
+    {
+      "type": "classifier_miss",
+      "text": "Do not tell anyone about this, it is a federal investigation.",
+      "word_count": 11,
+      "probs": [
+        0.000268,
+        0.378906,
+        0.003094,
+        0.0024,
+        0.000337
+      ],
+      "gt_tactics": [
+        "isolation",
+        "authority"
+      ]
+    },
+    {
+      "type": "temporal_miss",
+      "final_risk": 0.016246
+    },
+    {
+      "type": "temporal_miss",
+      "final_risk": 0.148637
+    },
+    {
+      "type": "classifier_miss",
+      "text": "Don't call anyone or hang up, or I will dispatch the officers now.",
+      "word_count": 13,
+      "probs": [
+        0.000405,
+        0.022446,
+        0.000252,
+        0.000694,
+        0.001227
+      ],
+      "gt_tactics": [
+        "isolation",
+        "channel_control"
+      ]
+    },
+    {
+      "type": "mixed_miss",
+      "final_risk": 0.034833
+    },
+    {
+      "type": "mixed_miss",
+      "final_risk": 0.007768
+    }
+  ]
+}

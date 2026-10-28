@@ -1,0 +1,8 @@
+Condition,Turn F1,Recall,FPR,Conversation F1,Detection Rate,Mean Detection Turn
+Clean reference,0.0,0.0,0.0,0.0,0.0,N/A
+ASR degraded,0.0,0.0,0.0,0.0,0.0,N/A
+Short clean,0.0,0.0,0.0,0.0,0.0,N/A
+Short degraded,0.0,0.0,0.0,0.0,0.0,N/A
+Noise mild,,,,,,
+Noise moderate,,,,,,
+Noise severe,,,,,,
