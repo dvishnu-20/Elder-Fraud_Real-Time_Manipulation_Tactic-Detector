@@ -1,0 +1,291 @@
+{
+  "dataset_version": "temporal_v2_features",
+  "parent_dataset": "data/processed/temporal_v2/",
+  "frozen_distilbert_model": "C:\\Users\\duddu\\Downloads\\ELDERY LIVE TATIC DETECTOR\\elder-fraud-detector\\ml\\models\\tactic_classifier\\v2_temporal_validity",
+  "feature_dim": 5,
+  "labels_order": [
+    "urgency",
+    "isolation",
+    "authority",
+    "emotional_destabilization",
+    "channel_control"
+  ],
+  "calibrated_thresholds": {
+    "urgency": 0.15,
+    "isolation": 0.25,
+    "authority": 0.1,
+    "emotional_destabilization": 0.2,
+    "channel_control": 0.15
+  },
+  "seed": 42,
+  "extraction_timestamp": "2026-10-05T13:05:52.573168",
+  "splits": {
+    "train": {
+      "file": "train_features.jsonl",
+      "conversations": 1400,
+      "fraud": 707,
+      "benign": 693,
+      "turns": 11454
+    },
+    "validation": {
+      "file": "validation_features.jsonl",
+      "conversations": 300,
+      "fraud": 160,
+      "benign": 140,
+      "turns": 2458
+    },
+    "test": {
+      "file": "test_features.jsonl",
+      "conversations": 300,
+      "fraud": 133,
+      "benign": 167,
+      "turns": 2400
+    }
+  },
+  "quality_metrics": {
+    "train": {
+      "total_sequences": 1400,
+      "fraud_sequences": 707,
+      "benign_sequences": 693,
+      "total_turns": 11454,
+      "min_length": 4,
+      "max_length": 12,
+      "mean_length": 8.18,
+      "median_length": 8.0,
+      "pct_ge_6": 84.43,
+      "pct_ge_10": 45.93,
+      "empty_sequences": 0,
+      "nan_features": 0,
+      "out_of_bounds_features": 0
+    },
+    "validation": {
+      "total_sequences": 300,
+      "fraud_sequences": 160,
+      "benign_sequences": 140,
+      "total_turns": 2458,
+      "min_length": 4,
+      "max_length": 12,
+      "mean_length": 8.19,
+      "median_length": 8.0,
+      "pct_ge_6": 87.67,
+      "pct_ge_10": 46.0,
+      "empty_sequences": 0,
+      "nan_features": 0,
+      "out_of_bounds_features": 0
+    },
+    "test": {
+      "total_sequences": 300,
+      "fraud_sequences": 133,
+      "benign_sequences": 167,
+      "total_turns": 2400,
+      "min_length": 4,
+      "max_length": 12,
+      "mean_length": 8.0,
+      "median_length": 8.0,
+      "pct_ge_6": 83.33,
+      "pct_ge_10": 39.67,
+      "empty_sequences": 0,
+      "nan_features": 0,
+      "out_of_bounds_features": 0
+    }
+  },
+  "feature_distributions": {
+    "train": {
+      "urgency": {
+        "overall_mean": 0.083,
+        "std": 0.2708,
+        "min": 0.0001,
+        "max": 0.9989,
+        "median": 0.0007,
+        "p95": 0.9988,
+        "fraud_turns_mean": 0.0977,
+        "benign_turns_mean": 0.0576
+      },
+      "isolation": {
+        "overall_mean": 0.0767,
+        "std": 0.2577,
+        "min": 0.0001,
+        "max": 0.9971,
+        "median": 0.0007,
+        "p95": 0.9839,
+        "fraud_turns_mean": 0.1113,
+        "benign_turns_mean": 0.017
+      },
+      "authority": {
+        "overall_mean": 0.0605,
+        "std": 0.2328,
+        "min": 0.0002,
+        "max": 0.9993,
+        "median": 0.0009,
+        "p95": 0.9984,
+        "fraud_turns_mean": 0.0629,
+        "benign_turns_mean": 0.0563
+      },
+      "emotional_destabilization": {
+        "overall_mean": 0.0261,
+        "std": 0.1462,
+        "min": 0.0003,
+        "max": 0.9987,
+        "median": 0.0014,
+        "p95": 0.0205,
+        "fraud_turns_mean": 0.0361,
+        "benign_turns_mean": 0.0087
+      },
+      "channel_control": {
+        "overall_mean": 0.061,
+        "std": 0.234,
+        "min": 0.0001,
+        "max": 0.9989,
+        "median": 0.0007,
+        "p95": 0.9985,
+        "fraud_turns_mean": 0.0667,
+        "benign_turns_mean": 0.051
+      }
+    },
+    "validation": {
+      "urgency": {
+        "overall_mean": 0.0839,
+        "std": 0.2723,
+        "min": 0.0001,
+        "max": 0.9989,
+        "median": 0.0007,
+        "p95": 0.9988,
+        "fraud_turns_mean": 0.0993,
+        "benign_turns_mean": 0.0558
+      },
+      "isolation": {
+        "overall_mean": 0.0793,
+        "std": 0.2619,
+        "min": 0.0001,
+        "max": 0.9971,
+        "median": 0.0007,
+        "p95": 0.9839,
+        "fraud_turns_mean": 0.114,
+        "benign_turns_mean": 0.0156
+      },
+      "authority": {
+        "overall_mean": 0.0619,
+        "std": 0.2355,
+        "min": 0.0002,
+        "max": 0.9993,
+        "median": 0.0009,
+        "p95": 0.9984,
+        "fraud_turns_mean": 0.0637,
+        "benign_turns_mean": 0.0587
+      },
+      "emotional_destabilization": {
+        "overall_mean": 0.0244,
+        "std": 0.1405,
+        "min": 0.0003,
+        "max": 0.9987,
+        "median": 0.0012,
+        "p95": 0.0205,
+        "fraud_turns_mean": 0.0341,
+        "benign_turns_mean": 0.0066
+      },
+      "channel_control": {
+        "overall_mean": 0.0623,
+        "std": 0.2362,
+        "min": 0.0001,
+        "max": 0.9989,
+        "median": 0.0007,
+        "p95": 0.9986,
+        "fraud_turns_mean": 0.07,
+        "benign_turns_mean": 0.0481
+      }
+    },
+    "test": {
+      "urgency": {
+        "overall_mean": 0.0827,
+        "std": 0.2701,
+        "min": 0.0001,
+        "max": 0.9989,
+        "median": 0.0007,
+        "p95": 0.9988,
+        "fraud_turns_mean": 0.0963,
+        "benign_turns_mean": 0.0646
+      },
+      "isolation": {
+        "overall_mean": 0.0711,
+        "std": 0.2482,
+        "min": 0.0001,
+        "max": 0.9971,
+        "median": 0.0007,
+        "p95": 0.9839,
+        "fraud_turns_mean": 0.1151,
+        "benign_turns_mean": 0.0129
+      },
+      "authority": {
+        "overall_mean": 0.0649,
+        "std": 0.2412,
+        "min": 0.0002,
+        "max": 0.9993,
+        "median": 0.001,
+        "p95": 0.9984,
+        "fraud_turns_mean": 0.0657,
+        "benign_turns_mean": 0.0639
+      },
+      "emotional_destabilization": {
+        "overall_mean": 0.0255,
+        "std": 0.1449,
+        "min": 0.0003,
+        "max": 0.9987,
+        "median": 0.0012,
+        "p95": 0.0205,
+        "fraud_turns_mean": 0.0395,
+        "benign_turns_mean": 0.0071
+      },
+      "channel_control": {
+        "overall_mean": 0.0641,
+        "std": 0.2396,
+        "min": 0.0001,
+        "max": 0.9989,
+        "median": 0.0007,
+        "p95": 0.9985,
+        "fraud_turns_mean": 0.0674,
+        "benign_turns_mean": 0.0597
+      }
+    }
+  },
+  "temporal_structure": {
+    "train": {
+      "fraud": {
+        "mean_tactic_turns": 3.7,
+        "mean_first_tactic_turn": 2.64,
+        "pct_normal_openers_ge_2": 35.79,
+        "pct_multi_turn_gaps": 30.55
+      },
+      "benign": {
+        "mean_tactic_turns": 1.07,
+        "pct_ge_1_tactic": 64.5,
+        "pct_ge_2_tactics": 21.21
+      }
+    },
+    "validation": {
+      "fraud": {
+        "mean_tactic_turns": 3.65,
+        "mean_first_tactic_turn": 2.55,
+        "pct_normal_openers_ge_2": 32.5,
+        "pct_multi_turn_gaps": 27.5
+      },
+      "benign": {
+        "mean_tactic_turns": 1.06,
+        "pct_ge_1_tactic": 61.43,
+        "pct_ge_2_tactics": 22.14
+      }
+    },
+    "test": {
+      "fraud": {
+        "mean_tactic_turns": 3.8,
+        "mean_first_tactic_turn": 2.47,
+        "pct_normal_openers_ge_2": 33.83,
+        "pct_multi_turn_gaps": 30.08
+      },
+      "benign": {
+        "mean_tactic_turns": 1.2,
+        "pct_ge_1_tactic": 70.06,
+        "pct_ge_2_tactics": 25.15
+      }
+    }
+  }
+}

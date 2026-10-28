@@ -1,0 +1,26 @@
+{
+    "total_conversations": 600,
+    "total_turns": 3400,
+    "fraud_conversations": 299,
+    "benign_conversations": 301,
+    "splits": {
+        "train": 420,
+        "validation": 90,
+        "test": 90
+    },
+    "tactics": {
+        "emotional_destabilization": 184,
+        "urgency": 339,
+        "isolation": 241,
+        "channel_control": 242,
+        "none": 960,
+        "authority": 257
+    },
+    "difficulties": {
+        "easy": 473,
+        "medium": 144,
+        "hard": 1245,
+        "none": 57
+    },
+    "multi_label_turns": 224
+}

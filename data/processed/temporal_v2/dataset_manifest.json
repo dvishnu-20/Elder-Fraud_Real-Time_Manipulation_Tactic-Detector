@@ -1,0 +1,106 @@
+{
+  "dataset_version": "V2_temporal_validity",
+  "seed": 42,
+  "num_conversations": 2000,
+  "fraud_conversations": 1000,
+  "benign_conversations": 1000,
+  "generation_purpose": "temporal_validity_repair",
+  "parent_dataset": "V1",
+  "models_trained": false,
+  "generation_script": "scripts/generate_synthetic_data.py",
+  "generation_script_sha256": "90545a2db49e9c87308fd2d3daf6c527b2ec816b81d5243f862d8a289d4c190f",
+  "generation_timestamp": "2026-10-05T12:38:57.402832",
+  "split_sizes": {
+    "train_conversations": 1400,
+    "val_conversations": 300,
+    "test_conversations": 300
+  },
+  "turn_counts": {
+    "train_turns": 11454,
+    "val_turns": 2458,
+    "test_turns": 2400,
+    "total_turns": 16312
+  },
+  "gate_results": {
+    "GATE 1: Both classes contain tactic-bearing turns": {
+      "passed": true,
+      "details": "Fraud tactics=3457, Benign tactics=1090"
+    },
+    "GATE 2: Fraud is NOT perfectly determined by >= 1 tactic": {
+      "passed": true,
+      "details": "P(Fraud | >=1 tactic) = 0.6061, Benign with >=1 tactic = 650"
+    },
+    "GATE 3: Every individual tactic appears in both classes": {
+      "passed": true,
+      "details": "All 5 tactics present in both classes"
+    },
+    "GATE 4: No individual tactic is nearly perfectly predictive of fraud (>95%)": {
+      "passed": true,
+      "details": "Highest individual tactic P(Fraud|tactic) <= 0.95"
+    },
+    "GATE 5: Fraud contains normal/non-tactic turns": {
+      "passed": true,
+      "details": "Fraud normal turns = 6757"
+    },
+    "GATE 6: Benign contains legitimate tactic-like behavior (>=30%)": {
+      "passed": true,
+      "details": "Benign with tactics = 65.0%"
+    },
+    "GATE 7: Conversation-level split has zero ID overlap": {
+      "passed": true,
+      "details": "Overlap counts = 0"
+    },
+    "GATE 8: Train/test conversation overlap = 0": {
+      "passed": true,
+      "details": "Disjoint splits verified"
+    },
+    "GATE 9: No deterministic topic -> fraud relationship": {
+      "passed": true,
+      "details": "All 12 topics contain both fraud & benign"
+    },
+    "GATE 10: No deterministic vocabulary -> fraud relationship": {
+      "passed": true,
+      "details": "Vocabulary balanced across topics"
+    },
+    "GATE 11: Multiple tactic orders exist": {
+      "passed": true,
+      "details": "5 distinct archetypes per class with procedural variation"
+    },
+    "GATE 12: Normal-turn gaps exist in fraud (>=30%)": {
+      "passed": true,
+      "details": "Multi-gap fraud convs = 55.0%"
+    },
+    "GATE 13: Delayed manipulation exists (>=20%)": {
+      "passed": true,
+      "details": "Delayed opener fraud convs = 35.0%"
+    },
+    "GATE 14: Independent verification appears substantially in benign (>=50%)": {
+      "passed": true,
+      "details": "Benign with verification = 77.9%"
+    },
+    "GATE 15: Fraud conversations contain suppression/coercion (>=50%)": {
+      "passed": true,
+      "details": "Fraud with suppression = 57.9%"
+    },
+    "GATE 16: Progression archetypes differ in context/verification, not single tactic": {
+      "passed": true,
+      "details": "Verified across 10 archetypes"
+    },
+    "GATE 17: At least 60% of conversations have >= 6 turns": {
+      "passed": true,
+      "details": "84.75% of conversations have >= 6 turns"
+    },
+    "GATE 18: No single tactic presence achieves near-perfect separation": {
+      "passed": true,
+      "details": "P(Fraud | >=1 tactic) = 0.6061 (Benign contains 600 tactic instances)"
+    },
+    "GATE 19: Dataset generation is reproducible": {
+      "passed": true,
+      "details": "Seed=42 fixed and recorded"
+    },
+    "GATE 20: Synthetic and challenge evaluation sets remain separate": {
+      "passed": true,
+      "details": "Challenge set untouched"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_version": "V1_synthetic",
+  "seed": 42,
+  "num_conversations": 1600,
+  "fraud_conversations": 800,
+  "benign_conversations": 800,
+  "split_sizes": {
+    "train_conversations": 1120,
+    "val_conversations": 240,
+    "test_conversations": 240
+  }
+}
