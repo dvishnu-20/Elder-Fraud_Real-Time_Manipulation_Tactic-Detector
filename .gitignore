@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# PyTorch model binaries (large files — use Git LFS if needed)
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+
+# HuggingFace cache
+.cache/
+*.arrow
+
+# Environment secrets
+.env
+.env.local
+.env.*.local
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+*.dockerignore
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# pytest cache
+.pytest_cache/
+*.pytest_cache
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large data files
+*.jsonl.bak
+*.csv.bak
+data/raw/
+data/external/
+
+# Compiled ML artifacts (keep reports, not binary models)
+ml/models/**/*.pt
+ml/models/**/*.pth
+

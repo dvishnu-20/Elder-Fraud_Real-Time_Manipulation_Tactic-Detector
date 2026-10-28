@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: elder_fraud_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+      - RISK_THRESHOLD_GUARDED=25
+      - RISK_THRESHOLD_HIGH=50
+      - RISK_THRESHOLD_CRITICAL=75
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: elder_fraud_frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
