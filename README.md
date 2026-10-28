@@ -23,20 +23,6 @@ By evaluating the conversational **progression** of manipulative tactics over ti
 
 ---
 
-## 👥 Contributors & Academic Affiliation
-
-**Vellore Institute of Technology (VIT), Vellore**  
-*School of Computer Science and Engineering — Department of Data Science*
-
-| Contributor Name | Registration Number | Official Email |
-| :--- | :---: | :--- |
-| **Duddu Satya Sai Vishnu Vardhan** | `23MID0163` | duddu.satya2023@vitstudent.ac.in |
-| **Palli Pavan Kumar** | `23MID0181` | pallipavan.kumar2023@vitstudent.ac.in |
-| **Darisi Rithvik** | `23MID0209` | darisi.rithvik2023@vitstudent.ac.in |
-| **Yakkaladevi Atchuta Ramakrishna** | `23MID0256` | yakkaladevi.atchutha2023@vitstudent.ac.in |
-
----
-
 ## 🧠 Core Tactic Taxonomy (The 5 Manipulation Pillars)
 
 Drawing from research by the AARP Public Policy Institute and empirical analysis of victim reports from the Consumer Financial Protection Bureau (CFPB), conversational telephone fraud is categorized into 5 distinct manipulation tactics:
@@ -344,4 +330,4 @@ As certified in the Phase 10 Final Scientific Audit:
 ## 📄 License
 
 This research and development project is licensed under the [MIT License](LICENSE).  
-Copyright © 2026 Duddu Satya Sai Vishnu Vardhan, Palli Pavan Kumar, Darisi Rithvik, Yakkaladevi Atchuta Ramakrishna.
+Copyright © 2026 Duddu Satya Sai Vishnu Vardhan.
