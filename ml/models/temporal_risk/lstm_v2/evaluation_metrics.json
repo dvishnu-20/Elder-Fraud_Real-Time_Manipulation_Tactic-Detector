@@ -1,0 +1,87 @@
+{
+  "majority_class": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.44333333333333336,
+    "accuracy": 0.44333333333333336,
+    "precision": 0.44333333333333336,
+    "recall": 1.0,
+    "f1": 0.6143187066974596,
+    "macro_precision": 0.22166666666666668,
+    "macro_recall": 0.5,
+    "macro_f1": 0.3071593533487298,
+    "threshold": 0.5,
+    "confusion_matrix": {
+      "tn": 0,
+      "fp": 167,
+      "fn": 0,
+      "tp": 133
+    },
+    "fpr": 1.0,
+    "fnr": 0.0
+  },
+  "tactic_count_rule": {
+    "roc_auc": 0.8666876772770249,
+    "pr_auc": 0.7491945432443384,
+    "accuracy": 0.86,
+    "precision": 0.76,
+    "recall": 1.0,
+    "f1": 0.8636363636363636,
+    "macro_precision": 0.88,
+    "macro_recall": 0.874251497005988,
+    "macro_f1": 0.8599003735990037,
+    "threshold": 0.5,
+    "confusion_matrix": {
+      "tn": 125,
+      "fp": 42,
+      "fn": 0,
+      "tp": 133
+    },
+    "fpr": 0.25149700598802394,
+    "fnr": 0.0
+  },
+  "logistic_regression_20_feat": {
+    "roc_auc": 0.9997748863175904,
+    "pr_auc": 0.999727579819113,
+    "accuracy": 0.9966666666666667,
+    "precision": 1.0,
+    "recall": 0.9924812030075187,
+    "f1": 0.9962264150943396,
+    "macro_precision": 0.9970238095238095,
+    "macro_recall": 0.9962406015037594,
+    "macro_f1": 0.996620670233737,
+    "threshold": 0.24,
+    "confusion_matrix": {
+      "tn": 167,
+      "fp": 0,
+      "fn": 1,
+      "tp": 132
+    },
+    "fpr": 0.0,
+    "fnr": 0.007518796992481203
+  },
+  "causal_lstm": {
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "threshold": 0.2,
+    "confusion_matrix": {
+      "tn": 167,
+      "fp": 0,
+      "fn": 0,
+      "tp": 133
+    },
+    "fpr": 0.0,
+    "fnr": 0.0
+  },
+  "lstm_vs_logistic_diff": {
+    "delta_f1": 0.0037735849056603765,
+    "delta_pr_auc": 0.000272420180887023,
+    "delta_roc_auc": 0.0002251136824096278
+  }
+}

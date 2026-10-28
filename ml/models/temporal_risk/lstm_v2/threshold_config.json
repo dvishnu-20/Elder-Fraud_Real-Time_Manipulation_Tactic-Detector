@@ -1,0 +1,6 @@
+{
+  "calibrated_threshold": 0.2,
+  "calibration_dataset": "data/processed/temporal_v2_features/validation_features.jsonl",
+  "optimization_criteria": "Max F1 on Validation Set (Sweep 0.05 to 0.95, Median Plateau)",
+  "validation_f1_at_threshold": 1.0
+}

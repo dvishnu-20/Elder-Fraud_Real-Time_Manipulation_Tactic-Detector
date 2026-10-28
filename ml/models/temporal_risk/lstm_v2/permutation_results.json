@@ -1,0 +1,23 @@
+{
+  "original_test_metrics": {
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "f1": 1.0
+  },
+  "shuffled_test_metrics_mean": {
+    "roc_auc": 0.9895862410517312,
+    "pr_auc": 0.9885448923500965,
+    "f1": 0.8780905249835109
+  },
+  "shuffled_test_metrics_std": {
+    "roc_auc": 0.0016790583552557003,
+    "pr_auc": 0.0018023601895691195,
+    "f1": 0.005074469120087297
+  },
+  "degradation_deltas": {
+    "delta_roc_auc": 0.010413758948268792,
+    "delta_pr_auc": 0.01145510764990354,
+    "delta_f1": 0.12190947501648908
+  },
+  "num_permutation_seeds": 10
+}

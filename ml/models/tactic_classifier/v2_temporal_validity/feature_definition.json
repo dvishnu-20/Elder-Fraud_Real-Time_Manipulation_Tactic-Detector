@@ -1,0 +1,13 @@
+{
+  "feature_dim": 5,
+  "feature_names": [
+    "urgency",
+    "isolation",
+    "authority",
+    "emotional_destabilization",
+    "channel_control"
+  ],
+  "description": "5-dimensional continuous DistilBERT probabilities for multi-label manipulation tactics",
+  "model_architecture": "DistilBERT for Sequence Classification (BCEWithLogitsLoss)",
+  "dataset_version": "temporal_v2_repaired"
+}

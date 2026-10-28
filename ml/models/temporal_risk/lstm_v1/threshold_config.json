@@ -1,0 +1,10 @@
+{
+  "calibrated_threshold": 0.55,
+  "calibration_dataset": "data/processed/temporal/val_seq.jsonl",
+  "optimization_criteria": "Max F1 on Validation Set",
+  "sweep_range": [
+    0.1,
+    0.95,
+    0.05
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "thresholds": [
+    0.2,
+    0.2,
+    0.15,
+    0.15,
+    0.2
+  ],
+  "labels": [
+    "urgency",
+    "isolation",
+    "authority",
+    "emotional_destabilization",
+    "channel_control"
+  ],
+  "seed": 42,
+  "dataset_version": "Phase3_Final"
+}

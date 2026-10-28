@@ -1,0 +1,25 @@
+{
+  "labels": [
+    "urgency",
+    "isolation",
+    "authority",
+    "emotional_destabilization",
+    "channel_control"
+  ],
+  "thresholds": [
+    0.15,
+    0.25,
+    0.1,
+    0.2,
+    0.15
+  ],
+  "threshold_mapping": {
+    "urgency": 0.15,
+    "isolation": 0.25,
+    "authority": 0.1,
+    "emotional_destabilization": 0.2,
+    "channel_control": 0.15
+  },
+  "calibration_dataset": "data/processed/temporal_v2/validation.jsonl",
+  "timestamp": "2026-10-05T12:57:00.364689"
+}

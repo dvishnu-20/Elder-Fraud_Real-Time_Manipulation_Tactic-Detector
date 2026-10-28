@@ -1,0 +1,25 @@
+{
+  "total_fraud_conversations": 133,
+  "detected_fraud_conversations": 133,
+  "undetected_fraud_conversations": 0,
+  "mean_detection_turn": 3.1503759398496243,
+  "median_detection_turn": 1.0,
+  "min_detection_turn": 1,
+  "max_detection_turn": 9,
+  "detection_rate_cumulative": {
+    "by_turn_1": 0.6616541353383458,
+    "by_turn_2": 0.6616541353383458,
+    "by_turn_3": 0.6616541353383458,
+    "by_turn_5": 0.6616541353383458,
+    "by_turn_7": 0.9398496240601504,
+    "full_conversation": 1.0
+  },
+  "detection_counts_cumulative": {
+    "1": 88,
+    "2": 88,
+    "3": 88,
+    "5": 88,
+    "7": 125,
+    "full": 133
+  }
+}
