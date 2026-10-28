@@ -1,0 +1,202 @@
+{
+  "overall_test_metrics": {
+    "micro_precision": 0.9518,
+    "micro_recall": 1.0,
+    "micro_f1": 0.9753,
+    "macro_precision": 0.9585,
+    "macro_recall": 1.0,
+    "macro_f1": 0.9769
+  },
+  "per_tactic_test_metrics": {
+    "urgency": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "threshold": 0.15
+    },
+    "isolation": {
+      "precision": 0.7927,
+      "recall": 1.0,
+      "f1": 0.8844,
+      "pr_auc": 0.9511,
+      "threshold": 0.25
+    },
+    "authority": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "threshold": 0.1
+    },
+    "emotional_destabilization": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "threshold": 0.2
+    },
+    "channel_control": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "threshold": 0.15
+    }
+  },
+  "sub_population_evaluations": [
+    {
+      "name": "1. Benign Tactic-Bearing Turns",
+      "count": 201,
+      "micro_f1": 1.0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0
+    },
+    {
+      "name": "2. Fraud Tactic-Bearing Turns",
+      "count": 471,
+      "micro_f1": 1.0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0
+    },
+    {
+      "name": "3. Benign Hard Negatives (Caller None)",
+      "count": 316,
+      "micro_f1": 0.0,
+      "micro_precision": 0.0,
+      "micro_recall": 0.0
+    },
+    {
+      "name": "4. Legitimate Authority (Benign)",
+      "count": 64,
+      "micro_f1": 1.0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0
+    },
+    {
+      "name": "5. Legitimate Urgency (Benign)",
+      "count": 64,
+      "micro_f1": 1.0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0
+    },
+    {
+      "name": "6. Legitimate Emotional Language (Benign)",
+      "count": 4,
+      "micro_f1": 1.0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0
+    },
+    {
+      "name": "7. Legitimate Privacy/Channel (Benign)",
+      "count": 69,
+      "micro_f1": 1.0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0
+    },
+    {
+      "name": "8. Manipulative Tactic Turns (Fraud)",
+      "count": 471,
+      "micro_f1": 1.0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0
+    },
+    {
+      "name": "9. Multi-label Turns",
+      "count": 0,
+      "micro_f1": 0.0,
+      "micro_prec": 0.0,
+      "micro_rec": 0.0
+    }
+  ],
+  "validation_metrics": {
+    "urgency": {
+      "best_threshold": 0.15,
+      "val_precision": 1.0,
+      "val_recall": 1.0,
+      "val_f1": 1.0,
+      "val_pr_auc": 1.0
+    },
+    "isolation": {
+      "best_threshold": 0.25,
+      "val_precision": 0.7778,
+      "val_recall": 1.0,
+      "val_f1": 0.875,
+      "val_pr_auc": 0.9602
+    },
+    "authority": {
+      "best_threshold": 0.1,
+      "val_precision": 1.0,
+      "val_recall": 1.0,
+      "val_f1": 1.0,
+      "val_pr_auc": 1.0
+    },
+    "emotional_destabilization": {
+      "best_threshold": 0.2,
+      "val_precision": 1.0,
+      "val_recall": 1.0,
+      "val_f1": 1.0,
+      "val_pr_auc": 1.0
+    },
+    "channel_control": {
+      "best_threshold": 0.15,
+      "val_precision": 1.0,
+      "val_recall": 1.0,
+      "val_f1": 1.0,
+      "val_pr_auc": 1.0
+    }
+  },
+  "error_examples": {
+    "false_positives": [
+      {
+        "text": "You are legally prohibited from contacting outside parties or family members for verification during an active federal operation.",
+        "speaker": "caller",
+        "conversation_level_label": "fraud",
+        "true_labels": [],
+        "pred_labels": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0039,
+          "isolation": 0.9701,
+          "authority": 0.0054,
+          "emotional_destabilization": 0.0026,
+          "channel_control": 0.0045
+        }
+      },
+      {
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "speaker": "caller",
+        "conversation_level_label": "fraud",
+        "true_labels": [],
+        "pred_labels": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0088,
+          "isolation": 0.9862,
+          "authority": 0.0013,
+          "emotional_destabilization": 0.0264,
+          "channel_control": 0.0058
+        }
+      },
+      {
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "speaker": "caller",
+        "conversation_level_label": "fraud",
+        "true_labels": [],
+        "pred_labels": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0088,
+          "isolation": 0.9862,
+          "authority": 0.0013,
+          "emotional_destabilization": 0.0264,
+          "channel_control": 0.0058
+        }
+      }
+    ],
+    "false_negatives": []
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "contingency_table": {
+    "zero": {
+      "fraud": 0,
+      "benign": 117
+    },
+    "ge1": {
+      "fraud": 122,
+      "benign": 1
+    },
+    "ge2": {
+      "fraud": 101,
+      "benign": 0
+    },
+    "ge3": {
+      "fraud": 101,
+      "benign": 0
+    }
+  },
+  "permutation_ablation": {
+    "orig_f1": 0.9959183673469387,
+    "orig_roc": 0.9999305362600723,
+    "orig_pr": 0.9999333599893375,
+    "shuffled_f1_mean": 0.9810259360544465,
+    "shuffled_f1_std": 0.00869175611047336,
+    "shuffled_roc_mean": 0.9974228952486802,
+    "shuffled_pr_mean": 0.9979224599589287
+  },
+  "fps": [
+    {
+      "conversation_id": "conv_cp_098_benign",
+      "label": 0,
+      "topic": "password_security",
+      "num_turns": 2,
+      "tactic_bearing_turns": 1,
+      "max_tactic_prob": 0.9505699872970581,
+      "lstm_risk": 0.671887,
+      "decision": 1
+    }
+  ],
+  "fns": [],
+  "time_to_detection_counts": {
+    "1": 89,
+    "7": 2,
+    "6": 8,
+    "9": 12,
+    "5": 5,
+    "3": 4,
+    "4": 2
+  }
+}

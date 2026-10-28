@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-10-05T19:01:22Z",
+  "mode": "demo",
+  "dataset": "built_in_demo",
+  "conversations_processed": 2,
+  "model_load_time_s": 21.43,
+  "lstm_threshold": 0.2,
+  "results": [
+    {
+      "conversation_id": "demo_fraud_001",
+      "ground_truth": "fraud",
+      "predicted": "fraud",
+      "correct": true,
+      "final_risk": 0.999998,
+      "risk_triggered": true,
+      "first_trigger_turn": 6,
+      "total_turns": 9,
+      "latencies": [
+        {
+          "turn_id": 1,
+          "classification_ms": 928.64,
+          "temporal_ms": 51.39,
+          "total_ms": 980.7390000205487
+        },
+        {
+          "turn_id": 2,
+          "classification_ms": 286.94,
+          "temporal_ms": 1.71,
+          "total_ms": 288.90089999185875
+        },
+        {
+          "turn_id": 3,
+          "classification_ms": 391.43,
+          "temporal_ms": 8.4,
+          "total_ms": 400.0448000151664
+        },
+        {
+          "turn_id": 4,
+          "classification_ms": 173.58,
+          "temporal_ms": 1.66,
+          "total_ms": 175.37580005591735
+        },
+        {
+          "turn_id": 5,
+          "classification_ms": 278.5,
+          "temporal_ms": 4.12,
+          "total_ms": 282.82469999976456
+        },
+        {
+          "turn_id": 6,
+          "classification_ms": 354.87,
+          "temporal_ms": 1.74,
+          "total_ms": 356.8129999912344
+        },
+        {
+          "turn_id": 7,
+          "classification_ms": 197.26,
+          "temporal_ms": 1.38,
+          "total_ms": 198.792900016997
+        },
+        {
+          "turn_id": 8,
+          "classification_ms": 176.7,
+          "temporal_ms": 0.96,
+          "total_ms": 177.8193999780342
+        },
+        {
+          "turn_id": 9,
+          "classification_ms": 261.07,
+          "temporal_ms": 1.11,
+          "total_ms": 262.32189999427646
+        }
+      ],
+      "risk_progression": [
+        0.161592,
+        0.048157,
+        0.022456,
+        0.008217,
+        0.034282,
+        0.412059,
+        0.998878,
+        0.999979,
+        0.999998
+      ]
+    },
+    {
+      "conversation_id": "demo_benign_001",
+      "ground_truth": "benign",
+      "predicted": "benign",
+      "correct": true,
+      "final_risk": 0.000187,
+      "risk_triggered": false,
+      "first_trigger_turn": null,
+      "total_turns": 7,
+      "latencies": [
+        {
+          "turn_id": 1,
+          "classification_ms": 1578.53,
+          "temporal_ms": 1.18,
+          "total_ms": 1579.8537000082433
+        },
+        {
+          "turn_id": 2,
+          "classification_ms": 663.87,
+          "temporal_ms": 8.66,
+          "total_ms": 672.6787000079639
+        },
+        {
+          "turn_id": 3,
+          "classification_ms": 1107.88,
+          "temporal_ms": 1.46,
+          "total_ms": 1109.4903000048362
+        },
+        {
+          "turn_id": 4,
+          "classification_ms": 394.58,
+          "temporal_ms": 1.13,
+          "total_ms": 396.11480000894517
+        },
+        {
+          "turn_id": 5,
+          "classification_ms": 406.02,
+          "temporal_ms": 2.87,
+          "total_ms": 409.2026999569498
+        },
+        {
+          "turn_id": 6,
+          "classification_ms": 749.12,
+          "temporal_ms": 2.61,
+          "total_ms": 751.9499000045471
+        },
+        {
+          "turn_id": 7,
+          "classification_ms": 447.9,
+          "temporal_ms": 1.91,
+          "total_ms": 450.0329000293277
+        }
+      ],
+      "risk_progression": [
+        0.160116,
+        0.047484,
+        0.010793,
+        0.002325,
+        0.000593,
+        0.000235,
+        0.000187
+      ]
+    }
+  ],
+  "latency_summary": {
+    "total_turns": 16,
+    "mean_ms": 530.81,
+    "max_ms": 1579.85
+  }
+}

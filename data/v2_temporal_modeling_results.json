@@ -1,0 +1,864 @@
+{
+  "models": {
+    "majority_class": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.44333333333333336,
+      "accuracy": 0.44333333333333336,
+      "precision": 0.44333333333333336,
+      "recall": 1.0,
+      "f1": 0.6143187066974596,
+      "macro_precision": 0.22166666666666668,
+      "macro_recall": 0.5,
+      "macro_f1": 0.3071593533487298,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 0,
+        "fp": 167,
+        "fn": 0,
+        "tp": 133
+      },
+      "fpr": 1.0,
+      "fnr": 0.0
+    },
+    "tactic_count_rule": {
+      "roc_auc": 0.8666876772770249,
+      "pr_auc": 0.7491945432443384,
+      "accuracy": 0.86,
+      "precision": 0.76,
+      "recall": 1.0,
+      "f1": 0.8636363636363636,
+      "macro_precision": 0.88,
+      "macro_recall": 0.874251497005988,
+      "macro_f1": 0.8599003735990037,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 125,
+        "fp": 42,
+        "fn": 0,
+        "tp": 133
+      },
+      "fpr": 0.25149700598802394,
+      "fnr": 0.0
+    },
+    "logistic_regression_20_feat": {
+      "roc_auc": 0.9997748863175904,
+      "pr_auc": 0.999727579819113,
+      "accuracy": 0.9966666666666667,
+      "precision": 1.0,
+      "recall": 0.9924812030075187,
+      "f1": 0.9962264150943396,
+      "macro_precision": 0.9970238095238095,
+      "macro_recall": 0.9962406015037594,
+      "macro_f1": 0.996620670233737,
+      "threshold": 0.24,
+      "confusion_matrix": {
+        "tn": 167,
+        "fp": 0,
+        "fn": 1,
+        "tp": 132
+      },
+      "fpr": 0.0,
+      "fnr": 0.007518796992481203
+    },
+    "causal_lstm": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "threshold": 0.2,
+      "confusion_matrix": {
+        "tn": 167,
+        "fp": 0,
+        "fn": 0,
+        "tp": 133
+      },
+      "fpr": 0.0,
+      "fnr": 0.0
+    },
+    "lstm_vs_logistic_diff": {
+      "delta_f1": 0.0037735849056603765,
+      "delta_pr_auc": 0.000272420180887023,
+      "delta_roc_auc": 0.0002251136824096278
+    }
+  },
+  "prefix_evaluation": {
+    "turn_1": {
+      "prefix_length": 1,
+      "eligible_conversations": 300,
+      "fraud_count": 133,
+      "benign_count": 167,
+      "metrics": {
+        "roc_auc": 0.6195578767277475,
+        "pr_auc": 0.5741848884340188,
+        "accuracy": 0.59,
+        "precision": 0.5301204819277109,
+        "recall": 0.6616541353383458,
+        "f1": 0.5886287625418061,
+        "macro_precision": 0.5971497932026615,
+        "macro_recall": 0.5972941335374364,
+        "macro_f1": 0.5899954443938267,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 89,
+          "fp": 78,
+          "fn": 45,
+          "tp": 88
+        },
+        "fpr": 0.46706586826347307,
+        "fnr": 0.3383458646616541
+      }
+    },
+    "turn_2": {
+      "prefix_length": 2,
+      "eligible_conversations": 300,
+      "fraud_count": 133,
+      "benign_count": 167,
+      "metrics": {
+        "roc_auc": 0.619242717572374,
+        "pr_auc": 0.5424984440027784,
+        "accuracy": 0.52,
+        "precision": 0.17647058823529413,
+        "recall": 0.022556390977443608,
+        "f1": 0.04,
+        "macro_precision": 0.3585533153190605,
+        "macro_recall": 0.4693620278240511,
+        "macro_f1": 0.36000000000000004,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 153,
+          "fp": 14,
+          "fn": 130,
+          "tp": 3
+        },
+        "fpr": 0.08383233532934131,
+        "fnr": 0.9774436090225563
+      }
+    },
+    "turn_3": {
+      "prefix_length": 3,
+      "eligible_conversations": 300,
+      "fraud_count": 133,
+      "benign_count": 167,
+      "metrics": {
+        "roc_auc": 0.5396425194723335,
+        "pr_auc": 0.5251925744818817,
+        "accuracy": 0.5766666666666667,
+        "precision": 0.875,
+        "recall": 0.05263157894736842,
+        "f1": 0.09929078014184398,
+        "macro_precision": 0.7217465753424658,
+        "macro_recall": 0.5233217774976363,
+        "macro_f1": 0.4113011634914013,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 166,
+          "fp": 1,
+          "fn": 126,
+          "tp": 7
+        },
+        "fpr": 0.005988023952095809,
+        "fnr": 0.9473684210526315
+      }
+    },
+    "turn_5": {
+      "prefix_length": 5,
+      "eligible_conversations": 250,
+      "fraud_count": 133,
+      "benign_count": 117,
+      "metrics": {
+        "roc_auc": 0.6337638969217917,
+        "pr_auc": 0.7281363648821532,
+        "accuracy": 0.512,
+        "precision": 1.0,
+        "recall": 0.08270676691729323,
+        "f1": 0.1527777777777778,
+        "macro_precision": 0.7447698744769875,
+        "macro_recall": 0.5413533834586466,
+        "macro_f1": 0.40504057428214735,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 117,
+          "fp": 0,
+          "fn": 122,
+          "tp": 11
+        },
+        "fpr": 0.0,
+        "fnr": 0.9172932330827067
+      }
+    },
+    "turn_7": {
+      "prefix_length": 7,
+      "eligible_conversations": 194,
+      "fraud_count": 128,
+      "benign_count": 66,
+      "metrics": {
+        "roc_auc": 0.7613636363636364,
+        "pr_auc": 0.891581390799774,
+        "accuracy": 0.7525773195876289,
+        "precision": 1.0,
+        "recall": 0.625,
+        "f1": 0.7692307692307693,
+        "macro_precision": 0.7894736842105263,
+        "macro_recall": 0.8125,
+        "macro_f1": 0.7512820512820513,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 66,
+          "fp": 0,
+          "fn": 48,
+          "tp": 80
+        },
+        "fpr": 0.0,
+        "fnr": 0.375
+      }
+    },
+    "full_conversation": {
+      "prefix_length": "full",
+      "eligible_conversations": 300,
+      "fraud_count": 133,
+      "benign_count": 167,
+      "metrics": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 167,
+          "fp": 0,
+          "fn": 0,
+          "tp": 133
+        },
+        "fpr": 0.0,
+        "fnr": 0.0
+      }
+    }
+  },
+  "time_to_detection": {
+    "total_fraud_conversations": 133,
+    "detected_fraud_conversations": 133,
+    "undetected_fraud_conversations": 0,
+    "mean_detection_turn": 3.1503759398496243,
+    "median_detection_turn": 1.0,
+    "min_detection_turn": 1,
+    "max_detection_turn": 9,
+    "detection_rate_cumulative": {
+      "by_turn_1": 0.6616541353383458,
+      "by_turn_2": 0.6616541353383458,
+      "by_turn_3": 0.6616541353383458,
+      "by_turn_5": 0.6616541353383458,
+      "by_turn_7": 0.9398496240601504,
+      "full_conversation": 1.0
+    },
+    "detection_counts_cumulative": {
+      "1": 88,
+      "2": 88,
+      "3": 88,
+      "5": 88,
+      "7": 125,
+      "full": 133
+    }
+  },
+  "permutation_test": {
+    "original_test_metrics": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "f1": 1.0
+    },
+    "shuffled_test_metrics_mean": {
+      "roc_auc": 0.9895862410517312,
+      "pr_auc": 0.9885448923500965,
+      "f1": 0.8780905249835109
+    },
+    "shuffled_test_metrics_std": {
+      "roc_auc": 0.0016790583552557003,
+      "pr_auc": 0.0018023601895691195,
+      "f1": 0.005074469120087297
+    },
+    "degradation_deltas": {
+      "delta_roc_auc": 0.010413758948268792,
+      "delta_pr_auc": 0.01145510764990354,
+      "delta_f1": 0.12190947501648908
+    },
+    "num_permutation_seeds": 10
+  },
+  "false_positive_analysis": {
+    "total_benign_fps": 0,
+    "total_benign_test": 167,
+    "fp_rate": 0.0,
+    "fp_records": []
+  },
+  "interpretability_examples": [
+    {
+      "conversation_id": "conv_fraud_0306_33d89c",
+      "topic": "tech_support",
+      "earliest_detection_turn": 7,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "caller",
+          "text": "Could you please confirm if you received our recent mailer regarding seasonal account maintenance?",
+          "probabilities": {
+            "urgency": 0.0005000000237487257,
+            "isolation": 0.0005099999834783375,
+            "authority": 0.0007699999841861427,
+            "emotional_destabilization": 0.000590000010561198,
+            "channel_control": 0.0006900000153109431
+          },
+          "lstm_prefix_risk": 0.16009236872196198,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 2,
+          "speaker": "recipient",
+          "text": "Yes, I am listening. What is this concerning?",
+          "probabilities": {
+            "urgency": 0.0003699999942909926,
+            "isolation": 0.0005499999970197678,
+            "authority": 0.0007999999797903001,
+            "emotional_destabilization": 0.0010300000431016088,
+            "channel_control": 0.00046999999904073775
+          },
+          "lstm_prefix_risk": 0.04747290164232254,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 3,
+          "speaker": "caller",
+          "text": "We are verifying an unapproved financial request flagged under your name.",
+          "probabilities": {
+            "urgency": 0.00016999999934341758,
+            "isolation": 0.0026199999265372753,
+            "authority": 0.0015999999595806003,
+            "emotional_destabilization": 0.001509999972768128,
+            "channel_control": 0.0005000000237487257
+          },
+          "lstm_prefix_risk": 0.010840765200555325,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 4,
+          "speaker": "recipient",
+          "text": "An unapproved request? I didn't authorize anything!",
+          "probabilities": {
+            "urgency": 0.0003100000030826777,
+            "isolation": 0.0006600000197067857,
+            "authority": 0.000590000010561198,
+            "emotional_destabilization": 0.0016499999910593033,
+            "channel_control": 0.0004299999854993075
+          },
+          "lstm_prefix_risk": 0.0023326121736317873,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 5,
+          "speaker": "caller",
+          "text": "Your grandson is currently locked in a detention cell crying in agony, and only your immediate payment can secure his release!",
+          "probabilities": {
+            "urgency": 0.025860000401735306,
+            "isolation": 0.02841000072658062,
+            "authority": 0.017249999567866325,
+            "emotional_destabilization": 0.9987199902534485,
+            "channel_control": 0.01336000021547079
+          },
+          "lstm_prefix_risk": 0.0019385472405701876,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "emotional_destabilization"
+        },
+        {
+          "turn": 6,
+          "speaker": "recipient",
+          "text": "I'm getting in my car right now, I have the phone with me and won't hang up.",
+          "probabilities": {
+            "urgency": 0.001019999966956675,
+            "isolation": 0.000590000010561198,
+            "authority": 0.00039999998989515007,
+            "emotional_destabilization": 0.0011399999493733048,
+            "channel_control": 0.0003600000054575503
+          },
+          "lstm_prefix_risk": 0.003098627319559455,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 7,
+          "speaker": "caller",
+          "text": "You have exactly twenty minutes to authorize this emergency wire transfer before federal marshals execute an asset seizure.",
+          "probabilities": {
+            "urgency": 0.9988499879837036,
+            "isolation": 0.0033400000538676977,
+            "authority": 0.008729999884963036,
+            "emotional_destabilization": 0.010850000195205212,
+            "channel_control": 0.004749999847263098
+          },
+          "lstm_prefix_risk": 0.5836727619171143,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "urgency"
+        },
+        {
+          "turn": 8,
+          "speaker": "recipient",
+          "text": "Oh goodness, I'm terrified! Please tell me what I need to do to protect my money!",
+          "probabilities": {
+            "urgency": 0.00033999999868683517,
+            "isolation": 0.00041000000783242285,
+            "authority": 0.000590000010561198,
+            "emotional_destabilization": 0.003530000103637576,
+            "channel_control": 0.0005099999834783375
+          },
+          "lstm_prefix_risk": 0.9994251728057861,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 9,
+          "speaker": "caller",
+          "text": "Do not tell the bank teller or anyone in your family why you are withdrawing this cash; the entire local branch is under criminal investigation.",
+          "probabilities": {
+            "urgency": 0.00343000004068017,
+            "isolation": 0.9943299889564514,
+            "authority": 0.005280000157654285,
+            "emotional_destabilization": 0.01145000010728836,
+            "channel_control": 0.0035200000274926424
+          },
+          "lstm_prefix_risk": 0.9999920129776001,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "isolation"
+        },
+        {
+          "turn": 10,
+          "speaker": "recipient",
+          "text": "I won't say anything to the teller, I promise; just please make sure my grandson is safe.",
+          "probabilities": {
+            "urgency": 0.00033999999868683517,
+            "isolation": 0.002369999885559082,
+            "authority": 0.00039999998989515007,
+            "emotional_destabilization": 0.0008900000248104334,
+            "channel_control": 0.00044999999227002263
+          },
+          "lstm_prefix_risk": 0.999998927116394,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 11,
+          "speaker": "caller",
+          "text": "Keep this mobile line open continuously and do not hang up while you drive to the store to purchase the prepaid voucher cards.",
+          "probabilities": {
+            "urgency": 0.010639999993145466,
+            "isolation": 0.020749999210238457,
+            "authority": 0.005030000116676092,
+            "emotional_destabilization": 0.006140000186860561,
+            "channel_control": 0.9988999962806702
+          },
+          "lstm_prefix_risk": 0.9999994039535522,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "channel_control"
+        },
+        {
+          "turn": 12,
+          "speaker": "recipient",
+          "text": "I don't understand, but I will do whatever you say officer, please don't send police to my home.",
+          "probabilities": {
+            "urgency": 0.0001900000061141327,
+            "isolation": 0.0010300000431016088,
+            "authority": 0.0013200000394135714,
+            "emotional_destabilization": 0.000699999975040555,
+            "channel_control": 0.0005099999834783375
+          },
+          "lstm_prefix_risk": 0.9999995231628418,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_fraud_0471_1cfef4",
+      "topic": "family_emergency",
+      "earliest_detection_turn": 7,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "caller",
+          "text": "Thank you for answering, I have a few standard questions to update your contact preferences.",
+          "probabilities": {
+            "urgency": 0.0002699999895412475,
+            "isolation": 0.0004299999854993075,
+            "authority": 0.0007099999929778278,
+            "emotional_destabilization": 0.0008699999889358878,
+            "channel_control": 0.0006799999973736703
+          },
+          "lstm_prefix_risk": 0.16007749736309052,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 2,
+          "speaker": "recipient",
+          "text": "Yes, I am listening. What is this concerning?",
+          "probabilities": {
+            "urgency": 0.0003699999942909926,
+            "isolation": 0.0005499999970197678,
+            "authority": 0.0007999999797903001,
+            "emotional_destabilization": 0.0010300000431016088,
+            "channel_control": 0.00046999999904073775
+          },
+          "lstm_prefix_risk": 0.0474679172039032,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 3,
+          "speaker": "caller",
+          "text": "We are verifying an unapproved financial request flagged under your name.",
+          "probabilities": {
+            "urgency": 0.00016999999934341758,
+            "isolation": 0.0026199999265372753,
+            "authority": 0.0015999999595806003,
+            "emotional_destabilization": 0.001509999972768128,
+            "channel_control": 0.0005000000237487257
+          },
+          "lstm_prefix_risk": 0.010839702561497688,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 4,
+          "speaker": "recipient",
+          "text": "An unapproved request? I didn't authorize anything!",
+          "probabilities": {
+            "urgency": 0.0003100000030826777,
+            "isolation": 0.0006600000197067857,
+            "authority": 0.000590000010561198,
+            "emotional_destabilization": 0.0016499999910593033,
+            "channel_control": 0.0004299999854993075
+          },
+          "lstm_prefix_risk": 0.002332450356334448,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 5,
+          "speaker": "caller",
+          "text": "How could you be so careless with your family's future? If you don't act right now, you will be left homeless and destitute!",
+          "probabilities": {
+            "urgency": 0.013609999790787697,
+            "isolation": 0.02271999977529049,
+            "authority": 0.011020000092685223,
+            "emotional_destabilization": 0.998199999332428,
+            "channel_control": 0.009460000321269035
+          },
+          "lstm_prefix_risk": 0.0018664650851860642,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "emotional_destabilization"
+        },
+        {
+          "turn": 6,
+          "speaker": "recipient",
+          "text": "Please help me, I have my checkbook ready, how much do I need to withdraw?",
+          "probabilities": {
+            "urgency": 0.0005099999834783375,
+            "isolation": 0.0003600000054575503,
+            "authority": 0.0004400000034365803,
+            "emotional_destabilization": 0.0008500000112690032,
+            "channel_control": 0.0007399999885819852
+          },
+          "lstm_prefix_risk": 0.002840515226125717,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 7,
+          "speaker": "caller",
+          "text": "You have exactly twenty minutes to authorize this emergency wire transfer before federal marshals execute an asset seizure.",
+          "probabilities": {
+            "urgency": 0.9988499879837036,
+            "isolation": 0.0033400000538676977,
+            "authority": 0.008729999884963036,
+            "emotional_destabilization": 0.010850000195205212,
+            "channel_control": 0.004749999847263098
+          },
+          "lstm_prefix_risk": 0.5269192457199097,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "urgency"
+        },
+        {
+          "turn": 8,
+          "speaker": "recipient",
+          "text": "I don't understand, but I will do whatever you say officer, please don't send police to my home.",
+          "probabilities": {
+            "urgency": 0.0001900000061141327,
+            "isolation": 0.0010300000431016088,
+            "authority": 0.0013200000394135714,
+            "emotional_destabilization": 0.000699999975040555,
+            "channel_control": 0.0005099999834783375
+          },
+          "lstm_prefix_risk": 0.9993471503257751,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 9,
+          "speaker": "caller",
+          "text": "Go into a locked room right now where no one can overhear you, and do not let anyone in your household know about this call.",
+          "probabilities": {
+            "urgency": 0.0040699997916817665,
+            "isolation": 0.9964399933815002,
+            "authority": 0.006029999814927578,
+            "emotional_destabilization": 0.020989999175071716,
+            "channel_control": 0.007459999993443489
+          },
+          "lstm_prefix_risk": 0.9999915361404419,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "isolation"
+        },
+        {
+          "turn": 10,
+          "speaker": "recipient",
+          "text": "I don't understand, but I will do whatever you say officer, please don't send police to my home.",
+          "probabilities": {
+            "urgency": 0.0001900000061141327,
+            "isolation": 0.0010300000431016088,
+            "authority": 0.0013200000394135714,
+            "emotional_destabilization": 0.000699999975040555,
+            "channel_control": 0.0005099999834783375
+          },
+          "lstm_prefix_risk": 0.999998927116394,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 11,
+          "speaker": "caller",
+          "text": "Download the remote access utility immediately and give me the nine-digit control code so I can manipulate your screen directly.",
+          "probabilities": {
+            "urgency": 0.005210000090301037,
+            "isolation": 0.012249999679625034,
+            "authority": 0.008340000174939632,
+            "emotional_destabilization": 0.009189999662339687,
+            "channel_control": 0.998740017414093
+          },
+          "lstm_prefix_risk": 0.9999994039535522,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "channel_control"
+        },
+        {
+          "turn": 12,
+          "speaker": "recipient",
+          "text": "I don't understand, but I will do whatever you say officer, please don't send police to my home.",
+          "probabilities": {
+            "urgency": 0.0001900000061141327,
+            "isolation": 0.0010300000431016088,
+            "authority": 0.0013200000394135714,
+            "emotional_destabilization": 0.000699999975040555,
+            "channel_control": 0.0005099999834783375
+          },
+          "lstm_prefix_risk": 0.9999995231628418,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_fraud_0452_c5fe5d",
+      "topic": "banking",
+      "earliest_detection_turn": 7,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "caller",
+          "text": "Good morning, I am calling regarding a routine administrative verification on your residential file.",
+          "probabilities": {
+            "urgency": 0.0007300000288523734,
+            "isolation": 0.0002099999983329326,
+            "authority": 0.010409999638795853,
+            "emotional_destabilization": 0.0005600000149570405,
+            "channel_control": 0.0002500000118743628
+          },
+          "lstm_prefix_risk": 0.16152364015579224,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 2,
+          "speaker": "recipient",
+          "text": "Yes, I am listening. What is this concerning?",
+          "probabilities": {
+            "urgency": 0.0003699999942909926,
+            "isolation": 0.0005499999970197678,
+            "authority": 0.0007999999797903001,
+            "emotional_destabilization": 0.0010300000431016088,
+            "channel_control": 0.00046999999904073775
+          },
+          "lstm_prefix_risk": 0.04810634255409241,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 3,
+          "speaker": "caller",
+          "text": "We are verifying an unapproved financial request flagged under your name.",
+          "probabilities": {
+            "urgency": 0.00016999999934341758,
+            "isolation": 0.0026199999265372753,
+            "authority": 0.0015999999595806003,
+            "emotional_destabilization": 0.001509999972768128,
+            "channel_control": 0.0005000000237487257
+          },
+          "lstm_prefix_risk": 0.011013446375727654,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 4,
+          "speaker": "recipient",
+          "text": "An unapproved request? I didn't authorize anything!",
+          "probabilities": {
+            "urgency": 0.0003100000030826777,
+            "isolation": 0.0006600000197067857,
+            "authority": 0.000590000010561198,
+            "emotional_destabilization": 0.0016499999910593033,
+            "channel_control": 0.0004299999854993075
+          },
+          "lstm_prefix_risk": 0.0023711167741566896,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 5,
+          "speaker": "caller",
+          "text": "Your entire life savings are being looted by international crime syndicates right now, and you are about to lose everything you own!",
+          "probabilities": {
+            "urgency": 0.02240999974310398,
+            "isolation": 0.01875000074505806,
+            "authority": 0.015960000455379486,
+            "emotional_destabilization": 0.9984700083732605,
+            "channel_control": 0.011649999767541885
+          },
+          "lstm_prefix_risk": 0.0019173631444573402,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "emotional_destabilization"
+        },
+        {
+          "turn": 6,
+          "speaker": "recipient",
+          "text": "Please help me, I have my checkbook ready, how much do I need to withdraw?",
+          "probabilities": {
+            "urgency": 0.0005099999834783375,
+            "isolation": 0.0003600000054575503,
+            "authority": 0.0004400000034365803,
+            "emotional_destabilization": 0.0008500000112690032,
+            "channel_control": 0.0007399999885819852
+          },
+          "lstm_prefix_risk": 0.0029419914353638887,
+          "predicted_fraud_at_turn": false,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 7,
+          "speaker": "caller",
+          "text": "If you do not complete the safety deposit within fifteen minutes, your social security benefits will be irrevocably terminated.",
+          "probabilities": {
+            "urgency": 0.9987900257110596,
+            "isolation": 0.011620000004768372,
+            "authority": 0.0037299999967217445,
+            "emotional_destabilization": 0.013620000332593918,
+            "channel_control": 0.002859999891370535
+          },
+          "lstm_prefix_risk": 0.5472832322120667,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "urgency"
+        },
+        {
+          "turn": 8,
+          "speaker": "recipient",
+          "text": "I'm getting in my car right now, I have the phone with me and won't hang up.",
+          "probabilities": {
+            "urgency": 0.001019999966956675,
+            "isolation": 0.000590000010561198,
+            "authority": 0.00039999998989515007,
+            "emotional_destabilization": 0.0011399999493733048,
+            "channel_control": 0.0003600000054575503
+          },
+          "lstm_prefix_risk": 0.9993727803230286,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 9,
+          "speaker": "caller",
+          "text": "You are bound by a strict federal non-disclosure order; speaking to your children, spouse, or attorney will result in immediate felony charges.",
+          "probabilities": {
+            "urgency": 0.00774999987334013,
+            "isolation": 0.9955899715423584,
+            "authority": 0.011119999922811985,
+            "emotional_destabilization": 0.010409999638795853,
+            "channel_control": 0.004939999897032976
+          },
+          "lstm_prefix_risk": 0.9999916553497314,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "isolation"
+        },
+        {
+          "turn": 10,
+          "speaker": "recipient",
+          "text": "I won't say anything to the teller, I promise; just please make sure my grandson is safe.",
+          "probabilities": {
+            "urgency": 0.00033999999868683517,
+            "isolation": 0.002369999885559082,
+            "authority": 0.00039999998989515007,
+            "emotional_destabilization": 0.0008900000248104334,
+            "channel_control": 0.00044999999227002263
+          },
+          "lstm_prefix_risk": 0.999998927116394,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        },
+        {
+          "turn": 11,
+          "speaker": "caller",
+          "text": "You must convert your cash into Bitcoin at the designated grocery store terminal and scan the QR barcode I send you.",
+          "probabilities": {
+            "urgency": 0.009460000321269035,
+            "isolation": 0.007369999773800373,
+            "authority": 0.008329999633133411,
+            "emotional_destabilization": 0.0043299999088048935,
+            "channel_control": 0.9986600279808044
+          },
+          "lstm_prefix_risk": 0.9999994039535522,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "channel_control"
+        },
+        {
+          "turn": 12,
+          "speaker": "recipient",
+          "text": "Oh goodness, I'm terrified! Please tell me what I need to do to protect my money!",
+          "probabilities": {
+            "urgency": 0.00033999999868683517,
+            "isolation": 0.00041000000783242285,
+            "authority": 0.000590000010561198,
+            "emotional_destabilization": 0.003530000103637576,
+            "channel_control": 0.0005099999834783375
+          },
+          "lstm_prefix_risk": 0.9999995231628418,
+          "predicted_fraud_at_turn": true,
+          "dominant_tactic": "none"
+        }
+      ]
+    }
+  ]
+}

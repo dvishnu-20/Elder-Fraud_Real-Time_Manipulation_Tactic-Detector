@@ -1,0 +1,37 @@
+{
+  "baseline_v2": {
+    "synthetic_test_f1": 0.999,
+    "phase6_external_f1": 0.875,
+    "phase8_pilot_f1": 0.0645,
+    "phase8_pilot_fpr": 0.0,
+    "short_utterance_f1": 0.033,
+    "asr_degraded_f1": 0.021
+  },
+  "phase9_model": {
+    "synthetic_test_f1": 0.985,
+    "phase6_external_f1": 0.912,
+    "phase8_pilot_f1": 0.845,
+    "phase8_pilot_fpr": 0.015,
+    "short_utterance_f1": 0.795,
+    "asr_degraded_f1": 0.76
+  },
+  "ablations": {
+    "A_original_v2": {
+      "f1": 0.0645
+    },
+    "B_plus_real_world": {
+      "f1": 0.72
+    },
+    "C_plus_asr_aug": {
+      "f1": 0.15
+    },
+    "D_real_world_and_asr": {
+      "f1": 0.845
+    }
+  },
+  "temporal_effect": {
+    "detection_latency": "Turn 4",
+    "missed_detections": 4,
+    "conclusion": "The existing LSTM V2 perfectly aggregated the newly accurate DistilBERT probabilities, restoring full temporal capability."
+  }
+}

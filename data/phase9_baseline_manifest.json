@@ -1,0 +1,22 @@
+{
+  "baseline_v2": {
+    "distilbert_path": "ml/models/tactic_classifier/v2_temporal_validity/",
+    "distilbert_sha256": "76d2d4e440f65cb1e9f275a6496a0dcd6751a35e1f85261882815ccdda59a684",
+    "tokenizer": "distilbert-base-uncased",
+    "labels": ["urgency", "isolation", "authority", "emotional_destabilization", "channel_control"],
+    "threshold": 0.5,
+    "lstm_path": "ml/models/temporal_risk/lstm_v2/",
+    "lstm_sha256": "c6dd5b03ba91a20677ed4c7a148d23cba26ff08fa1528d5603a0cb1bd2ae64a1",
+    "tau": 0.20,
+    "phase6_metrics": {
+      "f1": 0.8750,
+      "fpr": 0.143
+    },
+    "phase8_metrics": {
+      "f1": 0.0645,
+      "fpr": 0.0,
+      "recall": 0.0333
+    },
+    "phase8_1_findings": "DistilBERT fails to generalize to real human short conversational turns (Domain Shift)."
+  }
+}

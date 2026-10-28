@@ -1,0 +1,939 @@
+{
+  "old_baseline": {
+    "model_tag": "OLD BASELINE (Phase 4.1)",
+    "model_dir": "C:\\Users\\duddu\\Downloads\\ELDERY LIVE TATIC DETECTOR\\elder-fraud-detector\\ml\\models\\tactic_classifier\\final",
+    "thresholds": [
+      0.2,
+      0.2,
+      0.15,
+      0.15,
+      0.2
+    ],
+    "micro_precision": 0.45763688760806914,
+    "micro_recall": 0.9694749694749695,
+    "micro_f1": 0.6217697729052467,
+    "macro_precision": 0.4469046762723442,
+    "macro_recall": 0.9584495679581625,
+    "macro_f1": 0.5938520735334202,
+    "hard_neg_specificity": 0.08205128205128205,
+    "hard_neg_total": 195,
+    "hard_neg_correct": 16,
+    "hard_neg_fp": 179,
+    "total_fp": 941,
+    "total_fn": 25,
+    "per_tactic": {
+      "urgency": {
+        "precision": 0.4418604651162791,
+        "recall": 0.9941860465116279,
+        "f1": 0.6118067978533095,
+        "pr_auc": 0.6522015581146866,
+        "threshold": 0.2,
+        "support": 172
+      },
+      "isolation": {
+        "precision": 0.27106227106227104,
+        "recall": 0.9866666666666667,
+        "f1": 0.42528735632183906,
+        "pr_auc": 0.5607953301591904,
+        "threshold": 0.2,
+        "support": 75
+      },
+      "authority": {
+        "precision": 0.6861471861471862,
+        "recall": 0.984472049689441,
+        "f1": 0.8086734693877551,
+        "pr_auc": 0.8633150442205446,
+        "threshold": 0.15,
+        "support": 322
+      },
+      "emotional_destabilization": {
+        "precision": 0.3295711060948081,
+        "recall": 1.0,
+        "f1": 0.49575551782682514,
+        "pr_auc": 0.4080784813663511,
+        "threshold": 0.15,
+        "support": 146
+      },
+      "channel_control": {
+        "precision": 0.5058823529411764,
+        "recall": 0.8269230769230769,
+        "f1": 0.6277372262773723,
+        "pr_auc": 0.4600762772988323,
+        "threshold": 0.2,
+        "support": 104
+      }
+    },
+    "contrastive_pairs": {
+      "total_pairs": 55,
+      "benign_correct": 4,
+      "benign_accuracy": 0.07272727272727272,
+      "manipulative_correct": 12,
+      "manipulative_accuracy": 0.21818181818181817,
+      "pair_accuracy_count": 0,
+      "pair_accuracy": 0.0
+    }
+  },
+  "new_retrained_v2": {
+    "model_tag": "NEW RETRAINED V2 (Phase 4.3)",
+    "model_dir": "C:\\Users\\duddu\\Downloads\\ELDERY LIVE TATIC DETECTOR\\elder-fraud-detector\\ml\\models\\tactic_classifier\\retrained_v2",
+    "thresholds": [
+      0.15,
+      0.15,
+      0.15,
+      0.3,
+      0.6
+    ],
+    "micro_precision": 0.9227272727272727,
+    "micro_recall": 0.7435897435897436,
+    "micro_f1": 0.8235294117647058,
+    "macro_precision": 0.8954825800656966,
+    "macro_recall": 0.7063860921133521,
+    "macro_f1": 0.776848327891714,
+    "hard_neg_specificity": 0.9538461538461539,
+    "hard_neg_total": 195,
+    "hard_neg_correct": 186,
+    "hard_neg_fp": 9,
+    "total_fp": 51,
+    "total_fn": 210,
+    "per_tactic": {
+      "urgency": {
+        "precision": 0.8969072164948454,
+        "recall": 0.5058139534883721,
+        "f1": 0.6468401486988847,
+        "pr_auc": 0.8556587075577755,
+        "threshold": 0.15,
+        "support": 172
+      },
+      "isolation": {
+        "precision": 0.9113924050632911,
+        "recall": 0.96,
+        "f1": 0.935064935064935,
+        "pr_auc": 0.9463443740046421,
+        "threshold": 0.15,
+        "support": 75
+      },
+      "authority": {
+        "precision": 0.9936908517350158,
+        "recall": 0.9782608695652174,
+        "f1": 0.9859154929577465,
+        "pr_auc": 0.9953244466070206,
+        "threshold": 0.15,
+        "support": 322
+      },
+      "emotional_destabilization": {
+        "precision": 0.7238095238095238,
+        "recall": 0.5205479452054794,
+        "f1": 0.6055776892430279,
+        "pr_auc": 0.7122510049932236,
+        "threshold": 0.3,
+        "support": 146
+      },
+      "channel_control": {
+        "precision": 0.9516129032258065,
+        "recall": 0.5673076923076923,
+        "f1": 0.7108433734939759,
+        "pr_auc": 0.9084260281463362,
+        "threshold": 0.6,
+        "support": 104
+      }
+    },
+    "contrastive_pairs": {
+      "total_pairs": 55,
+      "benign_correct": 53,
+      "benign_accuracy": 0.9636363636363636,
+      "manipulative_correct": 20,
+      "manipulative_accuracy": 0.36363636363636365,
+      "pair_accuracy_count": 18,
+      "pair_accuracy": 0.32727272727272727
+    }
+  },
+  "error_analysis_10_samples": {
+    "10_false_positives": [
+      {
+        "text": "Your grandson got a speeding ticket and had to pay a fifty dollar fine.",
+        "category": "contrastive_pair_emotional_destabilization",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.39250001311302185,
+          "isolation": 0.0006000000284984708,
+          "authority": 0.007499999832361937,
+          "emotional_destabilization": 0.9846000075340271,
+          "channel_control": 0.00039999998989515007
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "Leave the backup application running in the background while your files sync.",
+        "category": "contrastive_pair_channel_control",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "channel_control"
+        ],
+        "probabilities": {
+          "urgency": 0.0005000000237487257,
+          "isolation": 0.0013000000035390258,
+          "authority": 0.0006000000284984708,
+          "emotional_destabilization": 0.0007999999797903001,
+          "channel_control": 0.9751999974250793
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "I saw a news report about fraudsters posing as IRS agents and threatening people with arrest warrants.",
+        "category": "benign_hard_neg",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.00019999999494757503,
+          "isolation": 0.002199999988079071,
+          "authority": 0.012299999594688416,
+          "emotional_destabilization": 0.3440999984741211,
+          "channel_control": 9.999999747378752e-05
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "My nephew got arrested for a minor traffic violation, but he's out on bail now.",
+        "category": "benign_hard_neg",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.0008999999845400453,
+          "isolation": 0.00039999998989515007,
+          "authority": 0.019099999219179153,
+          "emotional_destabilization": 0.5386999845504761,
+          "channel_control": 9.999999747378752e-05
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "Wire fraud is a serious federal offense that carries severe penalties under the law.",
+        "category": "benign_hard_neg",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "authority"
+        ],
+        "probabilities": {
+          "urgency": 0.015799999237060547,
+          "isolation": 0.011599999852478504,
+          "authority": 0.9991999864578247,
+          "emotional_destabilization": 0.02070000022649765,
+          "channel_control": 0.0010999999940395355
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "I need to authorize a wire transfer to pay my property taxes by the end of the month.",
+        "category": "benign_hard_neg",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "urgency"
+        ],
+        "probabilities": {
+          "urgency": 0.926800012588501,
+          "isolation": 0.0005000000237487257,
+          "authority": 0.020800000056624413,
+          "emotional_destabilization": 0.0008999999845400453,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "Flight 842 to Chicago is at final boarding call, all ticketed passengers must report to Gate B12 immediately.",
+        "category": "benign_neutral",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "urgency"
+        ],
+        "probabilities": {
+          "urgency": 0.27799999713897705,
+          "isolation": 9.999999747378752e-05,
+          "authority": 0.004999999888241291,
+          "emotional_destabilization": 0.0026000000070780516,
+          "channel_control": 0.003800000064074993
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "Turn off the stove right now, the soup pot on the back burner is boiling over!",
+        "category": "benign_neutral",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.013500000350177288,
+          "isolation": 0.00419999985024333,
+          "authority": 0.0019000000320374966,
+          "emotional_destabilization": 0.9983999729156494,
+          "channel_control": 0.009600000455975533
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      },
+      {
+        "text": "We have a flash flood warning in effect for our county; move to higher ground immediately.",
+        "category": "benign_neutral",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "urgency",
+          "isolation",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.6223000288009644,
+          "isolation": 0.3147999942302704,
+          "authority": 0.012600000016391277,
+          "emotional_destabilization": 0.9969000220298767,
+          "channel_control": 0.007300000172108412
+        },
+        "diagnosis": "Lexical shortcut / Over-sensitivity to benign domain vocabulary.",
+        "category_type": "lexical_shortcut"
+      }
+    ],
+    "10_false_negatives": [
+      {
+        "text": "You have until 4 PM to send the transfer, and you must do it right now without telling anyone.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "urgency",
+          "isolation"
+        ],
+        "prediction": [
+          "urgency"
+        ],
+        "probabilities": {
+          "urgency": 0.9994999766349792,
+          "isolation": 0.009999999776482582,
+          "authority": 0.0017999999690800905,
+          "emotional_destabilization": 0.01860000006854534,
+          "channel_control": 0.007400000002235174
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "Pay this invoice within the next fifteen minutes or law enforcement will be dispatched to your door.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "urgency",
+          "authority"
+        ],
+        "prediction": [
+          "urgency",
+          "isolation",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.9995999932289124,
+          "isolation": 0.27970001101493835,
+          "authority": 0.012299999594688416,
+          "emotional_destabilization": 0.9807000160217285,
+          "channel_control": 0.0203000009059906
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "Go to the grocery store and purchase the gift cards before tonight or your arrest warrant will be activated.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "urgency",
+          "authority"
+        ],
+        "prediction": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.9919000267982483,
+          "isolation": 0.12070000171661377,
+          "authority": 0.0024999999441206455,
+          "emotional_destabilization": 0.9480000138282776,
+          "channel_control": 0.15029999613761902
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "The courier arrives at 3 PM; hand over the cash immediately or face immediate prosecution.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "urgency",
+          "authority"
+        ],
+        "prediction": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.9850999712944031,
+          "isolation": 0.07360000163316727,
+          "authority": 0.0034000000450760126,
+          "emotional_destabilization": 0.5907999873161316,
+          "channel_control": 0.005799999926239252
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "You have thirty minutes to mail the parcel before the cartel finds out where you live.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.0038999998942017555,
+          "isolation": 0.0003000000142492354,
+          "authority": 0.00019999999494757503,
+          "emotional_destabilization": 0.01360000018030405,
+          "channel_control": 9.999999747378752e-05
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "To prevent the authorities from finding out, you must take this call in a quiet room and tell no one in your household.",
+        "category": "contrastive_pair_isolation",
+        "ground_truth": [
+          "isolation",
+          "authority"
+        ],
+        "prediction": [
+          "urgency",
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.26080000400543213,
+          "isolation": 0.9998999834060669,
+          "authority": 0.002899999963119626,
+          "emotional_destabilization": 0.09229999780654907,
+          "channel_control": 0.018400000408291817
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "We must move your retirement funds alone because your children are plotting to take your estate.",
+        "category": "contrastive_pair_isolation",
+        "ground_truth": [
+          "isolation",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.001500000013038516,
+          "isolation": 0.09070000052452087,
+          "authority": 0.0005000000237487257,
+          "emotional_destabilization": 0.12860000133514404,
+          "channel_control": 9.999999747378752e-05
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "Walk to your car alone right now so nobody in the house can overhear what I'm commanding you to do.",
+        "category": "contrastive_pair_isolation",
+        "ground_truth": [
+          "isolation",
+          "channel_control"
+        ],
+        "prediction": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.00019999999494757503,
+          "isolation": 0.4839000105857849,
+          "authority": 0.007000000216066837,
+          "emotional_destabilization": 0.020600000396370888,
+          "channel_control": 0.0017000000225380063
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "I'm a federal code inspector, and I am condemning your property and ordering an immediate eviction today.",
+        "category": "contrastive_pair_authority",
+        "ground_truth": [
+          "authority",
+          "urgency"
+        ],
+        "prediction": [
+          "authority",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.07509999722242355,
+          "isolation": 0.022700000554323196,
+          "authority": 0.9973000288009644,
+          "emotional_destabilization": 0.994700014591217,
+          "channel_control": 0.005799999926239252
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      },
+      {
+        "text": "You totaled our commercial vehicle and you owe forty thousand dollars right now or we take your home!",
+        "category": "contrastive_pair_emotional_destabilization",
+        "ground_truth": [
+          "emotional_destabilization",
+          "authority"
+        ],
+        "prediction": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.553600013256073,
+          "isolation": 0.0024999999441206455,
+          "authority": 0.007799999788403511,
+          "emotional_destabilization": 0.9995999932289124,
+          "channel_control": 0.005100000184029341
+        },
+        "diagnosis": "Missed subtle/coercive manipulation tactic.",
+        "category_type": "semantic_confusion"
+      }
+    ],
+    "10_true_positives": [
+      {
+        "text": "If you don't pick up and pay for this prescription in the next 24 hours, all your health benefits will be terminated.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.9998999834060669,
+          "isolation": 0.018699999898672104,
+          "authority": 0.01889999955892563,
+          "emotional_destabilization": 0.8848999738693237,
+          "channel_control": 0.01549999974668026
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "You must wire the money for the flight in 15 minutes or you'll be stranded and arrested at the terminal.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.9994999766349792,
+          "isolation": 0.0032999999821186066,
+          "authority": 0.007699999958276749,
+          "emotional_destabilization": 0.9318000078201294,
+          "channel_control": 0.012299999594688416
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "You are strictly prohibited under federal gag orders from mentioning this transaction to anyone at your workplace.",
+        "category": "contrastive_pair_isolation",
+        "ground_truth": [
+          "isolation",
+          "authority"
+        ],
+        "prediction": [
+          "isolation",
+          "authority"
+        ],
+        "probabilities": {
+          "urgency": 0.01140000019222498,
+          "isolation": 0.998199999332428,
+          "authority": 0.9908000230789185,
+          "emotional_destabilization": 0.06909999996423721,
+          "channel_control": 0.005100000184029341
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "Read this contract alone and do not let your lawyer or family inspect it, or the settlement is void.",
+        "category": "contrastive_pair_isolation",
+        "ground_truth": [
+          "isolation"
+        ],
+        "prediction": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.10769999772310257,
+          "isolation": 0.9998999834060669,
+          "authority": 0.007400000002235174,
+          "emotional_destabilization": 0.014299999922513962,
+          "channel_control": 0.04729999974370003
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "If you speak to anyone else about this dispute, you will be fired on the spot and blacklisted across the industry.",
+        "category": "contrastive_pair_isolation",
+        "ground_truth": [
+          "isolation",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "isolation",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.10140000283718109,
+          "isolation": 0.970300018787384,
+          "authority": 0.0649000033736229,
+          "emotional_destabilization": 0.9994999766349792,
+          "channel_control": 0.01209999993443489
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "Do not inform any other family members about this wire transfer; they cannot know.",
+        "category": "contrastive_pair_isolation",
+        "ground_truth": [
+          "isolation"
+        ],
+        "prediction": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0020000000949949026,
+          "isolation": 0.9998000264167786,
+          "authority": 0.00430000014603138,
+          "emotional_destabilization": 0.014700000174343586,
+          "channel_control": 0.010300000198185444
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "I am Officer Davis and there is an outstanding federal arrest warrant in your name that requires immediate bail.",
+        "category": "contrastive_pair_authority",
+        "ground_truth": [
+          "authority",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "authority",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.07010000199079514,
+          "isolation": 0.008799999952316284,
+          "authority": 0.9998000264167786,
+          "emotional_destabilization": 0.7563999891281128,
+          "channel_control": 0.007699999958276749
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "This is the IRS Special Enforcement Division demanding immediate payment or federal marshals will detain you.",
+        "category": "contrastive_pair_authority",
+        "ground_truth": [
+          "authority",
+          "urgency",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "urgency",
+          "authority",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.5108000040054321,
+          "isolation": 0.020400000736117363,
+          "authority": 0.9998999834060669,
+          "emotional_destabilization": 0.45910000801086426,
+          "channel_control": 0.010999999940395355
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "I am the chief bank auditor, and I am seizing your account assets immediately due to suspicious criminal activity.",
+        "category": "contrastive_pair_authority",
+        "ground_truth": [
+          "authority",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "authority",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.08919999748468399,
+          "isolation": 0.025100000202655792,
+          "authority": 0.9998999834060669,
+          "emotional_destabilization": 0.6632000207901001,
+          "channel_control": 0.016300000250339508
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      },
+      {
+        "text": "This is the border patrol taskforce; we have seized a contraband shipment bearing your identity.",
+        "category": "contrastive_pair_authority",
+        "ground_truth": [
+          "authority",
+          "emotional_destabilization"
+        ],
+        "prediction": [
+          "authority",
+          "emotional_destabilization"
+        ],
+        "probabilities": {
+          "urgency": 0.007699999958276749,
+          "isolation": 0.028300000354647636,
+          "authority": 0.998199999332428,
+          "emotional_destabilization": 0.9847000241279602,
+          "channel_control": 0.007000000216066837
+        },
+        "diagnosis": "Correctly identified manipulative behavior and exact tactic set.",
+        "category_type": "true_positive"
+      }
+    ],
+    "10_true_negatives": [
+      {
+        "text": "The bank closes at 4 PM, so please submit the transfer before then.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.0003000000142492354,
+          "isolation": 9.999999747378752e-05,
+          "authority": 0.00019999999494757503,
+          "emotional_destabilization": 9.999999747378752e-05,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "Your prescription expires in 24 hours, so please pick it up from the pharmacy soon.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.0005000000237487257,
+          "isolation": 9.999999747378752e-05,
+          "authority": 9.999999747378752e-05,
+          "emotional_destabilization": 0.00019999999494757503,
+          "channel_control": 9.999999747378752e-05
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "We recommend paying the utility invoice by Friday to avoid late fees.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.00019999999494757503,
+          "isolation": 9.999999747378752e-05,
+          "authority": 9.999999747378752e-05,
+          "emotional_destabilization": 9.999999747378752e-05,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "Your flight to Chicago boards in 15 minutes at Gate 12.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.0003000000142492354,
+          "isolation": 9.999999747378752e-05,
+          "authority": 0.00019999999494757503,
+          "emotional_destabilization": 0.0005000000237487257,
+          "channel_control": 9.999999747378752e-05
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "The grocery store discount on gift cards ends tonight at 9 PM.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.00019999999494757503,
+          "isolation": 0.00019999999494757503,
+          "authority": 0.00019999999494757503,
+          "emotional_destabilization": 0.00019999999494757503,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "Please review the lease agreement and sign it by the end of the day.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.0003000000142492354,
+          "isolation": 0.00019999999494757503,
+          "authority": 9.999999747378752e-05,
+          "emotional_destabilization": 9.999999747378752e-05,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "The municipal water company needs to inspect your meter tomorrow morning.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.00019999999494757503,
+          "isolation": 0.00019999999494757503,
+          "authority": 0.00019999999494757503,
+          "emotional_destabilization": 0.00019999999494757503,
+          "channel_control": 9.999999747378752e-05
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "The courier will drop off your package by 3 PM this afternoon.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.00019999999494757503,
+          "isolation": 0.00019999999494757503,
+          "authority": 9.999999747378752e-05,
+          "emotional_destabilization": 0.00019999999494757503,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "Your streaming subscription will automatically renew next month unless canceled.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.08209999650716782,
+          "isolation": 9.999999747378752e-05,
+          "authority": 0.00019999999494757503,
+          "emotional_destabilization": 0.0007999999797903001,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      },
+      {
+        "text": "The post office closes in thirty minutes, let's mail the package today.",
+        "category": "contrastive_pair_urgency",
+        "ground_truth": [
+          "none"
+        ],
+        "prediction": [
+          "none"
+        ],
+        "probabilities": {
+          "urgency": 0.00019999999494757503,
+          "isolation": 9.999999747378752e-05,
+          "authority": 9.999999747378752e-05,
+          "emotional_destabilization": 0.00019999999494757503,
+          "channel_control": 0.00019999999494757503
+        },
+        "diagnosis": "Correctly rejected benign text with legitimate domain vocabulary.",
+        "category_type": "true_negative"
+      }
+    ]
+  }
+}

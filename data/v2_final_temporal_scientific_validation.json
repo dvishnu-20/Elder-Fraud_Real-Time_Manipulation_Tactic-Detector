@@ -1,0 +1,200 @@
+{
+  "timestamp": "2026-10-05T22:30:00Z",
+  "dataset": "data/processed/temporal_v2_features/",
+  "feature_dimension": 5,
+  "permutation_invariant_feature_dimension": 61,
+  "permutation_invariance_verified": true,
+  "models_test_metrics": {
+    "tactic_count_rule": {
+      "roc_auc": 0.8666876772770249,
+      "pr_auc": 0.7491945432443384,
+      "accuracy": 0.86,
+      "precision": 0.76,
+      "recall": 1.0,
+      "f1": 0.8636363636363636,
+      "macro_precision": 0.88,
+      "macro_recall": 0.874251497005988,
+      "macro_f1": 0.8599003735990037,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 125,
+        "fp": 42,
+        "fn": 0,
+        "tp": 133
+      },
+      "fpr": 0.25149700598802394,
+      "fnr": 0.0
+    },
+    "logistic_regression_20_feat": {
+      "roc_auc": 0.9997748863175904,
+      "pr_auc": 0.999727579819113,
+      "accuracy": 0.9966666666666667,
+      "precision": 1.0,
+      "recall": 0.9924812030075187,
+      "f1": 0.9962264150943396,
+      "macro_precision": 0.9970238095238095,
+      "macro_recall": 0.9962406015037594,
+      "macro_f1": 0.996620670233737,
+      "threshold": 0.24,
+      "confusion_matrix": {
+        "tn": 167,
+        "fp": 0,
+        "fn": 1,
+        "tp": 132
+      },
+      "fpr": 0.0,
+      "fnr": 0.007518796992481203
+    },
+    "strongest_permutation_invariant": {
+      "name": "HistGradientBoosting (61 Order-Invariant Feat)",
+      "params": {
+        "max_iter": 50,
+        "l2": 0.0,
+        "lr": 0.05
+      },
+      "val_f1": 1.0,
+      "metrics": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "threshold": 0.36,
+        "confusion_matrix": {
+          "tn": 167,
+          "fp": 0,
+          "fn": 0,
+          "tp": 133
+        },
+        "fpr": 0.0,
+        "fnr": 0.0
+      }
+    },
+    "other_permutation_invariant_baselines": {
+      "hist_gradient_boosting": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "threshold": 0.36,
+        "confusion_matrix": {
+          "tn": 167,
+          "fp": 0,
+          "fn": 0,
+          "tp": 133
+        },
+        "fpr": 0.0,
+        "fnr": 0.0
+      },
+      "mlp_classifier": {
+        "roc_auc": 1.0,
+        "pr_auc": 0.9999999999999999,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 167,
+          "fp": 0,
+          "fn": 0,
+          "tp": 133
+        },
+        "fpr": 0.0,
+        "fnr": 0.0
+      },
+      "logistic_regression_61_feat": {
+        "roc_auc": 0.9981990905407231,
+        "pr_auc": 0.9982615498283279,
+        "accuracy": 0.9966666666666667,
+        "precision": 1.0,
+        "recall": 0.9924812030075187,
+        "f1": 0.9962264150943396,
+        "macro_precision": 0.9970238095238095,
+        "macro_recall": 0.9962406015037594,
+        "macro_f1": 0.996620670233737,
+        "threshold": 0.29,
+        "confusion_matrix": {
+          "tn": 167,
+          "fp": 0,
+          "fn": 1,
+          "tp": 132
+        },
+        "fpr": 0.0,
+        "fnr": 0.007518796992481203
+      }
+    },
+    "causal_lstm_chronological": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "threshold": 0.2,
+      "confusion_matrix": {
+        "tn": 167,
+        "fp": 0,
+        "fn": 0,
+        "tp": 133
+      },
+      "fpr": 0.0,
+      "fnr": 0.0
+    },
+    "causal_lstm_shuffled_10_seeds": {
+      "mean_roc_auc": 0.9895862410517312,
+      "mean_pr_auc": 0.9885448923500965,
+      "mean_f1": 0.8780905249835109,
+      "std_f1": 0.005074469120087297,
+      "individual_f1_scores": [
+        0.8712871287128713,
+        0.8741721854304636,
+        0.8837209302325582,
+        0.8837209302325582,
+        0.8741721854304636,
+        0.8859060402684564,
+        0.875,
+        0.8721311475409836,
+        0.8807947019867549,
+        0.88
+      ]
+    }
+  },
+  "differences": {
+    "lstm_vs_lr20": {
+      "delta_f1": 0.0037735849056603765,
+      "delta_roc_auc": 0.0002251136824096278,
+      "delta_pr_auc": 0.000272420180887023
+    },
+    "lstm_vs_strongest_pi": {
+      "delta_f1": 0.0,
+      "delta_roc_auc": 0.0,
+      "delta_pr_auc": 0.0
+    },
+    "lstm_permutation_degradation": {
+      "delta_f1": 0.12190947501648908,
+      "delta_roc_auc": 0.010413758948268792,
+      "delta_pr_auc": 0.01145510764990354
+    }
+  },
+  "scientific_verdict": {
+    "verdict": "MODEST TEMPORAL VALUE",
+    "verdict_code": "B",
+    "rationale": "On offline full-conversation metrics, non-temporal aggregation achieves competitive performance (F1 ~0.996-1.000). However, sequence modeling exhibits genuine sensitivity to turn ordering (12.19% F1 drop under permutation) and is fundamentally necessary for causal real-time streaming / prefix risk escalation before conversation end."
+  }
+}

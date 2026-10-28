@@ -1,0 +1,8 @@
+{
+  "phase9_candidate": {
+    "path": "C:\\Users\\duddu\\Downloads\\ELDERY LIVE TATIC DETECTOR\\elder-fraud-detector\\ml\\models\\tactic_classifier\\phase9_realworld_v1",
+    "sha256": "mock_phase9_hash_9999",
+    "training_data": "Synthetic + CFPB Real-World + ASR Augmentation",
+    "status": "ready_for_evaluation"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "augmentation": {
+    "enabled": true,
+    "ratio": 0.30,
+    "methods": [
+      {
+        "type": "word_deletion",
+        "probability": 0.15,
+        "description": "Simulates ASR dropping words in noisy conditions."
+      },
+      {
+        "type": "word_substitution",
+        "probability": 0.05,
+        "description": "Simulates ASR homophone confusion (e.g., 'there' vs 'their')."
+      },
+      {
+        "type": "punctuation_loss",
+        "probability": 0.50,
+        "description": "Removes punctuation to simulate raw ASR text streams."
+      },
+      {
+        "type": "hesitation_markers",
+        "probability": 0.10,
+        "description": "Injects 'um', 'uh', 'ah' into the transcript."
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "manifest": [
+    {
+      "category": "fraudulent_manipulation",
+      "count": 15,
+      "description": "Clear scam calls with multiple manipulation tactics."
+    },
+    {
+      "category": "benign_financial",
+      "count": 10,
+      "description": "Legitimate banking and financial discussions."
+    },
+    {
+      "category": "benign_family",
+      "count": 10,
+      "description": "Normal family check-ins and general conversation."
+    },
+    {
+      "category": "benign_customer_service",
+      "count": 10,
+      "description": "Legitimate retail customer service and ordering."
+    },
+    {
+      "category": "authority_benign",
+      "count": 5,
+      "description": "Legitimate calls from authorities or medical offices."
+    },
+    {
+      "category": "urgency_benign",
+      "count": 5,
+      "description": "Legitimate time-sensitive situations (e.g., missed flight, medical appointment)."
+    },
+    {
+      "category": "emotional_benign",
+      "count": 5,
+      "description": "Emotionally charged but legitimate conversations (e.g., family argument, grieving)."
+    },
+    {
+      "category": "channel_control_benign",
+      "count": 5,
+      "description": "Legitimate requests for privacy (e.g., doctor asking to speak privately)."
+    },
+    {
+      "category": "multi_tactic_manipulation",
+      "count": 10,
+      "description": "Complex scams overlapping urgency, isolation, and authority."
+    },
+    {
+      "category": "indirect_manipulation",
+      "count": 5,
+      "description": "Subtle, grooming-like scams (e.g., early stages of romance scam)."
+    }
+  ],
+  "total_conversations": 80,
+  "audio_conditions_applied": true
+}

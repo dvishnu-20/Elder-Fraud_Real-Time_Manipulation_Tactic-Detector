@@ -1,0 +1,4102 @@
+{
+  "challenge_set_size": 550,
+  "hard_negative_count": 110,
+  "contrastive_pair_count": 55,
+  "threshold_sweep_results": [
+    {
+      "threshold": 0.15,
+      "micro_precision": 0.4373304395008139,
+      "micro_recall": 0.9841269841269841,
+      "micro_f1": 0.6055597295266717,
+      "macro_precision": 0.4220776053374795,
+      "macro_recall": 0.9815264910350857,
+      "macro_f1": 0.5753970175491002,
+      "hard_neg_specificity": 0.045454545454545456,
+      "hard_neg_fp_count": 105,
+      "total_false_positives": 1037,
+      "total_false_negatives": 13,
+      "per_tactic": {
+        "urgency": {
+          "precision": 0.4222222222222222,
+          "recall": 0.9941860465116279,
+          "f1": 0.5927209705372617
+        },
+        "isolation": {
+          "precision": 0.24262295081967214,
+          "recall": 0.9866666666666667,
+          "f1": 0.3894736842105263
+        },
+        "authority": {
+          "precision": 0.6861471861471862,
+          "recall": 0.984472049689441,
+          "f1": 0.8086734693877551
+        },
+        "emotional_destabilization": {
+          "precision": 0.3295711060948081,
+          "recall": 1.0,
+          "f1": 0.49575551782682514
+        },
+        "channel_control": {
+          "precision": 0.4298245614035088,
+          "recall": 0.9423076923076923,
+          "f1": 0.5903614457831325
+        }
+      }
+    },
+    {
+      "threshold": 0.2,
+      "micro_precision": 0.47255369928400953,
+      "micro_recall": 0.967032967032967,
+      "micro_f1": 0.6348697394789579,
+      "macro_precision": 0.45706671521032616,
+      "macro_recall": 0.9564585869320414,
+      "macro_f1": 0.603669729319303,
+      "hard_neg_specificity": 0.045454545454545456,
+      "hard_neg_fp_count": 105,
+      "total_false_positives": 884,
+      "total_false_negatives": 27,
+      "per_tactic": {
+        "urgency": {
+          "precision": 0.4418604651162791,
+          "recall": 0.9941860465116279,
+          "f1": 0.6118067978533095
+        },
+        "isolation": {
+          "precision": 0.27106227106227104,
+          "recall": 0.9866666666666667,
+          "f1": 0.42528735632183906
+        },
+        "authority": {
+          "precision": 0.6975717439293598,
+          "recall": 0.9813664596273292,
+          "f1": 0.8154838709677419
+        },
+        "emotional_destabilization": {
+          "precision": 0.36895674300254455,
+          "recall": 0.9931506849315068,
+          "f1": 0.5380333951762524
+        },
+        "channel_control": {
+          "precision": 0.5058823529411764,
+          "recall": 0.8269230769230769,
+          "f1": 0.6277372262773723
+        }
+      }
+    },
+    {
+      "threshold": 0.3,
+      "micro_precision": 0.49614576033637003,
+      "micro_recall": 0.8644688644688645,
+      "micro_f1": 0.6304541406945681,
+      "macro_precision": 0.46795782383075774,
+      "macro_recall": 0.8223894738860873,
+      "macro_f1": 0.576903654486983,
+      "hard_neg_specificity": 0.06363636363636363,
+      "hard_neg_fp_count": 103,
+      "total_false_positives": 719,
+      "total_false_negatives": 111,
+      "per_tactic": {
+        "urgency": {
+          "precision": 0.45722713864306785,
+          "recall": 0.9011627906976745,
+          "f1": 0.6066536203522505
+        },
+        "isolation": {
+          "precision": 0.2975206611570248,
+          "recall": 0.96,
+          "f1": 0.45425867507886436
+        },
+        "authority": {
+          "precision": 0.7175398633257403,
+          "recall": 0.9782608695652174,
+          "f1": 0.8278580814717477
+        },
+        "emotional_destabilization": {
+          "precision": 0.38235294117647056,
+          "recall": 0.8013698630136986,
+          "f1": 0.5176991150442478
+        },
+        "channel_control": {
+          "precision": 0.48514851485148514,
+          "recall": 0.47115384615384615,
+          "f1": 0.47804878048780486
+        }
+      }
+    },
+    {
+      "threshold": 0.4,
+      "micro_precision": 0.5331715210355987,
+      "micro_recall": 0.8046398046398047,
+      "micro_f1": 0.6413625304136253,
+      "macro_precision": 0.48214556382915463,
+      "macro_recall": 0.7397801348985055,
+      "macro_f1": 0.5627672054473909,
+      "hard_neg_specificity": 0.1,
+      "hard_neg_fp_count": 99,
+      "total_false_positives": 577,
+      "total_false_negatives": 160,
+      "per_tactic": {
+        "urgency": {
+          "precision": 0.5460992907801419,
+          "recall": 0.8953488372093024,
+          "f1": 0.6784140969162996
+        },
+        "isolation": {
+          "precision": 0.3130841121495327,
+          "recall": 0.8933333333333333,
+          "f1": 0.46366782006920415
+        },
+        "authority": {
+          "precision": 0.7302325581395349,
+          "recall": 0.9751552795031055,
+          "f1": 0.8351063829787234
+        },
+        "emotional_destabilization": {
+          "precision": 0.3907563025210084,
+          "recall": 0.636986301369863,
+          "f1": 0.484375
+        },
+        "channel_control": {
+          "precision": 0.4305555555555556,
+          "recall": 0.2980769230769231,
+          "f1": 0.3522727272727273
+        }
+      }
+    },
+    {
+      "threshold": 0.5,
+      "micro_precision": 0.5716878402903811,
+      "micro_recall": 0.7692307692307693,
+      "micro_f1": 0.6559083810515357,
+      "macro_precision": 0.4977393558173011,
+      "macro_recall": 0.6860142532278771,
+      "macro_f1": 0.5602534226677685,
+      "hard_neg_specificity": 0.10909090909090909,
+      "hard_neg_fp_count": 98,
+      "total_false_positives": 472,
+      "total_false_negatives": 189,
+      "per_tactic": {
+        "urgency": {
+          "precision": 0.5862068965517241,
+          "recall": 0.8895348837209303,
+          "f1": 0.7066974595842956
+        },
+        "isolation": {
+          "precision": 0.34502923976608185,
+          "recall": 0.7866666666666666,
+          "f1": 0.4796747967479675
+        },
+        "authority": {
+          "precision": 0.7440758293838863,
+          "recall": 0.9751552795031055,
+          "f1": 0.8440860215053764
+        },
+        "emotional_destabilization": {
+          "precision": 0.43243243243243246,
+          "recall": 0.547945205479452,
+          "f1": 0.48338368580060426
+        },
+        "channel_control": {
+          "precision": 0.38095238095238093,
+          "recall": 0.23076923076923078,
+          "f1": 0.2874251497005988
+        }
+      }
+    },
+    {
+      "threshold": 0.6,
+      "micro_precision": 0.5975359342915811,
+      "micro_recall": 0.7106227106227107,
+      "micro_f1": 0.649191299498048,
+      "macro_precision": 0.4999810046999267,
+      "macro_recall": 0.6202668315797115,
+      "macro_f1": 0.5362525942401607,
+      "hard_neg_specificity": 0.14545454545454545,
+      "hard_neg_fp_count": 94,
+      "total_false_positives": 392,
+      "total_false_negatives": 237,
+      "per_tactic": {
+        "urgency": {
+          "precision": 0.6166666666666667,
+          "recall": 0.8604651162790697,
+          "f1": 0.7184466019417476
+        },
+        "isolation": {
+          "precision": 0.3986013986013986,
+          "recall": 0.76,
+          "f1": 0.5229357798165137
+        },
+        "authority": {
+          "precision": 0.7536945812807881,
+          "recall": 0.9503105590062112,
+          "f1": 0.8406593406593407
+        },
+        "emotional_destabilization": {
+          "precision": 0.40441176470588236,
+          "recall": 0.3767123287671233,
+          "f1": 0.3900709219858156
+        },
+        "channel_control": {
+          "precision": 0.32653061224489793,
+          "recall": 0.15384615384615385,
+          "f1": 0.20915032679738563
+        }
+      }
+    }
+  ],
+  "threshold_matrix_per_tactic": {
+    "urgency": [
+      {
+        "threshold": 0.15,
+        "precision": 0.4222222222222222,
+        "recall": 0.9941860465116279,
+        "f1": 0.5927209705372617
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.4418604651162791,
+        "recall": 0.9941860465116279,
+        "f1": 0.6118067978533095
+      },
+      {
+        "threshold": 0.3,
+        "precision": 0.45722713864306785,
+        "recall": 0.9011627906976745,
+        "f1": 0.6066536203522505
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.5460992907801419,
+        "recall": 0.8953488372093024,
+        "f1": 0.6784140969162996
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.5862068965517241,
+        "recall": 0.8895348837209303,
+        "f1": 0.7066974595842956
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.6166666666666667,
+        "recall": 0.8604651162790697,
+        "f1": 0.7184466019417476
+      }
+    ],
+    "isolation": [
+      {
+        "threshold": 0.15,
+        "precision": 0.24262295081967214,
+        "recall": 0.9866666666666667,
+        "f1": 0.3894736842105263
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.27106227106227104,
+        "recall": 0.9866666666666667,
+        "f1": 0.42528735632183906
+      },
+      {
+        "threshold": 0.3,
+        "precision": 0.2975206611570248,
+        "recall": 0.96,
+        "f1": 0.45425867507886436
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.3130841121495327,
+        "recall": 0.8933333333333333,
+        "f1": 0.46366782006920415
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.34502923976608185,
+        "recall": 0.7866666666666666,
+        "f1": 0.4796747967479675
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.3986013986013986,
+        "recall": 0.76,
+        "f1": 0.5229357798165137
+      }
+    ],
+    "authority": [
+      {
+        "threshold": 0.15,
+        "precision": 0.6861471861471862,
+        "recall": 0.984472049689441,
+        "f1": 0.8086734693877551
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.6975717439293598,
+        "recall": 0.9813664596273292,
+        "f1": 0.8154838709677419
+      },
+      {
+        "threshold": 0.3,
+        "precision": 0.7175398633257403,
+        "recall": 0.9782608695652174,
+        "f1": 0.8278580814717477
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.7302325581395349,
+        "recall": 0.9751552795031055,
+        "f1": 0.8351063829787234
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.7440758293838863,
+        "recall": 0.9751552795031055,
+        "f1": 0.8440860215053764
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.7536945812807881,
+        "recall": 0.9503105590062112,
+        "f1": 0.8406593406593407
+      }
+    ],
+    "emotional_destabilization": [
+      {
+        "threshold": 0.15,
+        "precision": 0.3295711060948081,
+        "recall": 1.0,
+        "f1": 0.49575551782682514
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.36895674300254455,
+        "recall": 0.9931506849315068,
+        "f1": 0.5380333951762524
+      },
+      {
+        "threshold": 0.3,
+        "precision": 0.38235294117647056,
+        "recall": 0.8013698630136986,
+        "f1": 0.5176991150442478
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.3907563025210084,
+        "recall": 0.636986301369863,
+        "f1": 0.484375
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.43243243243243246,
+        "recall": 0.547945205479452,
+        "f1": 0.48338368580060426
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.40441176470588236,
+        "recall": 0.3767123287671233,
+        "f1": 0.3900709219858156
+      }
+    ],
+    "channel_control": [
+      {
+        "threshold": 0.15,
+        "precision": 0.4298245614035088,
+        "recall": 0.9423076923076923,
+        "f1": 0.5903614457831325
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.5058823529411764,
+        "recall": 0.8269230769230769,
+        "f1": 0.6277372262773723
+      },
+      {
+        "threshold": 0.3,
+        "precision": 0.48514851485148514,
+        "recall": 0.47115384615384615,
+        "f1": 0.47804878048780486
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.4305555555555556,
+        "recall": 0.2980769230769231,
+        "f1": 0.3522727272727273
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.38095238095238093,
+        "recall": 0.23076923076923078,
+        "f1": 0.2874251497005988
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.32653061224489793,
+        "recall": 0.15384615384615385,
+        "f1": 0.20915032679738563
+      }
+    ]
+  },
+  "per_tactic_metrics_optimal": {
+    "urgency": {
+      "precision": 0.6166666666666667,
+      "recall": 0.8604651162790697,
+      "f1": 0.7184466019417476,
+      "pr_auc": 0.6522015581146866,
+      "best_threshold": 0.6,
+      "support": 172
+    },
+    "isolation": {
+      "precision": 0.3986013986013986,
+      "recall": 0.76,
+      "f1": 0.5229357798165137,
+      "pr_auc": 0.5607953301591904,
+      "best_threshold": 0.6,
+      "support": 75
+    },
+    "authority": {
+      "precision": 0.7440758293838863,
+      "recall": 0.9751552795031055,
+      "f1": 0.8440860215053764,
+      "pr_auc": 0.8633150442205446,
+      "best_threshold": 0.5,
+      "support": 322
+    },
+    "emotional_destabilization": {
+      "precision": 0.36895674300254455,
+      "recall": 0.9931506849315068,
+      "f1": 0.5380333951762524,
+      "pr_auc": 0.4080784813663511,
+      "best_threshold": 0.2,
+      "support": 146
+    },
+    "channel_control": {
+      "precision": 0.5058823529411764,
+      "recall": 0.8269230769230769,
+      "f1": 0.6277372262773723,
+      "pr_auc": 0.4600762772988323,
+      "best_threshold": 0.2,
+      "support": 104
+    }
+  },
+  "overall_optimal": {
+    "micro_precision": 0.5482456140350878,
+    "micro_recall": 0.9157509157509157,
+    "micro_f1": 0.6858710562414266,
+    "macro_precision": 0.5268365981191345,
+    "macro_recall": 0.8831388315273518,
+    "macro_f1": 0.6502478049434525,
+    "hard_negative_specificity": 0.08181818181818182,
+    "hard_negative_fps": 101,
+    "total_false_positives": 349,
+    "total_false_negatives": 68
+  },
+  "contrastive_pair_accuracy": {
+    "total_pairs": 55,
+    "benign_correct": 5,
+    "manipulative_correct": 14,
+    "pair_accuracy_count": 0,
+    "pair_accuracy_percent": 0.0,
+    "same_prediction_count": 5
+  },
+  "representative_predictions_25": [
+    {
+      "text": "If you don't pick up and pay for this prescription in the next 24 hours, all your health benefits will be terminated.",
+      "category": "contrastive_pair_urgency",
+      "ground_truth": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "predicted": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9929,
+        "isolation": 0.1309,
+        "authority": 0.114,
+        "emotional_destabilization": 0.9806,
+        "channel_control": 0.1512
+      }
+    },
+    {
+      "text": "The bank closes at 4 PM, so please submit the transfer before then.",
+      "category": "contrastive_pair_urgency",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "urgency",
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.9976,
+        "isolation": 0.0747,
+        "authority": 0.0388,
+        "emotional_destabilization": 0.0235,
+        "channel_control": 0.3259
+      }
+    },
+    {
+      "text": "The grocery store discount on gift cards ends tonight at 9 PM.",
+      "category": "contrastive_pair_urgency",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "urgency",
+        "authority",
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.761,
+        "isolation": 0.3219,
+        "authority": 0.7661,
+        "emotional_destabilization": 0.09,
+        "channel_control": 0.3072
+      }
+    },
+    {
+      "text": "You must wire the money for the flight in 15 minutes or you'll be stranded and arrested at the terminal.",
+      "category": "contrastive_pair_urgency",
+      "ground_truth": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "predicted": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.9987,
+        "isolation": 0.0932,
+        "authority": 0.0641,
+        "emotional_destabilization": 0.6972,
+        "channel_control": 0.2009
+      }
+    },
+    {
+      "text": "We must move your retirement funds alone because your children are plotting to take your estate.",
+      "category": "contrastive_pair_isolation",
+      "ground_truth": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "predicted": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9613,
+        "isolation": 0.6358,
+        "authority": 0.1141,
+        "emotional_destabilization": 0.9883,
+        "channel_control": 0.1278
+      }
+    },
+    {
+      "text": "Please enter your debit card PIN privately on the keypad so no one sees it.",
+      "category": "contrastive_pair_isolation",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "isolation",
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.0635,
+        "isolation": 0.9838,
+        "authority": 0.0147,
+        "emotional_destabilization": 0.035,
+        "channel_control": 0.8903
+      }
+    },
+    {
+      "text": "This is an official covert investigation into your grandmother, and you are legally forbidden from telling her.",
+      "category": "contrastive_pair_isolation",
+      "ground_truth": [
+        "isolation",
+        "authority"
+      ],
+      "predicted": [
+        "isolation",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.2839,
+        "isolation": 0.9799,
+        "authority": 0.5934,
+        "emotional_destabilization": 0.7787,
+        "channel_control": 0.0585
+      }
+    },
+    {
+      "text": "It's a surprise birthday party for Grandma, so please keep it secret from her.",
+      "category": "contrastive_pair_isolation",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.015,
+        "isolation": 0.5208,
+        "authority": 0.0336,
+        "emotional_destabilization": 0.1257,
+        "channel_control": 0.8
+      }
+    },
+    {
+      "text": "I'm a city building inspector checking the street for code compliance.",
+      "category": "contrastive_pair_authority",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.0213,
+        "isolation": 0.032,
+        "authority": 0.9964,
+        "emotional_destabilization": 0.0939,
+        "channel_control": 0.0511
+      }
+    },
+    {
+      "text": "This is the Amazon Fraud Taskforce; your identity has been flagged for money laundering.",
+      "category": "contrastive_pair_authority",
+      "ground_truth": [
+        "authority"
+      ],
+      "predicted": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.1261,
+        "isolation": 0.0748,
+        "authority": 0.9949,
+        "emotional_destabilization": 0.8253,
+        "channel_control": 0.0621
+      }
+    },
+    {
+      "text": "I am Officer Davis and there is an outstanding federal arrest warrant in your name that requires immediate bail.",
+      "category": "contrastive_pair_authority",
+      "ground_truth": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "predicted": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.555,
+        "isolation": 0.0944,
+        "authority": 0.9926,
+        "emotional_destabilization": 0.7749,
+        "channel_control": 0.043
+      }
+    },
+    {
+      "text": "I am Officer Davis calling to let you know we found your lost wallet at the bus stop.",
+      "category": "contrastive_pair_authority",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.0633,
+        "isolation": 0.0235,
+        "authority": 0.9825,
+        "emotional_destabilization": 0.1779,
+        "channel_control": 0.0495
+      }
+    },
+    {
+      "text": "I'm feeling a bit anxious about the upcoming college final exams.",
+      "category": "contrastive_pair_emotional_destabilization",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.0303,
+        "isolation": 0.0036,
+        "authority": 0.0152,
+        "emotional_destabilization": 0.4081,
+        "channel_control": 0.0047
+      }
+    },
+    {
+      "text": "The financial markets experienced a slight dip during yesterday's trading session.",
+      "category": "contrastive_pair_emotional_destabilization",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.504,
+        "isolation": 0.0282,
+        "authority": 0.815,
+        "emotional_destabilization": 0.891,
+        "channel_control": 0.0197
+      }
+    },
+    {
+      "text": "The financial system has collapsed and all your life savings have been wiped out forever!",
+      "category": "contrastive_pair_emotional_destabilization",
+      "ground_truth": [
+        "emotional_destabilization"
+      ],
+      "predicted": [
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.0858,
+        "isolation": 0.0224,
+        "authority": 0.0192,
+        "emotional_destabilization": 0.9877,
+        "channel_control": 0.0197
+      }
+    },
+    {
+      "text": "I heard a news report about a burglary three towns over.",
+      "category": "contrastive_pair_emotional_destabilization",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.0059,
+        "isolation": 0.0079,
+        "authority": 0.1758,
+        "emotional_destabilization": 0.524,
+        "channel_control": 0.0084
+      }
+    },
+    {
+      "text": "I just sent an authentication link; click and approve it right now while we are on the line.",
+      "category": "contrastive_pair_channel_control",
+      "ground_truth": [
+        "urgency",
+        "channel_control"
+      ],
+      "predicted": [
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.5027,
+        "isolation": 0.0118,
+        "authority": 0.0504,
+        "emotional_destabilization": 0.0408,
+        "channel_control": 0.9891
+      }
+    },
+    {
+      "text": "Please stay on the line for a moment while I transfer your call to the billing department.",
+      "category": "contrastive_pair_channel_control",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.2143,
+        "isolation": 0.0758,
+        "authority": 0.2585,
+        "emotional_destabilization": 0.078,
+        "channel_control": 0.9992
+      }
+    },
+    {
+      "text": "Leave the remote desktop access tool running in the background and do not touch your mouse or keyboard.",
+      "category": "contrastive_pair_channel_control",
+      "ground_truth": [
+        "channel_control"
+      ],
+      "predicted": [
+        "isolation",
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.0355,
+        "isolation": 0.9787,
+        "authority": 0.0609,
+        "emotional_destabilization": 0.0861,
+        "channel_control": 0.9827
+      }
+    },
+    {
+      "text": "Please leave the browser tab open while your photo upload completes.",
+      "category": "contrastive_pair_channel_control",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.0748,
+        "isolation": 0.1315,
+        "authority": 0.0292,
+        "emotional_destabilization": 0.0323,
+        "channel_control": 0.9986
+      }
+    },
+    {
+      "text": "I plan to transfer money to my grandson next week for his college semester tuition.",
+      "category": "contrastive_pair_multi_label",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.8859,
+        "isolation": 0.0316,
+        "authority": 0.21,
+        "emotional_destabilization": 0.7236,
+        "channel_control": 0.0986
+      }
+    },
+    {
+      "text": "My computer is running slowly; I'll ask the local computer technician to look at it this weekend.",
+      "category": "contrastive_pair_multi_label",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9372,
+        "isolation": 0.0215,
+        "authority": 0.4785,
+        "emotional_destabilization": 0.8686,
+        "channel_control": 0.0864
+      }
+    },
+    {
+      "text": "The IRS has issued an arrest warrant: you have fifteen minutes to stay on this line and purchase gift card vouchers or deputies will arrive.",
+      "category": "contrastive_pair_multi_label",
+      "ground_truth": [
+        "urgency",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "predicted": [
+        "urgency",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.9883,
+        "isolation": 0.2382,
+        "authority": 0.8734,
+        "emotional_destabilization": 0.7444,
+        "channel_control": 0.6227
+      }
+    },
+    {
+      "text": "I am Microsoft Headquarters: do not turn off your PC, give me remote control of your screen immediately, or your files will be erased.",
+      "category": "contrastive_pair_multi_label",
+      "ground_truth": [
+        "urgency",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "predicted": [
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.5773,
+        "isolation": 0.9697,
+        "authority": 0.3403,
+        "emotional_destabilization": 0.9108,
+        "channel_control": 0.6355
+      }
+    },
+    {
+      "text": "The news anchor mentioned that Bitcoin ATMs are often used by fraudsters.",
+      "category": "benign_hard_neg",
+      "ground_truth": [
+        "none"
+      ],
+      "predicted": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.0381,
+        "isolation": 0.141,
+        "authority": 0.8959,
+        "emotional_destabilization": 0.9384,
+        "channel_control": 0.0342
+      }
+    }
+  ],
+  "contrastive_pair_results": [
+    {
+      "pair_id": "cp_000",
+      "topic": "urgency",
+      "benign_text": "The bank closes at 4 PM, so please submit the transfer before then.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9976,
+        "isolation": 0.0747,
+        "authority": 0.0388,
+        "emotional_destabilization": 0.0235,
+        "channel_control": 0.3259
+      },
+      "manipulative_text": "You have until 4 PM to send the transfer, and you must do it right now without telling anyone.",
+      "manipulative_true": [
+        "urgency",
+        "isolation"
+      ],
+      "manipulative_pred": [
+        "urgency"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9992,
+        "isolation": 0.101,
+        "authority": 0.0305,
+        "emotional_destabilization": 0.0937,
+        "channel_control": 0.0833
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_001",
+      "topic": "urgency",
+      "benign_text": "Your prescription expires in 24 hours, so please pick it up from the pharmacy soon.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9975,
+        "isolation": 0.1426,
+        "authority": 0.1591,
+        "emotional_destabilization": 0.4355,
+        "channel_control": 0.8107
+      },
+      "manipulative_text": "If you don't pick up and pay for this prescription in the next 24 hours, all your health benefits will be terminated.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9929,
+        "isolation": 0.1309,
+        "authority": 0.114,
+        "emotional_destabilization": 0.9806,
+        "channel_control": 0.1512
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_002",
+      "topic": "urgency",
+      "benign_text": "We recommend paying the utility invoice by Friday to avoid late fees.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9673,
+        "isolation": 0.7225,
+        "authority": 0.2007,
+        "emotional_destabilization": 0.3333,
+        "channel_control": 0.5498
+      },
+      "manipulative_text": "Pay this invoice within the next fifteen minutes or law enforcement will be dispatched to your door.",
+      "manipulative_true": [
+        "urgency",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9985,
+        "isolation": 0.1983,
+        "authority": 0.0869,
+        "emotional_destabilization": 0.4823,
+        "channel_control": 0.5786
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_003",
+      "topic": "urgency",
+      "benign_text": "Your flight to Chicago boards in 15 minutes at Gate 12.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency"
+      ],
+      "benign_probs": {
+        "urgency": 0.9949,
+        "isolation": 0.0093,
+        "authority": 0.0689,
+        "emotional_destabilization": 0.0209,
+        "channel_control": 0.0582
+      },
+      "manipulative_text": "You must wire the money for the flight in 15 minutes or you'll be stranded and arrested at the terminal.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9987,
+        "isolation": 0.0932,
+        "authority": 0.0641,
+        "emotional_destabilization": 0.6972,
+        "channel_control": 0.2009
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_004",
+      "topic": "urgency",
+      "benign_text": "The grocery store discount on gift cards ends tonight at 9 PM.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "authority",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.761,
+        "isolation": 0.3219,
+        "authority": 0.7661,
+        "emotional_destabilization": 0.09,
+        "channel_control": 0.3072
+      },
+      "manipulative_text": "Go to the grocery store and purchase the gift cards before tonight or your arrest warrant will be activated.",
+      "manipulative_true": [
+        "urgency",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.92,
+        "isolation": 0.4621,
+        "authority": 0.1306,
+        "emotional_destabilization": 0.6629,
+        "channel_control": 0.9931
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_005",
+      "topic": "urgency",
+      "benign_text": "Please review the lease agreement and sign it by the end of the day.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9144,
+        "isolation": 0.0205,
+        "authority": 0.0096,
+        "emotional_destabilization": 0.0085,
+        "channel_control": 0.8861
+      },
+      "manipulative_text": "Sign the document immediately before the end of the day, or your bank accounts will be frozen permanently.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9848,
+        "isolation": 0.2085,
+        "authority": 0.024,
+        "emotional_destabilization": 0.8673,
+        "channel_control": 0.8915
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_006",
+      "topic": "urgency",
+      "benign_text": "The municipal water company needs to inspect your meter tomorrow morning.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.9979,
+        "isolation": 0.1204,
+        "authority": 0.4728,
+        "emotional_destabilization": 0.295,
+        "channel_control": 0.1134
+      },
+      "manipulative_text": "If you don't allow our water inspector inside within ten minutes, your supply will be permanently disconnected.",
+      "manipulative_true": [
+        "urgency"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9956,
+        "isolation": 0.2919,
+        "authority": 0.0855,
+        "emotional_destabilization": 0.9548,
+        "channel_control": 0.1237
+      },
+      "pair_correct": false,
+      "same_pred": true
+    },
+    {
+      "pair_id": "cp_007",
+      "topic": "urgency",
+      "benign_text": "The courier will drop off your package by 3 PM this afternoon.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9983,
+        "isolation": 0.0378,
+        "authority": 0.1031,
+        "emotional_destabilization": 0.2592,
+        "channel_control": 0.4239
+      },
+      "manipulative_text": "The courier arrives at 3 PM; hand over the cash immediately or face immediate prosecution.",
+      "manipulative_true": [
+        "urgency",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9977,
+        "isolation": 0.2149,
+        "authority": 0.1652,
+        "emotional_destabilization": 0.3461,
+        "channel_control": 0.6062
+      },
+      "pair_correct": false,
+      "same_pred": true
+    },
+    {
+      "pair_id": "cp_008",
+      "topic": "urgency",
+      "benign_text": "Your streaming subscription will automatically renew next month unless canceled.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.996,
+        "isolation": 0.2718,
+        "authority": 0.0482,
+        "emotional_destabilization": 0.8783,
+        "channel_control": 0.2684
+      },
+      "manipulative_text": "Your account is being charged thousands of dollars right now, act this second to reverse the charges!",
+      "manipulative_true": [
+        "urgency"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9766,
+        "isolation": 0.0471,
+        "authority": 0.018,
+        "emotional_destabilization": 0.9495,
+        "channel_control": 0.1061
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_009",
+      "topic": "urgency",
+      "benign_text": "The post office closes in thirty minutes, let's mail the package today.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency"
+      ],
+      "benign_probs": {
+        "urgency": 0.8485,
+        "isolation": 0.0016,
+        "authority": 0.0327,
+        "emotional_destabilization": 0.014,
+        "channel_control": 0.0242
+      },
+      "manipulative_text": "You have thirty minutes to mail the parcel before the cartel finds out where you live.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9979,
+        "isolation": 0.0927,
+        "authority": 0.0352,
+        "emotional_destabilization": 0.5578,
+        "channel_control": 0.1679
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_010",
+      "topic": "isolation",
+      "benign_text": "For patient privacy under HIPAA rules, please take this medical consultation in a quiet room.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.2443,
+        "isolation": 0.9973,
+        "authority": 0.0905,
+        "emotional_destabilization": 0.0578,
+        "channel_control": 0.2819
+      },
+      "manipulative_text": "To prevent the authorities from finding out, you must take this call in a quiet room and tell no one in your household.",
+      "manipulative_true": [
+        "isolation",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9299,
+        "isolation": 0.9928,
+        "authority": 0.0346,
+        "emotional_destabilization": 0.1586,
+        "channel_control": 0.325
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_011",
+      "topic": "isolation",
+      "benign_text": "It's a surprise birthday party for Grandma, so please keep it secret from her.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.015,
+        "isolation": 0.5208,
+        "authority": 0.0336,
+        "emotional_destabilization": 0.1257,
+        "channel_control": 0.8
+      },
+      "manipulative_text": "This is an official covert investigation into your grandmother, and you are legally forbidden from telling her.",
+      "manipulative_true": [
+        "isolation",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.2839,
+        "isolation": 0.9799,
+        "authority": 0.5934,
+        "emotional_destabilization": 0.7787,
+        "channel_control": 0.0585
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_012",
+      "topic": "isolation",
+      "benign_text": "Please enter your debit card PIN privately on the keypad so no one sees it.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0635,
+        "isolation": 0.9838,
+        "authority": 0.0147,
+        "emotional_destabilization": 0.035,
+        "channel_control": 0.8903
+      },
+      "manipulative_text": "Do not let the bank teller see you making this withdrawal; they are suspected of being part of the crime ring.",
+      "manipulative_true": [
+        "isolation"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.321,
+        "isolation": 0.9972,
+        "authority": 0.1267,
+        "emotional_destabilization": 0.5401,
+        "channel_control": 0.1674
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_013",
+      "topic": "isolation",
+      "benign_text": "Let's review your retirement savings in my private office so we aren't disturbed.",
+      "benign_true": [],
+      "benign_pred": [],
+      "benign_probs": {
+        "urgency": 0.0704,
+        "isolation": 0.0576,
+        "authority": 0.0101,
+        "emotional_destabilization": 0.1053,
+        "channel_control": 0.0315
+      },
+      "manipulative_text": "We must move your retirement funds alone because your children are plotting to take your estate.",
+      "manipulative_true": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9613,
+        "isolation": 0.6358,
+        "authority": 0.1141,
+        "emotional_destabilization": 0.9883,
+        "channel_control": 0.1278
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_014",
+      "topic": "isolation",
+      "benign_text": "I prefer to keep my salary negotiations confidential from other employees.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.0504,
+        "isolation": 0.8914,
+        "authority": 0.7993,
+        "emotional_destabilization": 0.3867,
+        "channel_control": 0.1771
+      },
+      "manipulative_text": "You are strictly prohibited under federal gag orders from mentioning this transaction to anyone at your workplace.",
+      "manipulative_true": [
+        "isolation",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.2478,
+        "isolation": 0.9958,
+        "authority": 0.2016,
+        "emotional_destabilization": 0.6326,
+        "channel_control": 0.0706
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_015",
+      "topic": "isolation",
+      "benign_text": "Please read this standard contract in the waiting room while we prepare your paperwork.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0859,
+        "isolation": 0.109,
+        "authority": 0.0291,
+        "emotional_destabilization": 0.0101,
+        "channel_control": 0.9894
+      },
+      "manipulative_text": "Read this contract alone and do not let your lawyer or family inspect it, or the settlement is void.",
+      "manipulative_true": [
+        "isolation"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.6986,
+        "isolation": 0.9898,
+        "authority": 0.0169,
+        "emotional_destabilization": 0.1197,
+        "channel_control": 0.6509
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_016",
+      "topic": "isolation",
+      "benign_text": "It is best practice for HR to handle employee disputes discreetly without office gossip.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.1241,
+        "isolation": 0.9329,
+        "authority": 0.9005,
+        "emotional_destabilization": 0.3471,
+        "channel_control": 0.1167
+      },
+      "manipulative_text": "If you speak to anyone else about this dispute, you will be fired on the spot and blacklisted across the industry.",
+      "manipulative_true": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9533,
+        "isolation": 0.5349,
+        "authority": 0.1546,
+        "emotional_destabilization": 0.9938,
+        "channel_control": 0.2386
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_017",
+      "topic": "isolation",
+      "benign_text": "I'm going for a short walk in the park to clear my head and get some fresh air.",
+      "benign_true": [],
+      "benign_pred": [],
+      "benign_probs": {
+        "urgency": 0.0546,
+        "isolation": 0.0059,
+        "authority": 0.0101,
+        "emotional_destabilization": 0.1515,
+        "channel_control": 0.1137
+      },
+      "manipulative_text": "Walk to your car alone right now so nobody in the house can overhear what I'm commanding you to do.",
+      "manipulative_true": [
+        "isolation",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.3484,
+        "isolation": 0.8205,
+        "authority": 0.011,
+        "emotional_destabilization": 0.7568,
+        "channel_control": 0.9308
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_018",
+      "topic": "isolation",
+      "benign_text": "Keep the ballot booth curtain closed so your vote remains completely private.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.1069,
+        "isolation": 0.947,
+        "authority": 0.0681,
+        "emotional_destabilization": 0.4477,
+        "channel_control": 0.9954
+      },
+      "manipulative_text": "Do not speak to the election workers or bank staff, they are monitoring you illegally.",
+      "manipulative_true": [
+        "isolation"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0188,
+        "isolation": 0.9962,
+        "authority": 0.0804,
+        "emotional_destabilization": 0.3909,
+        "channel_control": 0.0632
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_019",
+      "topic": "isolation",
+      "benign_text": "We should discuss this private family decision together over dinner tonight.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency"
+      ],
+      "benign_probs": {
+        "urgency": 0.9596,
+        "isolation": 0.0268,
+        "authority": 0.0078,
+        "emotional_destabilization": 0.0073,
+        "channel_control": 0.0499
+      },
+      "manipulative_text": "Do not inform any other family members about this wire transfer; they cannot know.",
+      "manipulative_true": [
+        "isolation"
+      ],
+      "manipulative_pred": [
+        "isolation"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0959,
+        "isolation": 0.9987,
+        "authority": 0.0633,
+        "emotional_destabilization": 0.1565,
+        "channel_control": 0.1609
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_020",
+      "topic": "authority",
+      "benign_text": "I am Officer Davis calling to let you know we found your lost wallet at the bus stop.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.0633,
+        "isolation": 0.0235,
+        "authority": 0.9825,
+        "emotional_destabilization": 0.1779,
+        "channel_control": 0.0495
+      },
+      "manipulative_text": "I am Officer Davis and there is an outstanding federal arrest warrant in your name that requires immediate bail.",
+      "manipulative_true": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.555,
+        "isolation": 0.0944,
+        "authority": 0.9926,
+        "emotional_destabilization": 0.7749,
+        "channel_control": 0.043
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_021",
+      "topic": "authority",
+      "benign_text": "This is the IRS sending your routine annual tax refund notification in the mail.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.1063,
+        "isolation": 0.0503,
+        "authority": 0.9985,
+        "emotional_destabilization": 0.1864,
+        "channel_control": 0.1081
+      },
+      "manipulative_text": "This is the IRS Special Enforcement Division demanding immediate payment or federal marshals will detain you.",
+      "manipulative_true": [
+        "urgency",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.5043,
+        "isolation": 0.1606,
+        "authority": 0.994,
+        "emotional_destabilization": 0.7891,
+        "channel_control": 0.0723
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_022",
+      "topic": "authority",
+      "benign_text": "I am the branch bank manager, returning your call regarding current mortgage interest rates.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.0383,
+        "isolation": 0.0558,
+        "authority": 0.9972,
+        "emotional_destabilization": 0.099,
+        "channel_control": 0.1032
+      },
+      "manipulative_text": "I am the chief bank auditor, and I am seizing your account assets immediately due to suspicious criminal activity.",
+      "manipulative_true": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.4759,
+        "isolation": 0.1915,
+        "authority": 0.9377,
+        "emotional_destabilization": 0.9573,
+        "channel_control": 0.049
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_023",
+      "topic": "authority",
+      "benign_text": "This is the IT tech support desk, following up on your printer ticket from yesterday.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.1209,
+        "isolation": 0.0313,
+        "authority": 0.9986,
+        "emotional_destabilization": 0.0871,
+        "channel_control": 0.159
+      },
+      "manipulative_text": "This is the Chief Security Officer at Microsoft; your computer has been flagged for illegal illicit materials.",
+      "manipulative_true": [
+        "authority"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0823,
+        "isolation": 0.1118,
+        "authority": 0.9919,
+        "emotional_destabilization": 0.8543,
+        "channel_control": 0.0412
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_024",
+      "topic": "authority",
+      "benign_text": "I am Judge Smith's court clerk, calling to confirm your rescheduled jury duty date.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.7014,
+        "isolation": 0.05,
+        "authority": 0.9937,
+        "emotional_destabilization": 0.1656,
+        "channel_control": 0.071
+      },
+      "manipulative_text": "I am Judge Smith, and you are in contempt of federal court for failing to appear.",
+      "manipulative_true": [
+        "authority"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.2408,
+        "isolation": 0.4876,
+        "authority": 0.9054,
+        "emotional_destabilization": 0.9087,
+        "channel_control": 0.0244
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_025",
+      "topic": "authority",
+      "benign_text": "This is the neighborhood pharmacy letting you know your blood pressure medicine is ready.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.0551,
+        "isolation": 0.0278,
+        "authority": 0.9961,
+        "emotional_destabilization": 0.1404,
+        "channel_control": 0.0626
+      },
+      "manipulative_text": "This is the Drug Enforcement Administration; we are confiscating your pharmacy orders as evidence.",
+      "manipulative_true": [
+        "authority"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0741,
+        "isolation": 0.1064,
+        "authority": 0.9956,
+        "emotional_destabilization": 0.5808,
+        "channel_control": 0.0415
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_026",
+      "topic": "authority",
+      "benign_text": "Hello, this is customer service from Amazon. How may I help you with your order today?",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.007,
+        "isolation": 0.0051,
+        "authority": 0.8773,
+        "emotional_destabilization": 0.0048,
+        "channel_control": 0.0195
+      },
+      "manipulative_text": "This is the Amazon Fraud Taskforce; your identity has been flagged for money laundering.",
+      "manipulative_true": [
+        "authority"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.1261,
+        "isolation": 0.0748,
+        "authority": 0.9949,
+        "emotional_destabilization": 0.8253,
+        "channel_control": 0.0621
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_027",
+      "topic": "authority",
+      "benign_text": "I'm the new regional director calling to introduce myself to the regional staff.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.0583,
+        "isolation": 0.0125,
+        "authority": 0.9742,
+        "emotional_destabilization": 0.026,
+        "channel_control": 0.0279
+      },
+      "manipulative_text": "I'm the senior regional director, and my orders are absolute: wire the balance or be terminated immediately.",
+      "manipulative_true": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "authority",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.972,
+        "isolation": 0.0426,
+        "authority": 0.8253,
+        "emotional_destabilization": 0.1529,
+        "channel_control": 0.8747
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_028",
+      "topic": "authority",
+      "benign_text": "This is the border customs office confirming that your international travel visa was approved.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.126,
+        "isolation": 0.0467,
+        "authority": 0.9975,
+        "emotional_destabilization": 0.1161,
+        "channel_control": 0.0484
+      },
+      "manipulative_text": "This is the border patrol taskforce; we have seized a contraband shipment bearing your identity.",
+      "manipulative_true": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.1984,
+        "isolation": 0.1124,
+        "authority": 0.9956,
+        "emotional_destabilization": 0.6081,
+        "channel_control": 0.0399
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_029",
+      "topic": "authority",
+      "benign_text": "I'm a city building inspector checking the street for code compliance.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority"
+      ],
+      "benign_probs": {
+        "urgency": 0.0213,
+        "isolation": 0.032,
+        "authority": 0.9964,
+        "emotional_destabilization": 0.0939,
+        "channel_control": 0.0511
+      },
+      "manipulative_text": "I'm a federal code inspector, and I am condemning your property and ordering an immediate eviction today.",
+      "manipulative_true": [
+        "urgency",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.3367,
+        "isolation": 0.2515,
+        "authority": 0.7391,
+        "emotional_destabilization": 0.9662,
+        "channel_control": 0.0176
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_030",
+      "topic": "emotional_destabilization",
+      "benign_text": "I was so heartbroken when my childhood pet passed away last year.",
+      "benign_true": [],
+      "benign_pred": [
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.0341,
+        "isolation": 0.0279,
+        "authority": 0.0566,
+        "emotional_destabilization": 0.9843,
+        "channel_control": 0.0174
+      },
+      "manipulative_text": "If you don't pay this veterinary bill in ten minutes, your pet will be put down immediately.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9988,
+        "isolation": 0.15,
+        "authority": 0.0864,
+        "emotional_destabilization": 0.7235,
+        "channel_control": 0.1161
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_031",
+      "topic": "emotional_destabilization",
+      "benign_text": "I'm feeling a bit anxious about the upcoming college final exams.",
+      "benign_true": [],
+      "benign_pred": [
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.0303,
+        "isolation": 0.0036,
+        "authority": 0.0152,
+        "emotional_destabilization": 0.4081,
+        "channel_control": 0.0047
+      },
+      "manipulative_text": "If you fail this verification, you will be expelled, sued for fraud, and ruin your life forever.",
+      "manipulative_true": [
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9099,
+        "isolation": 0.3933,
+        "authority": 0.0383,
+        "emotional_destabilization": 0.9944,
+        "channel_control": 0.1505
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_032",
+      "topic": "emotional_destabilization",
+      "benign_text": "Your grandson got a speeding ticket and had to pay a fifty dollar fine.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.7084,
+        "isolation": 0.1643,
+        "authority": 0.0465,
+        "emotional_destabilization": 0.9935,
+        "channel_control": 0.0279
+      },
+      "manipulative_text": "Your grandson was in a catastrophic accident and is weeping blood in a holding cell waiting for your bail!",
+      "manipulative_true": [
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0394,
+        "isolation": 0.0453,
+        "authority": 0.0304,
+        "emotional_destabilization": 0.9793,
+        "channel_control": 0.0136
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_033",
+      "topic": "emotional_destabilization",
+      "benign_text": "The financial markets experienced a slight dip during yesterday's trading session.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.504,
+        "isolation": 0.0282,
+        "authority": 0.815,
+        "emotional_destabilization": 0.891,
+        "channel_control": 0.0197
+      },
+      "manipulative_text": "The financial system has collapsed and all your life savings have been wiped out forever!",
+      "manipulative_true": [
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0858,
+        "isolation": 0.0224,
+        "authority": 0.0192,
+        "emotional_destabilization": 0.9877,
+        "channel_control": 0.0197
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_034",
+      "topic": "emotional_destabilization",
+      "benign_text": "I accidentally scratched the fender of the rental vehicle in the parking garage.",
+      "benign_true": [],
+      "benign_pred": [],
+      "benign_probs": {
+        "urgency": 0.0022,
+        "isolation": 0.0192,
+        "authority": 0.1472,
+        "emotional_destabilization": 0.1349,
+        "channel_control": 0.0086
+      },
+      "manipulative_text": "You totaled our commercial vehicle and you owe forty thousand dollars right now or we take your home!",
+      "manipulative_true": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.7609,
+        "isolation": 0.0529,
+        "authority": 0.0202,
+        "emotional_destabilization": 0.9853,
+        "channel_control": 0.0409
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_035",
+      "topic": "emotional_destabilization",
+      "benign_text": "There is a standard security update available for your online banking profile.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0507,
+        "isolation": 0.287,
+        "authority": 0.9745,
+        "emotional_destabilization": 0.1092,
+        "channel_control": 0.396
+      },
+      "manipulative_text": "Criminal hackers have penetrated your life, stolen your identity, and are draining every cent you own!",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0346,
+        "isolation": 0.0736,
+        "authority": 0.0342,
+        "emotional_destabilization": 0.9904,
+        "channel_control": 0.0265
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_036",
+      "topic": "emotional_destabilization",
+      "benign_text": "I get a little nervous whenever severe thunderstorms are in the forecast.",
+      "benign_true": [],
+      "benign_pred": [
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.0314,
+        "isolation": 0.0165,
+        "authority": 0.0165,
+        "emotional_destabilization": 0.9458,
+        "channel_control": 0.0151
+      },
+      "manipulative_text": "A catastrophic tornado is directly targeting your exact address; you will perish if you don't act!",
+      "manipulative_true": [
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.8356,
+        "isolation": 0.0335,
+        "authority": 0.0101,
+        "emotional_destabilization": 0.9641,
+        "channel_control": 0.0143
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_037",
+      "topic": "emotional_destabilization",
+      "benign_text": "The municipal property tax assessment went up slightly for our neighborhood.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.1561,
+        "isolation": 0.0472,
+        "authority": 0.9336,
+        "emotional_destabilization": 0.6976,
+        "channel_control": 0.0421
+      },
+      "manipulative_text": "The county is repossessing your house today and throwing you out onto the street with nothing!",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.2958,
+        "isolation": 0.0625,
+        "authority": 0.0107,
+        "emotional_destabilization": 0.982,
+        "channel_control": 0.0271
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_038",
+      "topic": "emotional_destabilization",
+      "benign_text": "I heard a news report about a burglary three towns over.",
+      "benign_true": [],
+      "benign_pred": [
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.0059,
+        "isolation": 0.0079,
+        "authority": 0.1758,
+        "emotional_destabilization": 0.524,
+        "channel_control": 0.0084
+      },
+      "manipulative_text": "A violent syndicate knows where you sleep and will arrive at your home tonight if you don't wire the ransom.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9844,
+        "isolation": 0.0897,
+        "authority": 0.0642,
+        "emotional_destabilization": 0.9711,
+        "channel_control": 0.0471
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_039",
+      "topic": "emotional_destabilization",
+      "benign_text": "Your annual Social Security earnings overview arrived in your postal mailbox.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0847,
+        "isolation": 0.049,
+        "authority": 0.9915,
+        "emotional_destabilization": 0.2246,
+        "channel_control": 0.5652
+      },
+      "manipulative_text": "Your Social Security number was found at a narcotics crime scene, making you a prime federal suspect.",
+      "manipulative_true": [
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.1032,
+        "isolation": 0.1216,
+        "authority": 0.9763,
+        "emotional_destabilization": 0.9415,
+        "channel_control": 0.0625
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_040",
+      "topic": "channel_control",
+      "benign_text": "Please stay on the line for a moment while I transfer your call to the billing department.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.2143,
+        "isolation": 0.0758,
+        "authority": 0.2585,
+        "emotional_destabilization": 0.078,
+        "channel_control": 0.9992
+      },
+      "manipulative_text": "Do not hang up this telephone line under any circumstances, or police cruisers will surround your house.",
+      "manipulative_true": [
+        "authority",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.2449,
+        "isolation": 0.9442,
+        "authority": 0.0997,
+        "emotional_destabilization": 0.6306,
+        "channel_control": 0.9947
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_041",
+      "topic": "channel_control",
+      "benign_text": "Could you share your screen during our Zoom team meeting to show the presentation slides?",
+      "benign_true": [],
+      "benign_pred": [],
+      "benign_probs": {
+        "urgency": 0.0033,
+        "isolation": 0.0036,
+        "authority": 0.0048,
+        "emotional_destabilization": 0.0017,
+        "channel_control": 0.0492
+      },
+      "manipulative_text": "You must install AnyDesk remote software right now and give me full master access to your desktop.",
+      "manipulative_true": [
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.989,
+        "isolation": 0.8186,
+        "authority": 0.1709,
+        "emotional_destabilization": 0.4703,
+        "channel_control": 0.9153
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_042",
+      "topic": "channel_control",
+      "benign_text": "Keep your phone on speaker while we prepare dinner together so we can chat.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0546,
+        "isolation": 0.1905,
+        "authority": 0.0518,
+        "emotional_destabilization": 0.0573,
+        "channel_control": 0.9987
+      },
+      "manipulative_text": "Keep this phone call on speaker in your front pocket while you enter the bank so I can listen to every word.",
+      "manipulative_true": [
+        "isolation",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.1583,
+        "isolation": 0.2933,
+        "authority": 0.1767,
+        "emotional_destabilization": 0.1238,
+        "channel_control": 0.9992
+      },
+      "pair_correct": false,
+      "same_pred": true
+    },
+    {
+      "pair_id": "cp_043",
+      "topic": "channel_control",
+      "benign_text": "Please leave the browser tab open while your photo upload completes.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0748,
+        "isolation": 0.1315,
+        "authority": 0.0292,
+        "emotional_destabilization": 0.0323,
+        "channel_control": 0.9986
+      },
+      "manipulative_text": "Do not close this browser window or touch your keyboard, or your computer system will be destroyed.",
+      "manipulative_true": [
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.4081,
+        "isolation": 0.9925,
+        "authority": 0.0192,
+        "emotional_destabilization": 0.8047,
+        "channel_control": 0.6534
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_044",
+      "topic": "channel_control",
+      "benign_text": "Hold on for a second while I retrieve a pen from my desk drawer.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0033,
+        "isolation": 0.004,
+        "authority": 0.0091,
+        "emotional_destabilization": 0.0053,
+        "channel_control": 0.7502
+      },
+      "manipulative_text": "Maintain this phone connection continuously; if you disconnect for one second, the deal is terminated.",
+      "manipulative_true": [
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9511,
+        "isolation": 0.376,
+        "authority": 0.0753,
+        "emotional_destabilization": 0.4849,
+        "channel_control": 0.9934
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_045",
+      "topic": "channel_control",
+      "benign_text": "I'll stay on the phone with you until you locate your misplaced car keys.",
+      "benign_true": [],
+      "benign_pred": [
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.2807,
+        "isolation": 0.0999,
+        "authority": 0.0371,
+        "emotional_destabilization": 0.2987,
+        "channel_control": 0.9966
+      },
+      "manipulative_text": "I am remaining on this line while you drive to the Bitcoin kiosk; keep the receiver active.",
+      "manipulative_true": [
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.1692,
+        "isolation": 0.0917,
+        "authority": 0.244,
+        "emotional_destabilization": 0.076,
+        "channel_control": 0.9992
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_046",
+      "topic": "channel_control",
+      "benign_text": "Open your web browser and search for that new soup recipe we talked about.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.009,
+        "isolation": 0.017,
+        "authority": 0.0389,
+        "emotional_destabilization": 0.0394,
+        "channel_control": 0.9914
+      },
+      "manipulative_text": "Open your browser immediately, go to the URL I dictate, and install the remote control application.",
+      "manipulative_true": [
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.1053,
+        "isolation": 0.0606,
+        "authority": 0.0565,
+        "emotional_destabilization": 0.0532,
+        "channel_control": 0.9989
+      },
+      "pair_correct": false,
+      "same_pred": true
+    },
+    {
+      "pair_id": "cp_047",
+      "topic": "channel_control",
+      "benign_text": "Let's turn on video mode so we can say hi to the grandchildren.",
+      "benign_true": [],
+      "benign_pred": [],
+      "benign_probs": {
+        "urgency": 0.0081,
+        "isolation": 0.0045,
+        "authority": 0.009,
+        "emotional_destabilization": 0.0015,
+        "channel_control": 0.1675
+      },
+      "manipulative_text": "Activate your camera right now so I can monitor your physical movements during this transfer.",
+      "manipulative_true": [
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.8377,
+        "isolation": 0.1389,
+        "authority": 0.0323,
+        "emotional_destabilization": 0.0453,
+        "channel_control": 0.9941
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_048",
+      "topic": "channel_control",
+      "benign_text": "Leave the backup application running in the background while your files sync.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0283,
+        "isolation": 0.0929,
+        "authority": 0.0467,
+        "emotional_destabilization": 0.0664,
+        "channel_control": 0.9985
+      },
+      "manipulative_text": "Leave the remote desktop access tool running in the background and do not touch your mouse or keyboard.",
+      "manipulative_true": [
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.0355,
+        "isolation": 0.9787,
+        "authority": 0.0609,
+        "emotional_destabilization": 0.0861,
+        "channel_control": 0.9827
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_049",
+      "topic": "channel_control",
+      "benign_text": "I'll send you a text message with the restaurant address while we're talking.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0573,
+        "isolation": 0.0032,
+        "authority": 0.0465,
+        "emotional_destabilization": 0.0133,
+        "channel_control": 0.5043
+      },
+      "manipulative_text": "I just sent an authentication link; click and approve it right now while we are on the line.",
+      "manipulative_true": [
+        "urgency",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.5027,
+        "isolation": 0.0118,
+        "authority": 0.0504,
+        "emotional_destabilization": 0.0408,
+        "channel_control": 0.9891
+      },
+      "pair_correct": false,
+      "same_pred": true
+    },
+    {
+      "pair_id": "cp_050",
+      "topic": "multi_label",
+      "benign_text": "The bank needs you to come to the local branch to update your mailing address with your ID.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9727,
+        "isolation": 0.5335,
+        "authority": 0.6905,
+        "emotional_destabilization": 0.3128,
+        "channel_control": 0.7516
+      },
+      "manipulative_text": "This is federal law enforcement: do not inform your family, stay on this call, and drive to the bank to wire the bail right now or face arrest.",
+      "manipulative_true": [
+        "urgency",
+        "isolation",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.8187,
+        "isolation": 0.847,
+        "authority": 0.8987,
+        "emotional_destabilization": 0.48,
+        "channel_control": 0.9542
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_051",
+      "topic": "multi_label",
+      "benign_text": "Your tax return has a minor typographical error; please call the IRS support line to adjust it.",
+      "benign_true": [],
+      "benign_pred": [
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.4818,
+        "isolation": 0.5935,
+        "authority": 0.8891,
+        "emotional_destabilization": 0.9242,
+        "channel_control": 0.9365
+      },
+      "manipulative_text": "The IRS has issued an arrest warrant: you have fifteen minutes to stay on this line and purchase gift card vouchers or deputies will arrive.",
+      "manipulative_true": [
+        "urgency",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9883,
+        "isolation": 0.2382,
+        "authority": 0.8734,
+        "emotional_destabilization": 0.7444,
+        "channel_control": 0.6227
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_052",
+      "topic": "multi_label",
+      "benign_text": "Please keep this medical diagnosis private and consult with Dr. Patel tomorrow morning.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "isolation",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.7838,
+        "isolation": 0.7566,
+        "authority": 0.5029,
+        "emotional_destabilization": 0.2399,
+        "channel_control": 0.9947
+      },
+      "manipulative_text": "This is the state medical board: you are under formal investigation, do not speak to anyone, and wire the bond right now or lose your license.",
+      "manipulative_true": [
+        "urgency",
+        "isolation",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.4977,
+        "isolation": 0.9194,
+        "authority": 0.8607,
+        "emotional_destabilization": 0.9594,
+        "channel_control": 0.3109
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_053",
+      "topic": "multi_label",
+      "benign_text": "My computer is running slowly; I'll ask the local computer technician to look at it this weekend.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.9372,
+        "isolation": 0.0215,
+        "authority": 0.4785,
+        "emotional_destabilization": 0.8686,
+        "channel_control": 0.0864
+      },
+      "manipulative_text": "I am Microsoft Headquarters: do not turn off your PC, give me remote control of your screen immediately, or your files will be erased.",
+      "manipulative_true": [
+        "urgency",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.5773,
+        "isolation": 0.9697,
+        "authority": 0.3403,
+        "emotional_destabilization": 0.9108,
+        "channel_control": 0.6355
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_054",
+      "topic": "multi_label",
+      "benign_text": "I plan to transfer money to my grandson next week for his college semester tuition.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.8859,
+        "isolation": 0.0316,
+        "authority": 0.21,
+        "emotional_destabilization": 0.7236,
+        "channel_control": 0.0986
+      },
+      "manipulative_text": "Your grandson was arrested in a foreign country: wire three thousand dollars in twenty minutes and don't tell your husband or he won't be released.",
+      "manipulative_true": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.8276,
+        "isolation": 0.6819,
+        "authority": 0.0976,
+        "emotional_destabilization": 0.9934,
+        "channel_control": 0.2926
+      },
+      "pair_correct": false,
+      "same_pred": false
+    }
+  ],
+  "comparison": {
+    "original_synthetic_test": {
+      "macro_f1": 0.998,
+      "micro_f1": 0.997,
+      "accuracy": 0.995
+    },
+    "phase_4_1_challenge_set": {
+      "macro_f1": 0.6502478049434525,
+      "micro_f1": 0.6858710562414266,
+      "hard_neg_specificity": 0.08181818181818182,
+      "contrastive_pair_accuracy": 0.0
+    }
+  },
+  "false_positive_examples": [
+    {
+      "text": "The bank closes at 4 PM, so please submit the transfer before then.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "urgency"
+      ],
+      "probabilities": {
+        "urgency": 0.9976,
+        "isolation": 0.0747,
+        "authority": 0.0388,
+        "emotional_destabilization": 0.0235,
+        "channel_control": 0.3259
+      }
+    },
+    {
+      "text": "Your prescription expires in 24 hours, so please pick it up from the pharmacy soon.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9975,
+        "isolation": 0.1426,
+        "authority": 0.1591,
+        "emotional_destabilization": 0.4355,
+        "channel_control": 0.8107
+      }
+    },
+    {
+      "text": "We recommend paying the utility invoice by Friday to avoid late fees.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "urgency",
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9673,
+        "isolation": 0.7225,
+        "authority": 0.2007,
+        "emotional_destabilization": 0.3333,
+        "channel_control": 0.5498
+      }
+    },
+    {
+      "text": "Pay this invoice within the next fifteen minutes or law enforcement will be dispatched to your door.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "authority"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9985,
+        "isolation": 0.1983,
+        "authority": 0.0869,
+        "emotional_destabilization": 0.4823,
+        "channel_control": 0.5786
+      }
+    },
+    {
+      "text": "Your flight to Chicago boards in 15 minutes at Gate 12.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "urgency"
+      ],
+      "spurious_labels": [
+        "urgency"
+      ],
+      "probabilities": {
+        "urgency": 0.9949,
+        "isolation": 0.0093,
+        "authority": 0.0689,
+        "emotional_destabilization": 0.0209,
+        "channel_control": 0.0582
+      }
+    },
+    {
+      "text": "You must wire the money for the flight in 15 minutes or you'll be stranded and arrested at the terminal.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.9987,
+        "isolation": 0.0932,
+        "authority": 0.0641,
+        "emotional_destabilization": 0.6972,
+        "channel_control": 0.2009
+      }
+    },
+    {
+      "text": "The grocery store discount on gift cards ends tonight at 9 PM.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "authority"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "urgency",
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.761,
+        "isolation": 0.3219,
+        "authority": 0.7661,
+        "emotional_destabilization": 0.09,
+        "channel_control": 0.3072
+      }
+    },
+    {
+      "text": "Go to the grocery store and purchase the gift cards before tonight or your arrest warrant will be activated.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "authority"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.92,
+        "isolation": 0.4621,
+        "authority": 0.1306,
+        "emotional_destabilization": 0.6629,
+        "channel_control": 0.9931
+      }
+    },
+    {
+      "text": "Please review the lease agreement and sign it by the end of the day.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "urgency"
+      ],
+      "probabilities": {
+        "urgency": 0.9144,
+        "isolation": 0.0205,
+        "authority": 0.0096,
+        "emotional_destabilization": 0.0085,
+        "channel_control": 0.8861
+      }
+    },
+    {
+      "text": "Sign the document immediately before the end of the day, or your bank accounts will be frozen permanently.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control"
+      ],
+      "probabilities": {
+        "urgency": 0.9848,
+        "isolation": 0.2085,
+        "authority": 0.024,
+        "emotional_destabilization": 0.8673,
+        "channel_control": 0.8915
+      }
+    },
+    {
+      "text": "The municipal water company needs to inspect your meter tomorrow morning.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9979,
+        "isolation": 0.1204,
+        "authority": 0.4728,
+        "emotional_destabilization": 0.295,
+        "channel_control": 0.1134
+      }
+    },
+    {
+      "text": "If you don't allow our water inspector inside within ten minutes, your supply will be permanently disconnected.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency"
+      ],
+      "pred_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9956,
+        "isolation": 0.2919,
+        "authority": 0.0855,
+        "emotional_destabilization": 0.9548,
+        "channel_control": 0.1237
+      }
+    },
+    {
+      "text": "The courier will drop off your package by 3 PM this afternoon.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9983,
+        "isolation": 0.0378,
+        "authority": 0.1031,
+        "emotional_destabilization": 0.2592,
+        "channel_control": 0.4239
+      }
+    },
+    {
+      "text": "The courier arrives at 3 PM; hand over the cash immediately or face immediate prosecution.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "authority"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.9977,
+        "isolation": 0.2149,
+        "authority": 0.1652,
+        "emotional_destabilization": 0.3461,
+        "channel_control": 0.6062
+      }
+    },
+    {
+      "text": "Your streaming subscription will automatically renew next month unless canceled.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "none"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "spurious_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.996,
+        "isolation": 0.2718,
+        "authority": 0.0482,
+        "emotional_destabilization": 0.8783,
+        "channel_control": 0.2684
+      }
+    }
+  ],
+  "false_negative_examples": [
+    {
+      "text": "You have until 4 PM to send the transfer, and you must do it right now without telling anyone.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "isolation"
+      ],
+      "pred_labels": [
+        "urgency"
+      ],
+      "missed_labels": [
+        "isolation"
+      ],
+      "probabilities": {
+        "urgency": 0.9992,
+        "isolation": 0.101,
+        "authority": 0.0305,
+        "emotional_destabilization": 0.0937,
+        "channel_control": 0.0833
+      }
+    },
+    {
+      "text": "Pay this invoice within the next fifteen minutes or law enforcement will be dispatched to your door.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "authority"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.9985,
+        "isolation": 0.1983,
+        "authority": 0.0869,
+        "emotional_destabilization": 0.4823,
+        "channel_control": 0.5786
+      }
+    },
+    {
+      "text": "Go to the grocery store and purchase the gift cards before tonight or your arrest warrant will be activated.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "authority"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.92,
+        "isolation": 0.4621,
+        "authority": 0.1306,
+        "emotional_destabilization": 0.6629,
+        "channel_control": 0.9931
+      }
+    },
+    {
+      "text": "The courier arrives at 3 PM; hand over the cash immediately or face immediate prosecution.",
+      "category": "contrastive_pair_urgency",
+      "true_labels": [
+        "urgency",
+        "authority"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.9977,
+        "isolation": 0.2149,
+        "authority": 0.1652,
+        "emotional_destabilization": 0.3461,
+        "channel_control": 0.6062
+      }
+    },
+    {
+      "text": "To prevent the authorities from finding out, you must take this call in a quiet room and tell no one in your household.",
+      "category": "contrastive_pair_isolation",
+      "true_labels": [
+        "authority",
+        "isolation"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "isolation"
+      ],
+      "missed_labels": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.9299,
+        "isolation": 0.9928,
+        "authority": 0.0346,
+        "emotional_destabilization": 0.1586,
+        "channel_control": 0.325
+      }
+    },
+    {
+      "text": "You are strictly prohibited under federal gag orders from mentioning this transaction to anyone at your workplace.",
+      "category": "contrastive_pair_isolation",
+      "true_labels": [
+        "authority",
+        "isolation"
+      ],
+      "pred_labels": [
+        "emotional_destabilization",
+        "isolation"
+      ],
+      "missed_labels": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.2478,
+        "isolation": 0.9958,
+        "authority": 0.2016,
+        "emotional_destabilization": 0.6326,
+        "channel_control": 0.0706
+      }
+    },
+    {
+      "text": "If you speak to anyone else about this dispute, you will be fired on the spot and blacklisted across the industry.",
+      "category": "contrastive_pair_isolation",
+      "true_labels": [
+        "emotional_destabilization",
+        "isolation"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "isolation"
+      ],
+      "probabilities": {
+        "urgency": 0.9533,
+        "isolation": 0.5349,
+        "authority": 0.1546,
+        "emotional_destabilization": 0.9938,
+        "channel_control": 0.2386
+      }
+    },
+    {
+      "text": "This is the IRS Special Enforcement Division demanding immediate payment or federal marshals will detain you.",
+      "category": "contrastive_pair_authority",
+      "true_labels": [
+        "urgency",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "pred_labels": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "urgency"
+      ],
+      "probabilities": {
+        "urgency": 0.5043,
+        "isolation": 0.1606,
+        "authority": 0.994,
+        "emotional_destabilization": 0.7891,
+        "channel_control": 0.0723
+      }
+    },
+    {
+      "text": "I'm the senior regional director, and my orders are absolute: wire the balance or be terminated immediately.",
+      "category": "contrastive_pair_authority",
+      "true_labels": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "urgency",
+        "authority"
+      ],
+      "missed_labels": [
+        "emotional_destabilization"
+      ],
+      "probabilities": {
+        "urgency": 0.972,
+        "isolation": 0.0426,
+        "authority": 0.8253,
+        "emotional_destabilization": 0.1529,
+        "channel_control": 0.8747
+      }
+    },
+    {
+      "text": "I'm a federal code inspector, and I am condemning your property and ordering an immediate eviction today.",
+      "category": "contrastive_pair_authority",
+      "true_labels": [
+        "urgency",
+        "authority"
+      ],
+      "pred_labels": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "urgency"
+      ],
+      "probabilities": {
+        "urgency": 0.3367,
+        "isolation": 0.2515,
+        "authority": 0.7391,
+        "emotional_destabilization": 0.9662,
+        "channel_control": 0.0176
+      }
+    },
+    {
+      "text": "You totaled our commercial vehicle and you owe forty thousand dollars right now or we take your home!",
+      "category": "contrastive_pair_emotional_destabilization",
+      "true_labels": [
+        "authority",
+        "emotional_destabilization"
+      ],
+      "pred_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.7609,
+        "isolation": 0.0529,
+        "authority": 0.0202,
+        "emotional_destabilization": 0.9853,
+        "channel_control": 0.0409
+      }
+    },
+    {
+      "text": "Criminal hackers have penetrated your life, stolen your identity, and are draining every cent you own!",
+      "category": "contrastive_pair_emotional_destabilization",
+      "true_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "pred_labels": [
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "urgency"
+      ],
+      "probabilities": {
+        "urgency": 0.0346,
+        "isolation": 0.0736,
+        "authority": 0.0342,
+        "emotional_destabilization": 0.9904,
+        "channel_control": 0.0265
+      }
+    },
+    {
+      "text": "The county is repossessing your house today and throwing you out onto the street with nothing!",
+      "category": "contrastive_pair_emotional_destabilization",
+      "true_labels": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "pred_labels": [
+        "emotional_destabilization"
+      ],
+      "missed_labels": [
+        "urgency"
+      ],
+      "probabilities": {
+        "urgency": 0.2958,
+        "isolation": 0.0625,
+        "authority": 0.0107,
+        "emotional_destabilization": 0.982,
+        "channel_control": 0.0271
+      }
+    },
+    {
+      "text": "Do not hang up this telephone line under any circumstances, or police cruisers will surround your house.",
+      "category": "contrastive_pair_channel_control",
+      "true_labels": [
+        "channel_control",
+        "authority"
+      ],
+      "pred_labels": [
+        "channel_control",
+        "emotional_destabilization",
+        "isolation"
+      ],
+      "missed_labels": [
+        "authority"
+      ],
+      "probabilities": {
+        "urgency": 0.2449,
+        "isolation": 0.9442,
+        "authority": 0.0997,
+        "emotional_destabilization": 0.6306,
+        "channel_control": 0.9947
+      }
+    },
+    {
+      "text": "Keep this phone call on speaker in your front pocket while you enter the bank so I can listen to every word.",
+      "category": "contrastive_pair_channel_control",
+      "true_labels": [
+        "channel_control",
+        "isolation"
+      ],
+      "pred_labels": [
+        "channel_control"
+      ],
+      "missed_labels": [
+        "isolation"
+      ],
+      "probabilities": {
+        "urgency": 0.1583,
+        "isolation": 0.2933,
+        "authority": 0.1767,
+        "emotional_destabilization": 0.1238,
+        "channel_control": 0.9992
+      }
+    }
+  ],
+  "contrastive_pair_failures": [
+    {
+      "pair_id": "cp_000",
+      "topic": "urgency",
+      "benign_text": "The bank closes at 4 PM, so please submit the transfer before then.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9976,
+        "isolation": 0.0747,
+        "authority": 0.0388,
+        "emotional_destabilization": 0.0235,
+        "channel_control": 0.3259
+      },
+      "manipulative_text": "You have until 4 PM to send the transfer, and you must do it right now without telling anyone.",
+      "manipulative_true": [
+        "urgency",
+        "isolation"
+      ],
+      "manipulative_pred": [
+        "urgency"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9992,
+        "isolation": 0.101,
+        "authority": 0.0305,
+        "emotional_destabilization": 0.0937,
+        "channel_control": 0.0833
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_001",
+      "topic": "urgency",
+      "benign_text": "Your prescription expires in 24 hours, so please pick it up from the pharmacy soon.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9975,
+        "isolation": 0.1426,
+        "authority": 0.1591,
+        "emotional_destabilization": 0.4355,
+        "channel_control": 0.8107
+      },
+      "manipulative_text": "If you don't pick up and pay for this prescription in the next 24 hours, all your health benefits will be terminated.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9929,
+        "isolation": 0.1309,
+        "authority": 0.114,
+        "emotional_destabilization": 0.9806,
+        "channel_control": 0.1512
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_002",
+      "topic": "urgency",
+      "benign_text": "We recommend paying the utility invoice by Friday to avoid late fees.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9673,
+        "isolation": 0.7225,
+        "authority": 0.2007,
+        "emotional_destabilization": 0.3333,
+        "channel_control": 0.5498
+      },
+      "manipulative_text": "Pay this invoice within the next fifteen minutes or law enforcement will be dispatched to your door.",
+      "manipulative_true": [
+        "urgency",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9985,
+        "isolation": 0.1983,
+        "authority": 0.0869,
+        "emotional_destabilization": 0.4823,
+        "channel_control": 0.5786
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_003",
+      "topic": "urgency",
+      "benign_text": "Your flight to Chicago boards in 15 minutes at Gate 12.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency"
+      ],
+      "benign_probs": {
+        "urgency": 0.9949,
+        "isolation": 0.0093,
+        "authority": 0.0689,
+        "emotional_destabilization": 0.0209,
+        "channel_control": 0.0582
+      },
+      "manipulative_text": "You must wire the money for the flight in 15 minutes or you'll be stranded and arrested at the terminal.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9987,
+        "isolation": 0.0932,
+        "authority": 0.0641,
+        "emotional_destabilization": 0.6972,
+        "channel_control": 0.2009
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_004",
+      "topic": "urgency",
+      "benign_text": "The grocery store discount on gift cards ends tonight at 9 PM.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "authority",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.761,
+        "isolation": 0.3219,
+        "authority": 0.7661,
+        "emotional_destabilization": 0.09,
+        "channel_control": 0.3072
+      },
+      "manipulative_text": "Go to the grocery store and purchase the gift cards before tonight or your arrest warrant will be activated.",
+      "manipulative_true": [
+        "urgency",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.92,
+        "isolation": 0.4621,
+        "authority": 0.1306,
+        "emotional_destabilization": 0.6629,
+        "channel_control": 0.9931
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_005",
+      "topic": "urgency",
+      "benign_text": "Please review the lease agreement and sign it by the end of the day.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9144,
+        "isolation": 0.0205,
+        "authority": 0.0096,
+        "emotional_destabilization": 0.0085,
+        "channel_control": 0.8861
+      },
+      "manipulative_text": "Sign the document immediately before the end of the day, or your bank accounts will be frozen permanently.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9848,
+        "isolation": 0.2085,
+        "authority": 0.024,
+        "emotional_destabilization": 0.8673,
+        "channel_control": 0.8915
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_006",
+      "topic": "urgency",
+      "benign_text": "The municipal water company needs to inspect your meter tomorrow morning.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.9979,
+        "isolation": 0.1204,
+        "authority": 0.4728,
+        "emotional_destabilization": 0.295,
+        "channel_control": 0.1134
+      },
+      "manipulative_text": "If you don't allow our water inspector inside within ten minutes, your supply will be permanently disconnected.",
+      "manipulative_true": [
+        "urgency"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9956,
+        "isolation": 0.2919,
+        "authority": 0.0855,
+        "emotional_destabilization": 0.9548,
+        "channel_control": 0.1237
+      },
+      "pair_correct": false,
+      "same_pred": true
+    },
+    {
+      "pair_id": "cp_007",
+      "topic": "urgency",
+      "benign_text": "The courier will drop off your package by 3 PM this afternoon.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.9983,
+        "isolation": 0.0378,
+        "authority": 0.1031,
+        "emotional_destabilization": 0.2592,
+        "channel_control": 0.4239
+      },
+      "manipulative_text": "The courier arrives at 3 PM; hand over the cash immediately or face immediate prosecution.",
+      "manipulative_true": [
+        "urgency",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9977,
+        "isolation": 0.2149,
+        "authority": 0.1652,
+        "emotional_destabilization": 0.3461,
+        "channel_control": 0.6062
+      },
+      "pair_correct": false,
+      "same_pred": true
+    },
+    {
+      "pair_id": "cp_008",
+      "topic": "urgency",
+      "benign_text": "Your streaming subscription will automatically renew next month unless canceled.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.996,
+        "isolation": 0.2718,
+        "authority": 0.0482,
+        "emotional_destabilization": 0.8783,
+        "channel_control": 0.2684
+      },
+      "manipulative_text": "Your account is being charged thousands of dollars right now, act this second to reverse the charges!",
+      "manipulative_true": [
+        "urgency"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9766,
+        "isolation": 0.0471,
+        "authority": 0.018,
+        "emotional_destabilization": 0.9495,
+        "channel_control": 0.1061
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_009",
+      "topic": "urgency",
+      "benign_text": "The post office closes in thirty minutes, let's mail the package today.",
+      "benign_true": [],
+      "benign_pred": [
+        "urgency"
+      ],
+      "benign_probs": {
+        "urgency": 0.8485,
+        "isolation": 0.0016,
+        "authority": 0.0327,
+        "emotional_destabilization": 0.014,
+        "channel_control": 0.0242
+      },
+      "manipulative_text": "You have thirty minutes to mail the parcel before the cartel finds out where you live.",
+      "manipulative_true": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9979,
+        "isolation": 0.0927,
+        "authority": 0.0352,
+        "emotional_destabilization": 0.5578,
+        "channel_control": 0.1679
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_010",
+      "topic": "isolation",
+      "benign_text": "For patient privacy under HIPAA rules, please take this medical consultation in a quiet room.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.2443,
+        "isolation": 0.9973,
+        "authority": 0.0905,
+        "emotional_destabilization": 0.0578,
+        "channel_control": 0.2819
+      },
+      "manipulative_text": "To prevent the authorities from finding out, you must take this call in a quiet room and tell no one in your household.",
+      "manipulative_true": [
+        "isolation",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "channel_control"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9299,
+        "isolation": 0.9928,
+        "authority": 0.0346,
+        "emotional_destabilization": 0.1586,
+        "channel_control": 0.325
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_011",
+      "topic": "isolation",
+      "benign_text": "It's a surprise birthday party for Grandma, so please keep it secret from her.",
+      "benign_true": [],
+      "benign_pred": [
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.015,
+        "isolation": 0.5208,
+        "authority": 0.0336,
+        "emotional_destabilization": 0.1257,
+        "channel_control": 0.8
+      },
+      "manipulative_text": "This is an official covert investigation into your grandmother, and you are legally forbidden from telling her.",
+      "manipulative_true": [
+        "isolation",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.2839,
+        "isolation": 0.9799,
+        "authority": 0.5934,
+        "emotional_destabilization": 0.7787,
+        "channel_control": 0.0585
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_012",
+      "topic": "isolation",
+      "benign_text": "Please enter your debit card PIN privately on the keypad so no one sees it.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "channel_control"
+      ],
+      "benign_probs": {
+        "urgency": 0.0635,
+        "isolation": 0.9838,
+        "authority": 0.0147,
+        "emotional_destabilization": 0.035,
+        "channel_control": 0.8903
+      },
+      "manipulative_text": "Do not let the bank teller see you making this withdrawal; they are suspected of being part of the crime ring.",
+      "manipulative_true": [
+        "isolation"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.321,
+        "isolation": 0.9972,
+        "authority": 0.1267,
+        "emotional_destabilization": 0.5401,
+        "channel_control": 0.1674
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_013",
+      "topic": "isolation",
+      "benign_text": "Let's review your retirement savings in my private office so we aren't disturbed.",
+      "benign_true": [],
+      "benign_pred": [],
+      "benign_probs": {
+        "urgency": 0.0704,
+        "isolation": 0.0576,
+        "authority": 0.0101,
+        "emotional_destabilization": 0.1053,
+        "channel_control": 0.0315
+      },
+      "manipulative_text": "We must move your retirement funds alone because your children are plotting to take your estate.",
+      "manipulative_true": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_pred": [
+        "urgency",
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.9613,
+        "isolation": 0.6358,
+        "authority": 0.1141,
+        "emotional_destabilization": 0.9883,
+        "channel_control": 0.1278
+      },
+      "pair_correct": false,
+      "same_pred": false
+    },
+    {
+      "pair_id": "cp_014",
+      "topic": "isolation",
+      "benign_text": "I prefer to keep my salary negotiations confidential from other employees.",
+      "benign_true": [],
+      "benign_pred": [
+        "isolation",
+        "authority",
+        "emotional_destabilization"
+      ],
+      "benign_probs": {
+        "urgency": 0.0504,
+        "isolation": 0.8914,
+        "authority": 0.7993,
+        "emotional_destabilization": 0.3867,
+        "channel_control": 0.1771
+      },
+      "manipulative_text": "You are strictly prohibited under federal gag orders from mentioning this transaction to anyone at your workplace.",
+      "manipulative_true": [
+        "isolation",
+        "authority"
+      ],
+      "manipulative_pred": [
+        "isolation",
+        "emotional_destabilization"
+      ],
+      "manipulative_probs": {
+        "urgency": 0.2478,
+        "isolation": 0.9958,
+        "authority": 0.2016,
+        "emotional_destabilization": 0.6326,
+        "channel_control": 0.0706
+      },
+      "pair_correct": false,
+      "same_pred": false
+    }
+  ]
+}

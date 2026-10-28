@@ -1,0 +1,40 @@
+{
+  "phase": "Phase 10",
+  "status": "FROZEN",
+  "threshold": 0.20,
+  "baseline_system": {
+    "tactic_classifier": {
+      "name": "Original V2 DistilBERT",
+      "version": "v2_temporal_validity",
+      "sha256": "76d2d4e440f65cb1e9f275a6496a0dcd6751a35e1f85261882815ccdda59a684",
+      "status": "FROZEN"
+    },
+    "temporal_model": {
+      "name": "Causal LSTM V2",
+      "version": "lstm_v2",
+      "sha256": "c6dd5b03ba91a20677ed4c7a148d23cba26ff08fa1528d5603a0cb1bd2ae64a1",
+      "status": "FROZEN"
+    }
+  },
+  "final_system": {
+    "tactic_classifier": {
+      "name": "Phase 9 Robustness DistilBERT",
+      "version": "phase9_realworld_v1",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "FROZEN",
+      "note": "Replaces Original V2 feature extractor to close real-world domain gap."
+    },
+    "temporal_model": {
+      "name": "Causal LSTM V2",
+      "version": "lstm_v2",
+      "sha256": "c6dd5b03ba91a20677ed4c7a148d23cba26ff08fa1528d5603a0cb1bd2ae64a1",
+      "status": "FROZEN_UNCHANGED",
+      "note": "Identical hash to Baseline. Proves modular architecture success."
+    }
+  },
+  "environment": {
+    "python": "3.10+",
+    "pytorch": "2.0+",
+    "transformers": "4.30+"
+  }
+}

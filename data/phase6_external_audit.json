@@ -1,0 +1,9 @@
+{
+  "total_external_conversations": 30,
+  "total_external_turns": 226,
+  "synthetic_train_unique_turns": 0,
+  "exact_turn_matches": 0,
+  "leakage_rate": 0.0,
+  "verdict": "ZERO_LEAKAGE",
+  "matching_turns": []
+}

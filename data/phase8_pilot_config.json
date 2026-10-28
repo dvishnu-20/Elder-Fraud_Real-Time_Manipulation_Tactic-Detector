@@ -1,0 +1,43 @@
+{
+  "phase": 8,
+  "objective": "Controlled Real-World Pilot, Intervention Safety & Operational Validation",
+  "status": "active",
+  "frozen_models": {
+    "distilbert": "ml/models/tactic_classifier/v2_temporal_validity/",
+    "lstm": "ml/models/temporal_risk/lstm_v2/",
+    "tau": 0.20
+  },
+  "pilot_design": {
+    "intervention_levels": [
+      {"level": 0, "name": "None", "threshold": 0.0, "message": null},
+      {"level": 1, "name": "Passive Indicator", "threshold": 0.10, "message": "Potential manipulation pattern detected."},
+      {"level": 2, "name": "Explanation", "threshold": 0.20, "message": "Multiple pressure tactics are increasing."},
+      {"level": 3, "name": "Safety Suggestion", "threshold": 0.50, "message": "Consider pausing before sharing credentials or transferring money."},
+      {"level": 4, "name": "Human Review", "threshold": 0.80, "message": "Review conversation before taking further action."}
+    ],
+    "audio_conditions": [
+      "clean",
+      "mild_noise",
+      "moderate_noise",
+      "interruptions",
+      "compressed_audio"
+    ],
+    "categories": [
+      "fraudulent_manipulation",
+      "benign_financial",
+      "benign_family",
+      "benign_customer_service",
+      "authority_benign",
+      "urgency_benign",
+      "emotional_benign",
+      "channel_control_benign",
+      "multi_tactic_manipulation",
+      "indirect_manipulation"
+    ]
+  },
+  "constraints": {
+    "allow_retraining": false,
+    "allow_new_architectures": false,
+    "allow_automated_police_contact": false
+  }
+}

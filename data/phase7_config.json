@@ -1,0 +1,70 @@
+{
+  "phase": 7,
+  "version": "2.0.0",
+  "frozen_models": {
+    "distilbert_path": "ml/models/tactic_classifier/v2_temporal_validity/",
+    "lstm_path": "ml/models/temporal_risk/lstm_v2/",
+    "lstm_weights": "ml/models/temporal_risk/lstm_v2/best_model.pt",
+    "distilbert_sha256": "76d2d4e440f65cb1e9f275a6496a0dcd6751a35e1f85261882815ccdda59a684",
+    "lstm_sha256": "c6dd5b03ba91a20677ed4c7a148d23cba26ff08fa1528d5603a0cb1bd2ae64a1"
+  },
+  "thresholds": {
+    "lstm_decision_threshold": 0.20,
+    "tactic_thresholds": {
+      "urgency": 0.15,
+      "isolation": 0.25,
+      "authority": 0.10,
+      "emotional_destabilization": 0.20,
+      "channel_control": 0.15
+    }
+  },
+  "risk_state_mapping": {
+    "description": "UI severity bands derived from LSTM temporal risk probability. The MODEL DECISION threshold is tau=0.20. UI bands are for presentation only and are NOT scientifically validated beyond the binary threshold.",
+    "bands": {
+      "NORMAL": {"min": 0.0, "max": 0.10, "description": "No manipulation indicators detected"},
+      "WATCH": {"min": 0.10, "max": 0.20, "description": "Low-level indicators — below decision threshold"},
+      "ELEVATED": {"min": 0.20, "max": 0.50, "description": "Threshold crossed — manipulation pattern likely"},
+      "HIGH_RISK": {"min": 0.50, "max": 0.80, "description": "Strong manipulation pattern detected"},
+      "CRITICAL": {"min": 0.80, "max": 1.0, "description": "Very high-confidence manipulation pattern"}
+    }
+  },
+  "asr": {
+    "default_provider": "mock",
+    "supported_providers": ["mock", "whisper_local"],
+    "mock_mode": true,
+    "sample_rate": 16000,
+    "chunk_duration_ms": 500,
+    "audio_format": "PCM16"
+  },
+  "vad": {
+    "silence_threshold_ms": 1500,
+    "max_turn_duration_ms": 30000,
+    "energy_threshold": 0.01
+  },
+  "turn_segmentation": {
+    "finalize_on": ["silence_detected", "max_duration", "speaker_change", "asr_endpoint"],
+    "min_turn_length_chars": 3
+  },
+  "session": {
+    "max_duration_minutes": 60,
+    "idle_timeout_minutes": 10
+  },
+  "privacy": {
+    "store_audio": false,
+    "store_transcript": true,
+    "transcript_retention_hours": 24,
+    "redact_pii": true,
+    "pii_patterns": ["credit_card", "ssn", "phone_number", "bank_account"]
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "websocket_path": "/ws/session/{session_id}",
+    "cors_origins": ["http://localhost:5173", "http://localhost:3000"]
+  },
+  "scientific_status": {
+    "phase5_verdict": "[B] MODEST TEMPORAL VALUE",
+    "phase6_verdict": "[B] MODERATE GENERALIZATION",
+    "phase7_purpose": "ENGINEERING INTEGRATION — does not change scientific conclusions"
+  }
+}

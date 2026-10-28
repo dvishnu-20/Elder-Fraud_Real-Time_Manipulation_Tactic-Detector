@@ -1,0 +1,384 @@
+{
+  "timestamp": "2026-10-05T22:45:00Z",
+  "phase": "Phase 6 \u2014 External / Real-World Generalization Validation",
+  "verdict": {
+    "verdict_code": "B",
+    "verdict_name": "MODERATE GENERALIZATION",
+    "rationale": "The pipeline demonstrates solid cross-domain transfer with acceptable degradation (External F1 = 0.8750, Gen Gap = +0.1250)."
+  },
+  "external_dataset_summary": {
+    "num_conversations": 30,
+    "fraud_conversations": 16,
+    "benign_conversations": 14,
+    "total_turns": 226,
+    "domains": [
+      "utility_cutoff_scam",
+      "social_security_scam",
+      "healthcare_clinic",
+      "grandchild_bail_scam",
+      "bank_fraud_alert",
+      "tech_support_scam",
+      "legitimate_utility",
+      "community_charity",
+      "legitimate_tech_support",
+      "legitimate_banking",
+      "irs_tax_impersonation",
+      "family_social"
+    ]
+  },
+  "turn_level_tactic_metrics": {
+    "micro_f1": 0.4235294117647059,
+    "micro_precision": 0.7058823529411765,
+    "micro_recall": 0.3025210084033613,
+    "macro_f1": 0.4190434557391079,
+    "macro_precision": 0.6688888888888889,
+    "macro_recall": 0.33151965982575426,
+    "benign_turn_specificity": 0.9357142857142857,
+    "per_tactic": {
+      "urgency": {
+        "precision": 0.65,
+        "recall": 0.5416666666666666,
+        "f1": 0.5909090909090909,
+        "support": 24
+      },
+      "isolation": {
+        "precision": 0.6666666666666666,
+        "recall": 0.35294117647058826,
+        "f1": 0.46153846153846156,
+        "support": 17
+      },
+      "authority": {
+        "precision": 1.0,
+        "recall": 0.21951219512195122,
+        "f1": 0.36,
+        "support": 41
+      },
+      "emotional_destabilization": {
+        "precision": 0.25,
+        "recall": 0.043478260869565216,
+        "f1": 0.07407407407407407,
+        "support": 23
+      },
+      "channel_control": {
+        "precision": 0.7777777777777778,
+        "recall": 0.5,
+        "f1": 0.6086956521739131,
+        "support": 14
+      }
+    }
+  },
+  "conversation_level_models": {
+    "majority": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.5333333333333333,
+      "accuracy": 0.5333333333333333,
+      "precision": 0.5333333333333333,
+      "recall": 1.0,
+      "f1": 0.6956521739130435,
+      "macro_precision": 0.26666666666666666,
+      "macro_recall": 0.5,
+      "macro_f1": 0.34782608695652173,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 0,
+        "fp": 14,
+        "fn": 0,
+        "tp": 16
+      },
+      "fpr": 1.0,
+      "fnr": 0.0
+    },
+    "tactic_count_rule": {
+      "roc_auc": 0.7410714285714286,
+      "pr_auc": 0.7043859649122807,
+      "accuracy": 0.7,
+      "precision": 0.6842105263157895,
+      "recall": 0.8125,
+      "f1": 0.7428571428571429,
+      "macro_precision": 0.7057416267942584,
+      "macro_recall": 0.6919642857142857,
+      "macro_f1": 0.6914285714285715,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 8,
+        "fp": 6,
+        "fn": 3,
+        "tp": 13
+      },
+      "fpr": 0.42857142857142855,
+      "fnr": 0.1875
+    },
+    "logistic_regression_20_feat": {
+      "roc_auc": 0.8258928571428571,
+      "pr_auc": 0.8873775530025529,
+      "accuracy": 0.8,
+      "precision": 0.9166666666666666,
+      "recall": 0.6875,
+      "f1": 0.7857142857142857,
+      "macro_precision": 0.8194444444444444,
+      "macro_recall": 0.8080357142857143,
+      "macro_f1": 0.7991071428571428,
+      "threshold": 0.24,
+      "confusion_matrix": {
+        "tn": 13,
+        "fp": 1,
+        "fn": 5,
+        "tp": 11
+      },
+      "fpr": 0.07142857142857142,
+      "fnr": 0.3125
+    },
+    "hist_gradient_boosting_61_feat": {
+      "roc_auc": 0.671875,
+      "pr_auc": 0.6908155529998561,
+      "accuracy": 0.4666666666666667,
+      "precision": 0.5,
+      "recall": 0.0625,
+      "f1": 0.1111111111111111,
+      "macro_precision": 0.48214285714285715,
+      "macro_recall": 0.4955357142857143,
+      "macro_f1": 0.3650793650793651,
+      "threshold": 0.36,
+      "confusion_matrix": {
+        "tn": 13,
+        "fp": 1,
+        "fn": 15,
+        "tp": 1
+      },
+      "fpr": 0.07142857142857142,
+      "fnr": 0.9375
+    },
+    "causal_lstm_v2": {
+      "roc_auc": 0.9419642857142857,
+      "pr_auc": 0.9655448717948718,
+      "accuracy": 0.8666666666666667,
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1": 0.875,
+      "macro_precision": 0.8660714285714286,
+      "macro_recall": 0.8660714285714286,
+      "macro_f1": 0.8660714285714286,
+      "threshold": 0.2,
+      "confusion_matrix": {
+        "tn": 12,
+        "fp": 2,
+        "fn": 2,
+        "tp": 14
+      },
+      "fpr": 0.14285714285714285,
+      "fnr": 0.125
+    }
+  },
+  "generalization_gap": {
+    "causal_lstm": 0.125,
+    "hist_gradient_boosting": 0.8888888888888888,
+    "logistic_regression_20_feat": 0.21051212938005393,
+    "tactic_count_rule": 0.12077922077922076,
+    "turn_classifier_micro_f1": 0.5517705882352941
+  },
+  "temporal_prefix_metrics": {
+    "turn_1": {
+      "eligible_conversations": 30,
+      "fraud_count": 16,
+      "benign_count": 14,
+      "metrics": {
+        "roc_auc": 0.5089285714285714,
+        "pr_auc": 0.6436998062139849,
+        "accuracy": 0.5333333333333333,
+        "precision": 0.5833333333333334,
+        "recall": 0.4375,
+        "f1": 0.5,
+        "macro_precision": 0.5416666666666667,
+        "macro_recall": 0.5401785714285714,
+        "macro_f1": 0.53125,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 9,
+          "fp": 5,
+          "fn": 9,
+          "tp": 7
+        },
+        "fpr": 0.35714285714285715,
+        "fnr": 0.5625
+      }
+    },
+    "turn_2": {
+      "eligible_conversations": 30,
+      "fraud_count": 16,
+      "benign_count": 14,
+      "metrics": {
+        "roc_auc": 0.4910714285714286,
+        "pr_auc": 0.6369207056848845,
+        "accuracy": 0.4666666666666667,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "macro_precision": 0.23333333333333334,
+        "macro_recall": 0.5,
+        "macro_f1": 0.3181818181818182,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 14,
+          "fp": 0,
+          "fn": 16,
+          "tp": 0
+        },
+        "fpr": 0.0,
+        "fnr": 1.0
+      }
+    },
+    "turn_3": {
+      "eligible_conversations": 30,
+      "fraud_count": 16,
+      "benign_count": 14,
+      "metrics": {
+        "roc_auc": 0.5446428571428572,
+        "pr_auc": 0.6347729083068239,
+        "accuracy": 0.4666666666666667,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "macro_precision": 0.23333333333333334,
+        "macro_recall": 0.5,
+        "macro_f1": 0.3181818181818182,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 14,
+          "fp": 0,
+          "fn": 16,
+          "tp": 0
+        },
+        "fpr": 0.0,
+        "fnr": 1.0
+      }
+    },
+    "turn_5": {
+      "eligible_conversations": 30,
+      "fraud_count": 16,
+      "benign_count": 14,
+      "metrics": {
+        "roc_auc": 0.6696428571428571,
+        "pr_auc": 0.7514680114134983,
+        "accuracy": 0.5666666666666667,
+        "precision": 1.0,
+        "recall": 0.1875,
+        "f1": 0.3157894736842105,
+        "macro_precision": 0.7592592592592593,
+        "macro_recall": 0.59375,
+        "macro_f1": 0.4993581514762516,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 14,
+          "fp": 0,
+          "fn": 13,
+          "tp": 3
+        },
+        "fpr": 0.0,
+        "fnr": 0.8125
+      }
+    },
+    "turn_7": {
+      "eligible_conversations": 18,
+      "fraud_count": 15,
+      "benign_count": 3,
+      "metrics": {
+        "roc_auc": 0.7333333333333334,
+        "pr_auc": 0.9415438374261903,
+        "accuracy": 0.6666666666666666,
+        "precision": 0.9090909090909091,
+        "recall": 0.6666666666666666,
+        "f1": 0.7692307692307693,
+        "macro_precision": 0.5974025974025974,
+        "macro_recall": 0.6666666666666666,
+        "macro_f1": 0.5846153846153846,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 2,
+          "fp": 1,
+          "fn": 5,
+          "tp": 10
+        },
+        "fpr": 0.3333333333333333,
+        "fnr": 0.3333333333333333
+      }
+    },
+    "full_conversation": {
+      "eligible_conversations": 30,
+      "fraud_count": 16,
+      "benign_count": 14,
+      "metrics": {
+        "roc_auc": 0.9419642857142857,
+        "pr_auc": 0.9655448717948718,
+        "accuracy": 0.8666666666666667,
+        "precision": 0.875,
+        "recall": 0.875,
+        "f1": 0.875,
+        "macro_precision": 0.8660714285714286,
+        "macro_recall": 0.8660714285714286,
+        "macro_f1": 0.8660714285714286,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "tn": 12,
+          "fp": 2,
+          "fn": 2,
+          "tp": 14
+        },
+        "fpr": 0.14285714285714285,
+        "fnr": 0.125
+      }
+    }
+  },
+  "time_to_detection": {
+    "total_fraud": 16,
+    "detected_fraud": 15,
+    "mean_detection_turn": 4.4,
+    "median_detection_turn": 5.0,
+    "min_detection_turn": 1,
+    "max_detection_turn": 9,
+    "cumulative_rates": {
+      "by_turn_1": 0.4375,
+      "by_turn_2": 0.4375,
+      "by_turn_3": 0.4375,
+      "by_turn_5": 0.5,
+      "by_turn_7": 0.75,
+      "full_conversation": 0.9375
+    },
+    "cumulative_counts": {
+      "1": 7,
+      "2": 7,
+      "3": 7,
+      "5": 8,
+      "7": 12,
+      "full": 15
+    }
+  },
+  "temporal_permutation_ablation": {
+    "original_f1": 0.875,
+    "shuffled_f1_mean": 0.8761388074291301,
+    "shuffled_f1_std": 0.030825101841909074,
+    "permutation_drop_f1": -0.0011388074291300843
+  },
+  "bootstrap_confidence_intervals": {
+    "f1_95ci": [
+      0.7198571428571429,
+      0.972972972972973
+    ],
+    "roc_auc_95ci": [
+      0.8240604575163399,
+      1.0
+    ],
+    "pr_auc_95ci": [
+      0.8874861596736596,
+      1.0
+    ]
+  },
+  "leakage_audit": {
+    "total_external_conversations": 30,
+    "total_external_turns": 226,
+    "synthetic_train_unique_turns": 0,
+    "exact_turn_matches": 0,
+    "leakage_rate": 0.0,
+    "verdict": "ZERO_LEAKAGE",
+    "matching_turns": []
+  }
+}

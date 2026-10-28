@@ -1,0 +1,85 @@
+{
+  "project_name": "Elder-Fraud Detector V2 — Phase 7 Real-Time Integration",
+  "phase": "Phase 7 — Real-Time Live Streaming & Audio/ASR Pipeline Integration",
+  "audit_timestamp": "2026-10-06T00:15:00Z",
+  "frozen_models": {
+    "distilbert_v2": {
+      "path": "ml/models/tactic_classifier/v2_temporal_validity/",
+      "weights_file": "ml/models/tactic_classifier/v2_temporal_validity/model.safetensors",
+      "sha256": "76d2d4e440f65cb1e9f275a6496a0dcd6751a35e1f85261882815ccdda59a684",
+      "tokenizer": "distilbert-base-uncased (max_length=48)",
+      "labels": ["urgency", "isolation", "authority", "emotional_destabilization", "channel_control"],
+      "turn_thresholds": {
+        "urgency": 0.15,
+        "isolation": 0.25,
+        "authority": 0.10,
+        "emotional_destabilization": 0.20,
+        "channel_control": 0.15
+      },
+      "inference_mode": "model.eval() + torch.no_grad()",
+      "output": "5 continuous sigmoid probabilities in [0.0, 1.0]^5"
+    },
+    "causal_lstm_v2": {
+      "path": "ml/models/temporal_risk/lstm_v2/",
+      "weights_file": "ml/models/temporal_risk/lstm_v2/best_model.pt",
+      "sha256": "c6dd5b03ba91a20677ed4c7a148d23cba26ff08fa1528d5603a0cb1bd2ae64a1",
+      "architecture": "CausalLSTMRiskModel(input_dim=5, hidden_dim=64, num_layers=1, dropout=0.2, pooling_head=final)",
+      "calibrated_threshold": 0.20,
+      "streaming_method": "predict_causal_step(step_features, prev_hidden_state)",
+      "causal_guarantee": "Strictly unidirectional; prefix prediction uses ONLY turns 1..t"
+    }
+  },
+  "existing_backend": {
+    "framework": "FastAPI 0.104.1",
+    "entrypoint": "backend/app/main.py",
+    "api_routes": "backend/app/api/routes.py",
+    "websocket": "backend/app/api/websocket.py",
+    "services": {
+      "demo_pipeline": "backend/app/services/demo_pipeline.py (uses MockClassifier, to be replaced with real models)",
+      "mock_classifier": "backend/app/services/mock_classifier.py (keyword-based mock, to be replaced)",
+      "risk_engine": "backend/app/services/risk_engine.py (heuristic accumulative, to be replaced with LSTM)",
+      "session_manager": "backend/app/services/session_manager.py (in-memory dict, to be extended)"
+    },
+    "tests": ["backend/tests/test_mock_classifier.py", "backend/tests/test_risk_engine.py"]
+  },
+  "existing_frontend": {
+    "framework": "React 19 + Vite 8 + TypeScript",
+    "entrypoint": "frontend/src/App.tsx",
+    "hook": "frontend/src/hooks/useWebsocket.ts",
+    "styles": ["frontend/src/index.css", "frontend/src/App.css"],
+    "design": "Glassmorphism dark theme with Inter font"
+  },
+  "existing_ml_code": {
+    "model_definition": "ml/temporal_model.py (CausalLSTMRiskModel with predict_causal_step)",
+    "training_scripts": [
+      "ml/train_v2_distilbert.py",
+      "ml/train_v2_temporal.py"
+    ],
+    "feature_extraction": "scripts/extract_v2_temporal_features.py"
+  },
+  "phase7_new_components": {
+    "backend": {
+      "model_service": "backend/app/services/model_service.py — loads frozen DistilBERT + LSTM once at startup",
+      "asr_provider": "backend/app/services/asr_provider.py — ASRProvider interface + MockASR + optional Whisper",
+      "vad_service": "backend/app/services/vad_service.py — Voice Activity Detection abstraction",
+      "turn_segmenter": "backend/app/services/turn_segmenter.py — streaming turn construction",
+      "temporal_engine": "backend/app/services/temporal_engine.py — Causal LSTM real-time wrapper",
+      "explanation_engine": "backend/app/services/explanation_engine.py — risk explanation generator",
+      "privacy_service": "backend/app/services/privacy_service.py — PII redaction"
+    },
+    "scripts": {
+      "replay": "scripts/run_phase7_replay.py",
+      "live": "backend/run_live.py"
+    },
+    "reports": [
+      "reports/phase7_architecture.md",
+      "reports/phase7_latency_benchmark.md",
+      "reports/phase7_model_regression.md",
+      "reports/phase7_causality_audit.md",
+      "reports/phase7_privacy_security.md",
+      "reports/phase7_test_report.md",
+      "reports/phase7_final_report.md"
+    ],
+    "config": "data/phase7_config.json"
+  }
+}

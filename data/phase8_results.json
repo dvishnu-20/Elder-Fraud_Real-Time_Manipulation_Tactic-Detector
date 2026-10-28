@@ -1,0 +1,22 @@
+{
+  "pilot_size": 80,
+  "fraud_total": 30,
+  "benign_total": 50,
+  "metrics": {
+    "precision": 1.0,
+    "recall": 0.0333,
+    "f1": 0.0645,
+    "fpr": 0.0,
+    "tp": 1,
+    "fn": 29,
+    "fp": 0,
+    "tn": 50
+  },
+  "latency_ms": {
+    "mean": 36.97,
+    "p95": 42.22,
+    "max": 126.12
+  },
+  "false_alarms": [],
+  "false_alarms_per_hour": 0.0
+}

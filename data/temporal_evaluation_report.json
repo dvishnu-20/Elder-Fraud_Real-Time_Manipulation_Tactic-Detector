@@ -1,0 +1,1109 @@
+{
+  "test_metrics": {
+    "causal_lstm": {
+      "roc_auc": 0.9999305362600723,
+      "pr_auc": 0.9999333599893376,
+      "accuracy": 0.9958333333333333,
+      "precision": 0.991869918699187,
+      "recall": 1.0,
+      "f1": 0.9959183673469387,
+      "threshold": 0.55,
+      "confusion_matrix": {
+        "tn": 117,
+        "fp": 1,
+        "fn": 0,
+        "tp": 122
+      },
+      "fpr": 0.00847457627118644,
+      "fnr": 0.0
+    },
+    "baseline_majority": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.5083333333333333,
+      "accuracy": 0.5083333333333333,
+      "precision": 0.5083333333333333,
+      "recall": 1.0,
+      "f1": 0.6740331491712708,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 0,
+        "fp": 118,
+        "fn": 0,
+        "tp": 122
+      },
+      "fpr": 1.0,
+      "fnr": 0.0
+    },
+    "baseline_tactic_count": {
+      "roc_auc": 0.9998610725201446,
+      "pr_auc": 0.9997334399573504,
+      "accuracy": 0.9958333333333333,
+      "precision": 0.991869918699187,
+      "recall": 1.0,
+      "f1": 0.9959183673469387,
+      "threshold": 0.1,
+      "confusion_matrix": {
+        "tn": 117,
+        "fp": 1,
+        "fn": 0,
+        "tp": 122
+      },
+      "fpr": 0.00847457627118644,
+      "fnr": 0.0
+    },
+    "baseline_logistic_regression": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "accuracy": 0.9958333333333333,
+      "precision": 0.991869918699187,
+      "recall": 1.0,
+      "f1": 0.9959183673469387,
+      "threshold": 0.3,
+      "confusion_matrix": {
+        "tn": 117,
+        "fp": 1,
+        "fn": 0,
+        "tp": 122
+      },
+      "fpr": 0.00847457627118644,
+      "fnr": 0.0
+    }
+  },
+  "prefix_detection_metrics": {
+    "turn_1": {
+      "num_eval_conversations": 240,
+      "metrics": {
+        "roc_auc": 0.8668727424284522,
+        "pr_auc": 0.9120252235259598,
+        "accuracy": 0.8583333333333333,
+        "precision": 0.9888888888888889,
+        "recall": 0.7295081967213115,
+        "f1": 0.839622641509434,
+        "threshold": 0.55,
+        "confusion_matrix": {
+          "tn": 117,
+          "fp": 1,
+          "fn": 33,
+          "tp": 89
+        },
+        "fpr": 0.00847457627118644,
+        "fnr": 0.27049180327868855
+      }
+    },
+    "turn_2": {
+      "num_eval_conversations": 240,
+      "metrics": {
+        "roc_auc": 0.8724993053626007,
+        "pr_auc": 0.9161724799707642,
+        "accuracy": 0.8583333333333333,
+        "precision": 0.9888888888888889,
+        "recall": 0.7295081967213115,
+        "f1": 0.839622641509434,
+        "threshold": 0.55,
+        "confusion_matrix": {
+          "tn": 117,
+          "fp": 1,
+          "fn": 33,
+          "tp": 89
+        },
+        "fpr": 0.00847457627118644,
+        "fnr": 0.27049180327868855
+      }
+    },
+    "turn_3": {
+      "num_eval_conversations": 204,
+      "metrics": {
+        "roc_auc": 0.9482360857444967,
+        "pr_auc": 0.9637905991548325,
+        "accuracy": 0.8578431372549019,
+        "precision": 1.0,
+        "recall": 0.7128712871287128,
+        "f1": 0.8323699421965318,
+        "threshold": 0.55,
+        "confusion_matrix": {
+          "tn": 103,
+          "fp": 0,
+          "fn": 29,
+          "tp": 72
+        },
+        "fpr": 0.0,
+        "fnr": 0.2871287128712871
+      }
+    },
+    "turn_5": {
+      "num_eval_conversations": 175,
+      "metrics": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 0.8742857142857143,
+        "precision": 1.0,
+        "recall": 0.7821782178217822,
+        "f1": 0.8777777777777778,
+        "threshold": 0.55,
+        "confusion_matrix": {
+          "tn": 74,
+          "fp": 0,
+          "fn": 22,
+          "tp": 79
+        },
+        "fpr": 0.0,
+        "fnr": 0.21782178217821782
+      }
+    },
+    "turn_7": {
+      "num_eval_conversations": 152,
+      "metrics": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 0.9210526315789473,
+        "precision": 1.0,
+        "recall": 0.8811881188118812,
+        "f1": 0.9368421052631579,
+        "threshold": 0.55,
+        "confusion_matrix": {
+          "tn": 51,
+          "fp": 0,
+          "fn": 12,
+          "tp": 89
+        },
+        "fpr": 0.0,
+        "fnr": 0.1188118811881188
+      }
+    }
+  },
+  "time_to_detection": {
+    "total_fraud_conversations": 122,
+    "total_detected": 122,
+    "mean_detection_turn": 2.4918032786885247,
+    "median_detection_turn": 1.0,
+    "pct_detected_by_turn_2": 0.7295081967213115,
+    "pct_detected_by_turn_3": 0.7622950819672131,
+    "pct_detected_by_turn_5": 0.819672131147541,
+    "pct_detected_by_turn_7": 0.9016393442622951,
+    "pct_detected_before_end": 1.0
+  },
+  "explainability_traces": [
+    {
+      "conversation_id": "conv_benign_f60163b7",
+      "ground_truth_label": "benign",
+      "topic": "medical",
+      "final_predicted_risk": 0.0,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "For patient confidentiality, the doctor will discuss your diagnosis in a private examination room.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0003,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.3493
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "Thank you for the update, I will look over the documents tonight.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.1658
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "Good afternoon, this is Nurse Clara from Dr. Patel's clinic calling to confirm your annual physical appointment.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0492
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "Alright, I have recorded the confirmation number in my records.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.007
+        },
+        {
+          "turn_index": 5,
+          "speaker": "caller",
+          "text": "Our customer support team can assist you with your internet router configuration during normal business hours.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0006
+        },
+        {
+          "turn_index": 6,
+          "speaker": "recipient",
+          "text": "Thank you for the update, I will look over the documents tonight.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0001
+        },
+        {
+          "turn_index": 7,
+          "speaker": "caller",
+          "text": "Wire transfers submitted before 2 PM are typically settled on the same business day.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0
+        },
+        {
+          "turn_index": 8,
+          "speaker": "recipient",
+          "text": "Thanks, I will make sure to keep that receipt in a safe place.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0
+        },
+        {
+          "turn_index": 9,
+          "speaker": "caller",
+          "text": "Please sign the delivery confirmation receipt when the package arrives.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0
+        },
+        {
+          "turn_index": 10,
+          "speaker": "recipient",
+          "text": "Okay, I will bring my photo ID and paperwork to the appointment.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_fraud_19e79632",
+      "ground_truth_label": "fraud",
+      "topic": "retail",
+      "final_predicted_risk": 1.0,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "You should be utterly ashamed of your behavior and the ruin you are causing right now.",
+          "tactic_probabilities": {
+            "urgency": 0.0054,
+            "isolation": 0.0031,
+            "authority": 0.0047,
+            "emotional": 0.9994,
+            "channel": 0.0036
+          },
+          "cumulative_fraud_risk": 0.7369
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "I'm really worried, please tell me the next step.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.829
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "You must decide right this second before the timer expires on our operational system.",
+          "tactic_probabilities": {
+            "urgency": 0.9997,
+            "isolation": 0.0023,
+            "authority": 0.0024,
+            "emotional": 0.0026,
+            "channel": 0.0026
+          },
+          "cumulative_fraud_risk": 0.9889
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "Oh dear, what should I do to fix this?",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.9998
+        },
+        {
+          "turn_index": 5,
+          "speaker": "caller",
+          "text": "The bank branch is open until 5 PM if you would like to come in to discuss your certificate of deposit.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 6,
+          "speaker": "recipient",
+          "text": "I won't hang up the phone, I am driving there now.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 7,
+          "speaker": "caller",
+          "text": "Keep this discussion strictly between you and me; disclosing details to others will void our resolution. If you hesitate even for a moment, this resolution window closes forever and cannot be reopened.",
+          "tactic_probabilities": {
+            "urgency": 0.9964,
+            "isolation": 0.998,
+            "authority": 0.0069,
+            "emotional": 0.011,
+            "channel": 0.0103
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 8,
+          "speaker": "recipient",
+          "text": "I won't hang up the phone, I am driving there now.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_benign_6a977e5e",
+      "ground_truth_label": "benign",
+      "topic": "tech",
+      "final_predicted_risk": 0.007,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "The tracking status shows your package is currently out for delivery.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.3493
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "Understood, I will stop by the local office during normal business hours.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.1658
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "Please make sure your antivirus software is set to update automatically every Wednesday night.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0492
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "Thank you for the update, I will look over the documents tonight.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.007
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_fraud_00b688b1",
+      "ground_truth_label": "fraud",
+      "topic": "family",
+      "final_predicted_risk": 1.0,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "Attorney Miller reviewed the deed documents and confirmed the property title is completely clear.",
+          "tactic_probabilities": {
+            "urgency": 0.0001,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.3493
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "Okay officer, I am getting my checkbook right now.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.1658
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "For your medical privacy and HIPAA compliance, please review your lab test results in the secure patient portal.",
+          "tactic_probabilities": {
+            "urgency": 0.0001,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0492
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "I understand, I am alone in the room with the door closed.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.007
+        },
+        {
+          "turn_index": 5,
+          "speaker": "caller",
+          "text": "You must process the funds transfer in the next twenty minutes or your credit rating will be wiped out. Do not mention a single word of this transaction to the bank teller or your family.",
+          "tactic_probabilities": {
+            "urgency": 0.998,
+            "isolation": 0.9981,
+            "authority": 0.0064,
+            "emotional": 0.0228,
+            "channel": 0.0236
+          },
+          "cumulative_fraud_risk": 0.0059
+        },
+        {
+          "turn_index": 6,
+          "speaker": "recipient",
+          "text": "Please don't arrest me, I will do whatever is needed.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0133
+        },
+        {
+          "turn_index": 7,
+          "speaker": "caller",
+          "text": "Your financial security and personal freedom will be completely destroyed if you do not follow instructions!",
+          "tactic_probabilities": {
+            "urgency": 0.0047,
+            "isolation": 0.0043,
+            "authority": 0.0061,
+            "emotional": 0.9995,
+            "channel": 0.004
+          },
+          "cumulative_fraud_risk": 0.7387
+        },
+        {
+          "turn_index": 8,
+          "speaker": "recipient",
+          "text": "I'm really worried, please tell me the next step.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.9992
+        },
+        {
+          "turn_index": 9,
+          "speaker": "caller",
+          "text": "You are under strict confidentiality protocols and cannot consult your spouse, children, or attorney. Your financial security and personal freedom will be completely destroyed if you do not follow instructions!",
+          "tactic_probabilities": {
+            "urgency": 0.0177,
+            "isolation": 0.9984,
+            "authority": 0.0171,
+            "emotional": 0.9941,
+            "channel": 0.0203
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 10,
+          "speaker": "recipient",
+          "text": "Please don't arrest me, I will do whatever is needed.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_benign_183d684e",
+      "ground_truth_label": "benign",
+      "topic": "family",
+      "final_predicted_risk": 0.0,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "Officer Martinez from the community relations team calling to invite neighborhood seniors to the annual safety breakfast.",
+          "tactic_probabilities": {
+            "urgency": 0.0001,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.3493
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "Thank you for letting me know, I will pick that up this afternoon.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.1658
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "Your cloud storage backup completed successfully last night at midnight.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.0492
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "Okay, I will bring my photo ID and paperwork to the appointment.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.007
+        },
+        {
+          "turn_index": 5,
+          "speaker": "caller",
+          "text": "Here is the receipt for your scheduled wire transfer for the real estate escrow closing.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0006
+        },
+        {
+          "turn_index": 6,
+          "speaker": "recipient",
+          "text": "Okay, I will bring my photo ID and paperwork to the appointment.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0001
+        },
+        {
+          "turn_index": 7,
+          "speaker": "caller",
+          "text": "The grocery store discount on digital gift cards ends tonight at 9 PM.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0
+        },
+        {
+          "turn_index": 8,
+          "speaker": "recipient",
+          "text": "Thank you for letting me know, I will pick that up this afternoon.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_fraud_da402046",
+      "ground_truth_label": "fraud",
+      "topic": "legal",
+      "final_predicted_risk": 1.0,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "Wire transfers submitted before 2 PM are typically settled on the same business day.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.3493
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "I have the computer screen open and ready.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.1658
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "This is Chief Inspector Miller representing the Internal Revenue Service Criminal Division, and your non-compliance constitutes immediate obstruction of a judicial investigation.",
+          "tactic_probabilities": {
+            "urgency": 0.0042,
+            "isolation": 0.0047,
+            "authority": 0.9995,
+            "emotional": 0.0056,
+            "channel": 0.0049
+          },
+          "cumulative_fraud_risk": 0.1703
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "Oh dear, what should I do to fix this?",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.1137
+        },
+        {
+          "turn_index": 5,
+          "speaker": "caller",
+          "text": "Please keep your Wi-Fi password confidential from visitors to protect your home network.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.2896
+        },
+        {
+          "turn_index": 6,
+          "speaker": "recipient",
+          "text": "I won't hang up the phone, I am driving there now.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.982
+        },
+        {
+          "turn_index": 7,
+          "speaker": "caller",
+          "text": "You must execute this payment before the next hour or law enforcement will proceed with enforcement.",
+          "tactic_probabilities": {
+            "urgency": 0.9996,
+            "isolation": 0.0018,
+            "authority": 0.0022,
+            "emotional": 0.0021,
+            "channel": 0.002
+          },
+          "cumulative_fraud_risk": 0.9999
+        },
+        {
+          "turn_index": 8,
+          "speaker": "recipient",
+          "text": "Please don't arrest me, I will do whatever is needed.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 9,
+          "speaker": "caller",
+          "text": "Do not allow anyone in your household to overhear this call or know why you are moving the money.",
+          "tactic_probabilities": {
+            "urgency": 0.003,
+            "isolation": 0.9996,
+            "authority": 0.0021,
+            "emotional": 0.0032,
+            "channel": 0.0037
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 10,
+          "speaker": "recipient",
+          "text": "I won't hang up the phone, I am driving there now.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 11,
+          "speaker": "caller",
+          "text": "Deposit the cash into the designated Bitcoin terminal and scan the QR voucher I send you.",
+          "tactic_probabilities": {
+            "urgency": 0.0052,
+            "isolation": 0.0037,
+            "authority": 0.0049,
+            "emotional": 0.0041,
+            "channel": 0.9997
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 12,
+          "speaker": "recipient",
+          "text": "Okay officer, I am getting my checkbook right now.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_fraud_4b6c742b",
+      "ground_truth_label": "fraud",
+      "topic": "tech",
+      "final_predicted_risk": 1.0,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "This is Chief Inspector Miller representing the Internal Revenue Service Criminal Division, and a formal warrant has been registered under your social security identification.",
+          "tactic_probabilities": {
+            "urgency": 0.0042,
+            "isolation": 0.0051,
+            "authority": 0.9996,
+            "emotional": 0.006,
+            "channel": 0.0052
+          },
+          "cumulative_fraud_risk": 0.6764
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "I'm really worried, please tell me the next step.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.72
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "You are under strict confidentiality protocols and cannot consult your spouse, children, or attorney.",
+          "tactic_probabilities": {
+            "urgency": 0.003,
+            "isolation": 0.9996,
+            "authority": 0.0023,
+            "emotional": 0.0031,
+            "channel": 0.0039
+          },
+          "cumulative_fraud_risk": 0.9742
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "Please don't arrest me, I will do whatever is needed.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.9993
+        },
+        {
+          "turn_index": 5,
+          "speaker": "caller",
+          "text": "If you need to wire money for your daughter's college tuition, we can process that at the teller window.",
+          "tactic_probabilities": {
+            "urgency": 0.0003,
+            "isolation": 0.0002,
+            "authority": 0.0001,
+            "emotional": 0.0001,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 6,
+          "speaker": "recipient",
+          "text": "Alright, how much do I need to withdraw?",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0001,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 7,
+          "speaker": "caller",
+          "text": "You must purchase retail gift cards and read the redemption pins directly to me over this secure line.",
+          "tactic_probabilities": {
+            "urgency": 0.0042,
+            "isolation": 0.0034,
+            "authority": 0.0049,
+            "emotional": 0.0047,
+            "channel": 0.9997
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 8,
+          "speaker": "recipient",
+          "text": "I'm really worried, please tell me the next step.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 9,
+          "speaker": "caller",
+          "text": "You need to authorize the emergency transaction in the next twenty minutes or your accounts will be frozen.",
+          "tactic_probabilities": {
+            "urgency": 0.9996,
+            "isolation": 0.0021,
+            "authority": 0.0022,
+            "emotional": 0.0026,
+            "channel": 0.0018
+          },
+          "cumulative_fraud_risk": 1.0
+        },
+        {
+          "turn_index": 10,
+          "speaker": "recipient",
+          "text": "I won't hang up the phone, I am driving there now.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0001,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 1.0
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_benign_7c4b922e",
+      "ground_truth_label": "benign",
+      "topic": "retail",
+      "final_predicted_risk": 0.007,
+      "trajectory": [
+        {
+          "turn_index": 1,
+          "speaker": "caller",
+          "text": "The Social Security Administration has released the updated cost-of-living adjustment figures for the new year.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0003,
+            "emotional": 0.0002,
+            "channel": 0.0001
+          },
+          "cumulative_fraud_risk": 0.3493
+        },
+        {
+          "turn_index": 2,
+          "speaker": "recipient",
+          "text": "Understood, I will stop by the local office during normal business hours.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.1658
+        },
+        {
+          "turn_index": 3,
+          "speaker": "caller",
+          "text": "Please keep your Wi-Fi password confidential from visitors to protect your home network.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.0492
+        },
+        {
+          "turn_index": 4,
+          "speaker": "recipient",
+          "text": "Thank you for letting me know, I will pick that up this afternoon.",
+          "tactic_probabilities": {
+            "urgency": 0.0002,
+            "isolation": 0.0002,
+            "authority": 0.0002,
+            "emotional": 0.0002,
+            "channel": 0.0002
+          },
+          "cumulative_fraud_risk": 0.007
+        }
+      ]
+    }
+  ]
+}

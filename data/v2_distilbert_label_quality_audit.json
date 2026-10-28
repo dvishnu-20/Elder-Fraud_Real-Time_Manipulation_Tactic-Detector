@@ -1,0 +1,518 @@
+{
+  "task1_fraud_none_overpredictions": {
+    "total_fraud_none_turns": 895,
+    "overprediction_count": 34,
+    "overprediction_rate": 0.038,
+    "by_tactic": {
+      "isolation": 34
+    },
+    "examples": [
+      {
+        "turn_index": 52,
+        "conversation_id": "conv_fraud_0027_7472ff",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "You are legally prohibited from contacting outside parties or family members for verification during an active federal operation.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0039,
+          "isolation": 0.9701,
+          "authority": 0.0054,
+          "emotional_destabilization": 0.0026,
+          "channel_control": 0.0045
+        }
+      },
+      {
+        "turn_index": 296,
+        "conversation_id": "conv_fraud_0204_ab378e",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0088,
+          "isolation": 0.9862,
+          "authority": 0.0013,
+          "emotional_destabilization": 0.0264,
+          "channel_control": 0.0058
+        }
+      },
+      {
+        "turn_index": 330,
+        "conversation_id": "conv_fraud_0203_271595",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0088,
+          "isolation": 0.9862,
+          "authority": 0.0013,
+          "emotional_destabilization": 0.0264,
+          "channel_control": 0.0058
+        }
+      },
+      {
+        "turn_index": 434,
+        "conversation_id": "conv_fraud_0239_c45b9c",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0026,
+          "isolation": 0.9839,
+          "authority": 0.002,
+          "emotional_destabilization": 0.0072,
+          "channel_control": 0.0086
+        }
+      },
+      {
+        "turn_index": 482,
+        "conversation_id": "conv_fraud_0004_843f76",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0088,
+          "isolation": 0.9862,
+          "authority": 0.0013,
+          "emotional_destabilization": 0.0264,
+          "channel_control": 0.0058
+        }
+      },
+      {
+        "turn_index": 566,
+        "conversation_id": "conv_fraud_0091_7d07f5",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Do not question my credentials or delay to seek second opinions; hesitation will result in immediate prosecution.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0016,
+          "isolation": 0.9719,
+          "authority": 0.006,
+          "emotional_destabilization": 0.0056,
+          "channel_control": 0.0013
+        }
+      },
+      {
+        "turn_index": 638,
+        "conversation_id": "conv_fraud_0212_3b1fef",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0088,
+          "isolation": 0.9862,
+          "authority": 0.0013,
+          "emotional_destabilization": 0.0264,
+          "channel_control": 0.0058
+        }
+      },
+      {
+        "turn_index": 658,
+        "conversation_id": "conv_fraud_0109_25698c",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0026,
+          "isolation": 0.9839,
+          "authority": 0.002,
+          "emotional_destabilization": 0.0072,
+          "channel_control": 0.0086
+        }
+      },
+      {
+        "turn_index": 686,
+        "conversation_id": "conv_fraud_0065_e0be98",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0026,
+          "isolation": 0.9839,
+          "authority": 0.002,
+          "emotional_destabilization": 0.0072,
+          "channel_control": 0.0086
+        }
+      },
+      {
+        "turn_index": 772,
+        "conversation_id": "conv_fraud_0238_00f8ce",
+        "turn_id": 7,
+        "speaker": "caller",
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "true_labels": [
+          "none"
+        ],
+        "predicted_tactics": [
+          "isolation"
+        ],
+        "probabilities": {
+          "urgency": 0.0022,
+          "isolation": 0.968,
+          "authority": 0.0034,
+          "emotional_destabilization": 0.0041,
+          "channel_control": 0.0018
+        }
+      }
+    ]
+  },
+  "task2_isolation_breakdown": {
+    "total_isolation_fps": 34,
+    "category_counts": {
+      "B. Mislabeled Isolation / Verification Suppression": 29,
+      "C. Ambiguous": 5
+    },
+    "records": [
+      {
+        "conversation_id": "conv_fraud_0027_7472ff",
+        "turn_id": 7,
+        "text": "You are legally prohibited from contacting outside parties or family members for verification during an active federal operation.",
+        "prob": 0.9701,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0204_ab378e",
+        "turn_id": 7,
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "prob": 0.9862,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0203_271595",
+        "turn_id": 7,
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "prob": 0.9862,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0239_c45b9c",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0004_843f76",
+        "turn_id": 7,
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "prob": 0.9862,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0091_7d07f5",
+        "turn_id": 7,
+        "text": "Do not question my credentials or delay to seek second opinions; hesitation will result in immediate prosecution.",
+        "prob": 0.9719,
+        "category": "C. Ambiguous"
+      },
+      {
+        "conversation_id": "conv_fraud_0212_3b1fef",
+        "turn_id": 7,
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "prob": 0.9862,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0109_25698c",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0065_e0be98",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0238_00f8ce",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0072_1be724",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0064_c546c5",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0147_eaef11",
+        "turn_id": 7,
+        "text": "You are legally prohibited from contacting outside parties or family members for verification during an active federal operation.",
+        "prob": 0.9701,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0008_1efdf1",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0071_595e4a",
+        "turn_id": 7,
+        "text": "Do not question my credentials or delay to seek second opinions; hesitation will result in immediate prosecution.",
+        "prob": 0.9719,
+        "category": "C. Ambiguous"
+      },
+      {
+        "conversation_id": "conv_fraud_0230_a74f98",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0213_ab906c",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0168_b59f99",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0016_c0d662",
+        "turn_id": 7,
+        "text": "Do not question my credentials or delay to seek second opinions; hesitation will result in immediate prosecution.",
+        "prob": 0.9719,
+        "category": "C. Ambiguous"
+      },
+      {
+        "conversation_id": "conv_fraud_0100_6abf98",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0118_f41fff",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0232_c8c333",
+        "turn_id": 7,
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "prob": 0.9862,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0062_75ea85",
+        "turn_id": 7,
+        "text": "Do not question my credentials or delay to seek second opinions; hesitation will result in immediate prosecution.",
+        "prob": 0.9719,
+        "category": "C. Ambiguous"
+      },
+      {
+        "conversation_id": "conv_fraud_0120_14eb8d",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0159_45d307",
+        "turn_id": 7,
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "prob": 0.9862,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0113_354ae1",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0167_eeaf1d",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0225_741f63",
+        "turn_id": 7,
+        "text": "Do not question my credentials or delay to seek second opinions; hesitation will result in immediate prosecution.",
+        "prob": 0.9719,
+        "category": "C. Ambiguous"
+      },
+      {
+        "conversation_id": "conv_fraud_0246_e9a2b6",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0229_f40ba4",
+        "turn_id": 7,
+        "text": "You are legally prohibited from contacting outside parties or family members for verification during an active federal operation.",
+        "prob": 0.9701,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0208_c752f1",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0216_f3232f",
+        "turn_id": 7,
+        "text": "Do NOT hang up this phone to check any website; breaking this secure connection will forfeit your emergency protection immediately.",
+        "prob": 0.9839,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0129_d7a044",
+        "turn_id": 7,
+        "text": "Do NOT call the number on your card or attempt to verify this with your bank; our investigators have flagged internal employees as suspects.",
+        "prob": 0.968,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      },
+      {
+        "conversation_id": "conv_fraud_0160_b696fd",
+        "turn_id": 7,
+        "text": "Calling any public customer service number will tip off the syndicate and cause your accounts to be emptied instantly.",
+        "prob": 0.9862,
+        "category": "B. Mislabeled Isolation / Verification Suppression"
+      }
+    ]
+  },
+  "task3_systematic_subcategories": {
+    "1. Fraud Tactic-Bearing Turns": {
+      "total_turns": 471,
+      "pred_isolation_positives": 120,
+      "rate": 0.2548
+    },
+    "2. Fraud Normal Turns (Gaps/Openers)": {
+      "total_turns": 866,
+      "pred_isolation_positives": 5,
+      "rate": 0.0058
+    },
+    "3. Fraud Verification-Suppression Turns": {
+      "total_turns": 76,
+      "pred_isolation_positives": 59,
+      "rate": 0.7763
+    },
+    "4. Benign Tactic-Bearing Turns": {
+      "total_turns": 201,
+      "pred_isolation_positives": 10,
+      "rate": 0.0498
+    },
+    "5. Benign Hard Negatives (Caller None)": {
+      "total_turns": 316,
+      "pred_isolation_positives": 0,
+      "rate": 0.0
+    },
+    "6. Benign Recipient Turns": {
+      "total_turns": 517,
+      "pred_isolation_positives": 0,
+      "rate": 0.0
+    }
+  },
+  "task4_all_tactics": {
+    "urgency": {
+      "total_negative_turns": 2208,
+      "over_predictions": 0,
+      "rate": 0.0
+    },
+    "isolation": {
+      "total_negative_turns": 2270,
+      "over_predictions": 34,
+      "rate": 0.015
+    },
+    "authority": {
+      "total_negative_turns": 2250,
+      "over_predictions": 0,
+      "rate": 0.0
+    },
+    "emotional_destabilization": {
+      "total_negative_turns": 2348,
+      "over_predictions": 0,
+      "rate": 0.0
+    },
+    "channel_control": {
+      "total_negative_turns": 2252,
+      "over_predictions": 0,
+      "rate": 0.0
+    }
+  }
+}

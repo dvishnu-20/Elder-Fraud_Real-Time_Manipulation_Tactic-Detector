@@ -1,0 +1,109 @@
+{
+  "project_name": "Elder-Fraud Detector V2",
+  "phase": "Phase 6 — External / Real-World Generalization Validation",
+  "audit_timestamp": "2026-10-05T22:38:00Z",
+  "components": {
+    "turn_level_classifier": {
+      "model_type": "DistilBERT (distilbert-base-uncased) Multi-Label Sequence Classifier",
+      "model_path": "ml/models/tactic_classifier/v2_temporal_validity/",
+      "weights_file": "ml/models/tactic_classifier/v2_temporal_validity/model.safetensors",
+      "sha256": "76d2d4e440f65cb1e9f275a6496a0dcd6751a35e1f85261882815ccdda59a684",
+      "feature_definition_path": "ml/models/tactic_classifier/v2_temporal_validity/feature_definition.json",
+      "threshold_config_path": "ml/models/tactic_classifier/v2_temporal_validity/threshold_config.json",
+      "training_metrics_path": "ml/models/tactic_classifier/v2_temporal_validity/training_metrics.json",
+      "labels": [
+        "urgency",
+        "isolation",
+        "authority",
+        "emotional_destabilization",
+        "channel_control"
+      ],
+      "status": "FROZEN"
+    },
+    "temporal_risk_model": {
+      "model_type": "CausalLSTMRiskModel (d_in=5, d_hidden=64, num_layers=1, bidirectional=False, final_pool)",
+      "model_path": "ml/models/temporal_risk/lstm_v2/",
+      "weights_file": "ml/models/temporal_risk/lstm_v2/best_model.pt",
+      "sha256": "c6dd5b03ba91a20677ed4c7a148d23cba26ff08fa1528d5603a0cb1bd2ae64a1",
+      "config_path": "ml/models/temporal_risk/lstm_v2/config.json",
+      "threshold_config_path": "ml/models/temporal_risk/lstm_v2/threshold_config.json",
+      "calibrated_threshold": 0.20,
+      "feature_dimension": 5,
+      "input_features": "5 continuous sigmoid probabilities [urgency, isolation, authority, emotional_destabilization, channel_control]",
+      "status": "FROZEN"
+    }
+  },
+  "datasets": {
+    "synthetic_v2_training": {
+      "raw_dataset": "data/processed/temporal_v2/train.jsonl",
+      "feature_dataset": "data/processed/temporal_v2_features/train_features.jsonl",
+      "num_conversations": 1400,
+      "num_turns": 11454,
+      "fraud_conversations": 707,
+      "benign_conversations": 693
+    },
+    "synthetic_v2_validation": {
+      "raw_dataset": "data/processed/temporal_v2/validation.jsonl",
+      "feature_dataset": "data/processed/temporal_v2_features/validation_features.jsonl",
+      "num_conversations": 300,
+      "num_turns": 2458,
+      "fraud_conversations": 160,
+      "benign_conversations": 140
+    },
+    "synthetic_v2_test": {
+      "raw_dataset": "data/processed/temporal_v2/test.jsonl",
+      "feature_dataset": "data/processed/temporal_v2_features/test_features.jsonl",
+      "num_conversations": 300,
+      "num_turns": 2400,
+      "fraud_conversations": 133,
+      "benign_conversations": 167
+    },
+    "challenge_dataset": {
+      "path": "data/challenge_set.jsonl",
+      "num_turns": 550,
+      "description": "550-turn challenge set containing contrastive pairs, hard negatives, and subtle manipulation"
+    }
+  },
+  "evaluation_scripts": [
+    "ml/train_v2_temporal.py",
+    "scripts/validate_temporal_robustness.py",
+    "scripts/evaluate_challenge_set.py",
+    "scripts/extract_v2_temporal_features.py"
+  ],
+  "existing_metrics": {
+    "synthetic_v2_test_lstm": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "mean_detection_turn": 3.15,
+      "benign_fpr": 0.0
+    },
+    "synthetic_v2_test_hist_gradient_boosting": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "f1": 1.0
+    },
+    "synthetic_v2_test_logistic_regression": {
+      "roc_auc": 0.9998,
+      "pr_auc": 0.9997,
+      "f1": 0.9962
+    },
+    "synthetic_v2_test_tactic_count_rule": {
+      "roc_auc": 0.8667,
+      "pr_auc": 0.7492,
+      "f1": 0.8636
+    },
+    "turn_level_v2_distilbert_test": {
+      "micro_f1": 0.9753,
+      "macro_f1": 0.9769,
+      "benign_specificity": 1.0
+    }
+  },
+  "existing_limitations": [
+    "Prior validation was evaluated solely on synthetic dialogues generated via template combinations.",
+    "Offline discrimination on synthetic data is matched by non-temporal high-order summary features (GBDT F1=1.0000).",
+    "Temporal value is currently established as MODEST (streaming prefix advantage and 12.19% permutation degradation), requiring external distribution validation to confirm real-world robustness."
+  ]
+}
